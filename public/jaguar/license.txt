@@ -1,0 +1,8 @@
+Model Information:
+* title:	Jaguar
+* source:	https://sketchfab.com/3d-models/jaguar-15194e67c98643c4a168076fd523e737
+* author:	Panthera_Onca (https://sketchfab.com/Panthera_Onca)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -6,36 +6,53 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { cardEvents } from "../assets";
+import EventsAndIncentives from "./AppProducts/EventsAndIncentives";
+import { useNavigate } from "react-router-dom";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
+const ServiceCard = ({ index, title, icon, url }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [toggle, setToggle] = useState(false);
+  const navigateTo = useNavigate();
+
+  return (
+    <Tilt className='xs:w-[250px] w-full'>
+      <motion.div
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+        className='w-full bg-gradient-to-r from-yellow-300 to-yellow-500 p-[1px] rounded-[20px] shadow-card relative overflow-hidden'
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onClick={ () => {
+          setToggle(!toggle)
+          navigateTo('/'+ url);
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
+        <div className='fabulous-golden-background rounded-[20px]
+          py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col relative
+          overflow-hidden'
+          >
+          <img
+            src={icon}
+            alt='web-development'
+            className={`${
+              isHovered ? 
+               'w-full h-full object-cover scale-100 absolute transition-all duration-300 transform'
+               : 'w-32 h-32 object-contain'
+            }`}
+          />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
+          <h3 className='text-black text-[20px] italic text-center'>
+            {title}
+          </h3>
+        </div>
+      </motion.div>
+    </Tilt>
+  );
+};
+
 
 const About = () => {
+  
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -45,18 +62,28 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-black text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        Convenio-Tur is a travel agent and tour operator which attends the international
+        receptive tourism market in Iguassu Falls and the surrounding area. We are well
+        equipped to correspond to the most sophisticated demands in this market.
+        <br/><br/>
+        Iguassu Falls is a destination with a lot to offer, with three different
+        countries united by enormous rivers and attractions included in the lists
+        of the Natural and Technological Wonders of the World.
+        <br/><br/>
+        Many have already heard of the Cataratas, of the Iguassu Jungle, of the Guarani
+        Republic, but few know of the excellent infrastructure of hotels, restaurants and
+        services with a level of quality to satisfy the most demanding visitor.
+        <br/><br/>
+        Convenio-Tur is here to guarantee that the traveler that arrives here can enjoy all
+        of the fantastic attractions that this destination has to offer without any worries.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10 cursor-pointer'
+        >
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ServiceCard key={service.title} index={index} {...service} url={service.url} />
         ))}
       </div>
     </>

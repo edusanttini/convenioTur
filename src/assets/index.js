@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import headerLogo from "./convenioturlogo.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -20,6 +21,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import flagarg from "./flagarg.jpg";
+import flagbr from "./flagbr.jpg";
+import flagpy from "./flagpy.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -29,6 +33,13 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import cataratas from "./cataratas.jpg";
+import cardEvents from "./eventsimg.jpg";
+import cardCataratas from "./cardCataratas.jpg";
+import cardTechnologic from "./cardTechnologic.jpg";
+import cardTransfer from "./cardTransfer.jpg";
+import cardGastronomia from "./cardGastronomia.jpeg";
+import cardHotels from "./cardHotels.jpg";
 
 export {
   logo,
@@ -59,4 +70,15 @@ export {
   carrent,
   jobit,
   tripguide,
+  headerLogo,
+  flagpy,
+  flagbr,
+  flagarg,
+  cataratas,
+  cardEvents,
+  cardHotels,
+  cardGastronomia,
+  cardTransfer,
+  cardTechnologic,
+  cardCataratas
 };

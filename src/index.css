@@ -33,12 +33,22 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.yellow-gradient {
+  background: #FCD34D;
+  background: linear-gradient(-90deg, #FCD34D 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #FCD34D 0%,
+    rgba(60, 51, 80, 0) 100%
+  );
+}
+
+.black-gradient {
+  background: #050400;
+  background: linear-gradient(-90deg, #FCD34D 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+    -90deg,
+    #0d0a00 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
@@ -201,4 +211,26 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+.fabulous-golden-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.fabulous-golden-background::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  left: -10px;
+  background: linear-gradient(to right, #FFD700, #FFDF00, #FFEC00, #FFF700, #FFEC00, #FFDF00, #FFD700);
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.hovercard {
+  position: fixed;
+  height: 100%;
 }

@@ -23,7 +23,25 @@ import {
   jobit,
   tripguide,
   threejs,
+  flagpy,
+  flagbr,
+  flagarg,
+  cataratas,
+  cardCataratas,
+  cardTechnologic,
+  cardTransfer,
+  cardGastronomia,
+  cardHotels,
+  cardEvents
 } from "../assets";
+
+export const bgImg = [
+  {
+    id: 'kodak',
+    imgUrl: cataratas,
+    title: 'cataratas',
+  },
+];
 
 export const navLinks = [
   {
@@ -31,8 +49,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "explore",
+    title: "Explore",
   },
   {
     id: "contact",
@@ -40,22 +58,54 @@ export const navLinks = [
   },
 ];
 
+export const exploreCountries = [
+  {
+    id: 'Arg',
+    imgUrl: flagarg,
+    title: 'Argentina',
+  },
+  {
+    id: 'Br',
+    imgUrl: flagbr,
+    title: 'Brasil',
+  },
+  {
+    id: 'Py',
+    imgUrl: flagpy,
+    title: 'Paraguay',
+  },
+];
+
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Events and Incentives",
+    icon: cardEvents,
+    url: "eventsandincentives",
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Cataratas and Nature Tours",
+    icon: cardCataratas,
+    url: "naturetours",
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Technologic/Cultural Tours",
+    icon: cardTechnologic,
+    url: "culturaltours",
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Transfer/Receptive Services",
+    icon: cardTransfer,
+    url: "transferservices",
+  },
+  {
+    title: "Gastronomy and Entertainment",
+    icon: cardGastronomia,
+    url: "gastronomy",
+  },
+  {
+    title: "Hotels",
+    icon: cardHotels,
+    url: "hotels",
   },
 ];
 
