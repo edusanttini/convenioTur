@@ -7,6 +7,7 @@ import { JaguarCanvas } from "./canvas";
 import { TestCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { bgGrayGradientStyle } from "../globalColorScheme";
 
 const Contact = () => {
   const formRef = useRef();
@@ -64,10 +65,6 @@ const Contact = () => {
         }
       );*/
   };
-
-  const bgGrayGradientStyle = {
-    background: 'linear-gradient(to right, #FCD34D, #FFBB28)'
-};
 
   return (
     

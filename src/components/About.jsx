@@ -9,6 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { cardEvents } from "../assets";
 import EventsAndIncentives from "./AppProducts/EventsAndIncentives";
 import { useNavigate } from "react-router-dom";
+import { bgYellowGradientStyle } from "../globalColorScheme";
 
 const ServiceCard = ({ index, title, icon, url }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -19,7 +20,7 @@ const ServiceCard = ({ index, title, icon, url }) => {
     <Tilt className='xs:w-[250px] w-full'>
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className='w-full bg-gradient-to-r from-yellow-300 to-yellow-500 p-[1px] rounded-[20px] shadow-card relative overflow-hidden'
+        className='w-full p-[1px] rounded-[20px] shadow-card relative overflow-hidden'
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={ () => {
@@ -27,9 +28,10 @@ const ServiceCard = ({ index, title, icon, url }) => {
           navigateTo('/'+ url);
         }}
       >
-        <div className='fabulous-golden-background rounded-[20px]
+        <div className='rounded-[20px]
           py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col relative
           overflow-hidden'
+          style={bgYellowGradientStyle}
           >
           <img
             src={icon}

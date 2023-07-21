@@ -4,11 +4,9 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import { bgGrayGradientStyle } from "../globalColorScheme";
 
 const AppProducts = ({urlPath}) => {
-    const bgGrayGradientStyle = {
-        background: 'linear-gradient(to bottom, #D6D6D6, #171717)'
-    };
 console.log("ff---", urlPath);
     return(
         <div className='relative z-0' style={bgGrayGradientStyle}>

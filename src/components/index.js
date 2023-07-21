@@ -14,6 +14,11 @@ import { TypingText } from './CustomTexts';
 import { TitleText } from './CustomTexts';
 import AppProducts from "./AppProducts";
 import EventsAndIncentives from "./AppProducts/EventsAndIncentives";
+import NatureTours from "./AppProducts/NatureTours";
+import CulturalTours from "./AppProducts/CulturalTours";
+import TransferServices from "./AppProducts/TransferServices";
+import Gastronomy from "./AppProducts/Gastronomy";
+import Hotels from "./AppProducts/Hotels";
 
 export {
   Hero,
@@ -34,5 +39,11 @@ export {
   JaguarCanvas,
   TestCanvas,
   AppProducts,
-  EventsAndIncentives
+  EventsAndIncentives,
+  NatureTours,
+  CulturalTours,
+  TransferServices,
+  Gastronomy,
+  Hotels
+  
 };

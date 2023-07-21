@@ -3,7 +3,14 @@ import ReactDOM from "react-dom/client";
 
 import App from "./App";
 import "./index.css";
-import { EventsAndIncentives } from "./components";
+import {
+  EventsAndIncentives,
+  NatureTours,
+  CulturalTours,
+  TransferServices,
+  Gastronomy,
+  Hotels
+} from "./components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function Main() {
@@ -14,6 +21,11 @@ export default function Main() {
           <Route path="/" element={<App />}/>
           <Route index element={<App/>}/>
           <Route path="/eventsandincentives" element={<EventsAndIncentives/>}/>
+          <Route path="/naturetours" element={<NatureTours/>}/>
+          <Route path="/culturaltours" element={<CulturalTours/>}/>
+          <Route path="/transferservices" element={<TransferServices/>}/>
+          <Route path="/gastronomy" element={<Gastronomy/>}/>
+          <Route path="/hotels" element={<Hotels/>}/>
           
         </Routes>
       </BrowserRouter>
