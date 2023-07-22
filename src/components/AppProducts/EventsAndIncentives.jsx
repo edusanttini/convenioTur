@@ -10,9 +10,6 @@ import { styles } from "../../styles";
 import { bgGrayGradientStyle, bgDarkGrayGradientStyle, yellowText } from "../../globalColorScheme";
 import { eventsAndIncentives, incentiveTravel, someOfTheEvents, thePrincipalVenues } from "../../assets";
 
-
-
-
 const EventsAndIncentives = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -76,9 +73,8 @@ const EventsAndIncentives = () => {
                                 style={yellowText}>
                                 The principal venues for realizing events in Iguassu are the following
                             </h2>
-                            <p className={`${styles.sectionSubTextGray}pr-32 pl-32 pl-sm-4 pt-16 `}>
-                                <div className=" pr-32 pl-32 pl-sm-4 pt-16 mx-auto ">
-                                <ul  style={{listStyleType: 'disc'}}>
+
+                                <ul className={`${styles.sectionSubTextGray}pr-32 pl-32 pl-sm-4 pt-16 mx-auto`}  style={{listStyleType: 'disc'}}>
                                     <li className="pb-4">The Iguassu Falls Convention Center with 18,192m2 of exposition space for events for up to 40,000 participants and an auditorium that seats 5,000.</li>
                                     <li className="pb-4">The Hotel Bourbon Cataratas Resort and Convention Center with a capacity for realizing simultaneously events for up to 5,000 participants.</li>
                                     <li className="pb-4">The Grand Mercure International Foz Hotel with installations for realizing events for 3,000 participants.</li>
@@ -87,8 +83,7 @@ const EventsAndIncentives = () => {
                                     <li className="pb-4">The Carimã Hotel has an area of 6,000m2 for events for up to 5,000 participants and a banquet hall which seats 1,000 people.</li>
                                     <li className="pb-4">The Mabu Thermas & Resort with an area dedicated to events of 10,000m2 which can attend a public of up to 5,000.</li>
                                 </ul>
-                            </div>
-                            </p>
+
                             <div className="mx-auto max-w-md">
                                 <p className={`pt-8 pb-32`}>
                                     <img src={thePrincipalVenues} className='max-w-[200px] h-auto'/>
@@ -107,15 +102,15 @@ const EventsAndIncentives = () => {
                                 Incentive Travel
                             </h2>
                             <p className={`${styles.sectionSubText} text-center pr-32 pl-32 pl-sm-4 pt-16 `}>
-                                <p>Incentive trips are organized as a way to reward employees, representatives or
+                                <span>Incentive trips are organized as a way to reward employees, representatives or
                                     clients for their performance or sales volume. They are an important tool to
-                                    increase productivity and promotion of companies or products.</p>
-                                <p>When a company offers a trip as a gift, the services provided must reflect the
+                                    increase productivity and promotion of companies or products.</span>
+                                <span>When a company offers a trip as a gift, the services provided must reflect the
                                     image of the company in a positive light. All of the most minute details of the services
                                     realized by the operator, restaurants, hotels and other suppliers must be well planned and
                                     executed. Convenio-Tur takes these responsibilities very seriously and its team of
                                     experienced professionals work full-time so that your Incentive Trip will be perfect
-                                    in all details.</p>
+                                    in all details.</span>
                                 
                             </p>
                             <div className="mx-auto max-w-md">
@@ -135,29 +130,28 @@ const EventsAndIncentives = () => {
                                 style={yellowText}>
                                 Some of the events realized with Convenio-Tur in Iguassu
                             </h2>
-                            <div className=" pr-32 pl-32 pl-sm-4 pt-16 mx-auto ">
-                                <ul  style={{listStyleType: 'disc'}}>
-                                    <li>XXI International Congress of Entomology - 4.000 participants</li>
-                                    <li>29º Congresso Brasileiro de Urologia - 3.500 participants</li>
-                                    <li>IV Semana do Aparelho Digestivo - 3.000 participants</li>
-                                    <li>ICOH 27th International Congress on Occupational Health - 3.000 participants</li>
-                                    <li>Copa América - Delegações Oficiais e Patrocinadores - 2.000 participants</li>
-                                    <li>XXII Congresso Brasileiro de Ciências das Plantas Daninhas - 1.500 participants</li>
-                                    <li>II Congresso Brasileiro de Soja - 1.500 participants</li>
-                                    <li>III Congresso Brasileiro de Soja - 1.500 participants</li>
-                                    <li>Reunião Integração de Morfologia Pan-americana - 1.400 participants</li>
-                                    <li>Convenção Nacional O Boticário - 1.400 participants</li>
-                                    <li>Skull Base Congress 1.000 participants</li>
-                                    <li>2º Congresso Mundial sobre Agricultura Conservacionista - 900 participants</li>
-                                    <li>30º Congresso Pan-americano de Otorrinolaringologia e Cirurgia de Cabeça e Garganta - 850 participants</li>
-                                    <li>9º Congresso Brasileiro de Obesidade - 800 participants</li>
-                                    <li>IV Diálogo Interamericano de Gerenciamento de Águas - 800 participants</li>
-                                    <li>Congresso Brasileiro de Medicina Tropical - 800 participants</li>
-                                    <li>XXXV Assembléia Geral CMSB - 800 participants</li>
-                                    <li>9º Congresso Brasileiro e 4º Congresso Latino-Americano de Alergia Imunológica em Pediatria - 800 participants</li>
-                                    <li>10º Congresso Brasileiro de Adolescência - 500 participants</li>
-                                </ul>
-                            </div>
+                            <ul  style={{listStyleType: 'disc'}} className=" pr-32 pl-32 pl-sm-4 pt-16 mx-auto ">
+                                <li>XXI International Congress of Entomology - 4.000 participants</li>
+                                <li>29º Congresso Brasileiro de Urologia - 3.500 participants</li>
+                                <li>IV Semana do Aparelho Digestivo - 3.000 participants</li>
+                                <li>ICOH 27th International Congress on Occupational Health - 3.000 participants</li>
+                                <li>Copa América - Delegações Oficiais e Patrocinadores - 2.000 participants</li>
+                                <li>XXII Congresso Brasileiro de Ciências das Plantas Daninhas - 1.500 participants</li>
+                                <li>II Congresso Brasileiro de Soja - 1.500 participants</li>
+                                <li>III Congresso Brasileiro de Soja - 1.500 participants</li>
+                                <li>Reunião Integração de Morfologia Pan-americana - 1.400 participants</li>
+                                <li>Convenção Nacional O Boticário - 1.400 participants</li>
+                                <li>Skull Base Congress 1.000 participants</li>
+                                <li>2º Congresso Mundial sobre Agricultura Conservacionista - 900 participants</li>
+                                <li>30º Congresso Pan-americano de Otorrinolaringologia e Cirurgia de Cabeça e Garganta - 850 participants</li>
+                                <li>9º Congresso Brasileiro de Obesidade - 800 participants</li>
+                                <li>IV Diálogo Interamericano de Gerenciamento de Águas - 800 participants</li>
+                                <li>Congresso Brasileiro de Medicina Tropical - 800 participants</li>
+                                <li>XXXV Assembléia Geral CMSB - 800 participants</li>
+                                <li>9º Congresso Brasileiro e 4º Congresso Latino-Americano de Alergia Imunológica em Pediatria - 800 participants</li>
+                                <li>10º Congresso Brasileiro de Adolescência - 500 participants</li>
+                            </ul>
+                            
                             
                             <div className="mx-auto max-w-md">
                                 <p className={`pt-8 pb-32`}>

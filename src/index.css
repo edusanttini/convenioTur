@@ -256,4 +256,7 @@ body {
   .pb-sm-4 {
     padding-bottom:2rem; /* Adjust the value as needed */
   }
+  .pt-sm-16 {
+    padding-top:4rem; /* Adjust the value as needed */
+  }
 }

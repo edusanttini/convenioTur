@@ -1,4 +1,4 @@
-import { cataratas2 } from "../assets";
+import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas2, continentalinn1, continentalinn2, golfresort1, golfresort2, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
 import { macuco1 } from "../assets";
 import { macucoIcon } from "../assets";
 import { birdpark1 } from "../assets";
@@ -454,22 +454,6 @@ const culturalTours = [
     ]
   },
   {
-    title: "Rural Tour",
-    country: "Brasil",
-    icon: ruralTourIcon,
-    iconBg: "#E6DEDD",
-    duration: "Full day (Overnight Optional)",
-    points: [
-      "Get to know the local culture while visiting or staying overnight with families from the Sabia River Community, in Matelandia, Paraná.",
-      "The strong influence of Italian and German immigrants can be felt in the food, speech and stories which trigger a nostalgic well being in the visitor.",
-      "The Sabia Circuit offers visits which emphasize real rest, authentic local cuisine prepared with the local produce, leisure activities and convivial country living.",
-      "Have walks on nature trails and enjoy beautiful landscapes. Visits can be full-day or with overnight.",
-    ],//check current website, thers another route that must be done on rural tours 'get to know the farms'
-    images: [
-      ruralTour1, ruralTour2, ruralTour3
-    ]
-  },
-  {
     title: "Visit to Paraguay",
     country_name: "Paraguay",
     icon: pyIcon,
@@ -483,6 +467,22 @@ const culturalTours = [
     ],
     images: [
       py1, py2, py3
+    ]
+  },
+  {
+    title: "Rural Tour",
+    country: "Brasil",
+    icon: ruralTourIcon,
+    iconBg: "#E6DEDD",
+    duration: "Full day (Overnight Optional)",
+    points: [
+      "Get to know the local culture while visiting or staying overnight with families from the Sabia River Community, in Matelandia, Paraná.",
+      "The strong influence of Italian and German immigrants can be felt in the food, speech and stories which trigger a nostalgic well being in the visitor.",
+      "The Sabia Circuit offers visits which emphasize real rest, authentic local cuisine prepared with the local produce, leisure activities and convivial country living.",
+      "Have walks on nature trails and enjoy beautiful landscapes. Visits can be full-day or with overnight.",
+    ],//check current website, thers another route that must be done on rural tours 'get to know the farms'
+    images: [
+      ruralTour1, ruralTour2, ruralTour3
     ]
   },
 ];
@@ -592,7 +592,7 @@ const hotels = [
       "Propicia um ambiente de alto luxo para os mais exigentes visitantes.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      hotelcataratas1, hotelcataratas2
     ]
   },
   {
@@ -608,7 +608,7 @@ const hotels = [
       "Desfrute de nosso Spa, restaurante gourmet, cais com deck de observação e atividades organizados como trekking, arvorismo, cavalgadas e caiaques."
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      loisuites2, LoiSuites1
     ]
   },
   {
@@ -624,7 +624,7 @@ const hotels = [
       "Uma estrutura funcional e sofisticada com serviço eficiente está focado na satisfação cliente para criar. Uma Experiência Memorável."
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      mabu1, mabu2, mabu3
     ]
   },
   {
@@ -640,7 +640,7 @@ const hotels = [
       "Sua arquitetura e serviços impecáveis fazem do Iguazu Grand Hotel Resort & Casino um local que proporciona o melhor para o viajante mais exigente."
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      iguazuGrand1, iguazugrand2
     ]
   },
   {
@@ -656,7 +656,7 @@ const hotels = [
       "Dispõe de uma das mais completas infraestruturas de eventos da região."
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      bourbon1, bourbon2
     ]
   },
   {
@@ -671,7 +671,7 @@ const hotels = [
       "Com localização privilegiada, perto das atrações das Três Fronteiras. Uma experiência sem igual para sua viagem.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      sheratoniguazu1, sheratoniguazu2
     ]
   },
   {
@@ -687,7 +687,7 @@ const hotels = [
       "Próximo as encantadas Cataratas, ao aeroporto e a fronteira Brasil/Argentina."
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      golfresort1, golfresort2
     ]
   },
   {
@@ -702,7 +702,7 @@ const hotels = [
       "Localizado em Argentina, oferece o melhor da gastronomia exuberante desse país.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      panoramic1, panoramic2
     ]
   },
   {
@@ -719,7 +719,7 @@ const hotels = [
       "Localizado na região central da cidade de Foz do Iguaçu, com acesso rápido aos principais centros turísticos e empresariais da cidade e região."
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      mercure1, mercure2, mercure3
     ]
   },
   {
@@ -734,7 +734,7 @@ const hotels = [
       "Estamos localizados a 18km do Parque Nacional do Iguaçu, 16 km do Aeroporto Internacional, a 500m da Rodoviária internacional, proporcionando fácil acesso a todos os pontos turísticos da Terra das Cataratas.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      bestwetern1, bestwetern2
     ]
   },
   {
@@ -749,7 +749,7 @@ const hotels = [
       "Localizado no centro de Foz do Iguaçu, entre todos os atrativos das Três Fronteiras, é um excelente ambiente para se hospedar.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      continentalinn1, continentalinn2
     ]
   },
   {
@@ -765,7 +765,7 @@ const hotels = [
       "O hotel dispõe ainda de sala de jogos, piscina adulto e infantil, restaurante climatizado, estacionamento fechado e seguro para veículos e ônibus."
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      hotelcassino1, hotelcassino2
     ]
   },
   {
@@ -780,7 +780,7 @@ const hotels = [
       "Oferecemos todo conforto e tranquilidade em sua hospedagem.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      rafaincentro1, rafaincentro2
     ]
   },
   {
@@ -795,7 +795,7 @@ const hotels = [
       "É sinômimo de uma estadia de alto grau de conforto e tranquilidade.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      turrance1, turrance2
     ]
   },
   {
@@ -810,7 +810,7 @@ const hotels = [
       "Nosso hotel ainda oferece piscina, salão de jogos, lan house, fitness-center, wi-fi, loja de souveniers e churrasqueira.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      sanrafael1, sanrafael2
     ]
   },
   {
@@ -825,7 +825,7 @@ const hotels = [
       "Sua grandiosa área de lazer faz do Carimã o maior hotel do estado do Paraná.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      carima1, carima2
     ]
   },
   {
@@ -840,7 +840,7 @@ const hotels = [
       "Uma equipe altamente treinada está pronta para lhe proporcionar uma estadia inesquecível.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      san_martin1, san_martin2
     ]
   },
   {
@@ -856,7 +856,7 @@ const hotels = [
       "Ainda mantém uma política e um compromisso de baixo impacto ambiental longe do massivo fluxo de turismo que caracteriza a área das Cataratas do Iguaçu."
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      yacutinga1, yacutinga2
     ]
   },
   {
@@ -872,7 +872,7 @@ const hotels = [
       "Estamos a 17km das Cataratas Argentinas e a 20 km do aeroporto internacional de Puerto Iguazú."
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      aldea1, aldea2
     ]
   },
   {
@@ -887,7 +887,7 @@ const hotels = [
       "Em uma área de 40.000 m² cercado de bosques com plantas nativas, o Recanto Park Hotel oferece aos seus hóspedes ambientes agradáveis, amplos e modernos incluindo: Piscinas, Sauna, Bosques, Treking, Futebol, Vôlei, Playground.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      recanto1, recanto2
     ]
   },
   {
@@ -902,7 +902,7 @@ const hotels = [
       "O hotel Rafain Palace conta com um dos maiores e mais modernos centro de eventos da região.",
     ],
     images: [
-      itaipu1, itaipu2, itaipu3
+      rafainpalace1, rafainpalace2, rafainpalace3
     ]
   },
 ];
