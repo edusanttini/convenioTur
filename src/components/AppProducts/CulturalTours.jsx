@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import {
     VerticalTimeline,
     VerticalTimelineElement,
-  } from "react-vertical-timeline-component";
+} from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 import { textVariant } from "../../utils/motion";
 import { Navbar } from "..";
@@ -14,8 +14,7 @@ const TourContainer = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        ...bgDarkGrayGradientStyle,
-        color: "#fff",
+        ...bgDarkGrayGradientStyle
       }}
       contentArrowStyle={{ borderRight: "10px solid  #FCD34D" }}
       iconStyle={{ background: experience.iconBg }}

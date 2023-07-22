@@ -17,7 +17,7 @@ const ServiceCard = ({ index, title, icon, url }) => {
   const navigateTo = useNavigate();
 
   return (
-    <Tilt className='xs:w-[250px] w-full'>
+    <Tilt className='xs:w-[250px] w-full clickable-element'>
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         className='w-full p-[1px] rounded-[20px] shadow-card relative overflow-hidden'
@@ -82,7 +82,7 @@ const About = () => {
         of the fantastic attractions that this destination has to offer without any worries.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10 cursor-pointer'
+      <div className='mt-20 flex flex-wrap gap-10'
         >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} url={service.url} />

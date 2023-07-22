@@ -234,3 +234,26 @@
   position: fixed;
   height: 100%;
 }
+
+body {
+  cursor: url(./assets/selectcursor.png), auto;
+}
+
+.clickable-element {
+  cursor: url(./assets/tapcursor.png), pointer;
+}
+
+@media (max-width: 640px) {
+  .pl-sm-4 {
+    padding-left:2rem; /* Adjust the value as needed */
+  }
+  .pr-sm-4 {
+    padding-right:2rem; /* Adjust the value as needed */
+  }
+  .pt-sm-4 {
+    padding-top:2rem; /* Adjust the value as needed */
+  }
+  .pb-sm-4 {
+    padding-bottom:2rem; /* Adjust the value as needed */
+  }
+}
