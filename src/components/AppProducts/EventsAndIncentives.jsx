@@ -77,13 +77,17 @@ const EventsAndIncentives = () => {
                                 The principal venues for realizing events in Iguassu are the following
                             </h2>
                             <p className={`${styles.sectionSubTextGray}pr-32 pl-32 pl-sm-4 pt-16 `}>
-                                {/*<p className="pb-4">- The Iguassu Falls Convention Center with 18,192m2 of exposition space for events for up to 40,000 participants and an auditorium that seats 5,000.</p>
-                                <p className="pb-4">- The Hotel Bourbon Cataratas Resort and Convention Center with a capacity for realizing simultaneously events for up to 5,000 participants.</p>
-                                <p className="pb-4">- The Grand Mercure International Foz Hotel with installations for realizing events for 3,000 participants.</p>
-                                <p className="pb-4">- The Recanto Park Hotel can organize banquets for up to 400 guests and events for up to 1,350 participants.</p>
-                                <p className="pb-4">- The Rafain Hotel and Convention Center has 18,015 m2 for events of up to 12,000 participants and has a capacity for banquets for up to 3,000 guests.</p>
-                                <p className="pb-4">- The Carimã Hotel has an area of 6,000m2 for events for up to 5,000 participants and a banquet hall which seats 1,000 people.</p>
-    <p className="pb-4">- The Mabu Thermas & Resort with an area dedicated to events of 10,000m2 which can attend a public of up to 5,000.</p>*/} 
+                                <div className=" pr-32 pl-32 pl-sm-4 pt-16 mx-auto ">
+                                <ul  style={{listStyleType: 'disc'}}>
+                                    <li className="pb-4">The Iguassu Falls Convention Center with 18,192m2 of exposition space for events for up to 40,000 participants and an auditorium that seats 5,000.</li>
+                                    <li className="pb-4">The Hotel Bourbon Cataratas Resort and Convention Center with a capacity for realizing simultaneously events for up to 5,000 participants.</li>
+                                    <li className="pb-4">The Grand Mercure International Foz Hotel with installations for realizing events for 3,000 participants.</li>
+                                    <li className="pb-4">The Recanto Park Hotel can organize banquets for up to 400 guests and events for up to 1,350 participants.</li>
+                                    <li className="pb-4">The Rafain Hotel and Convention Center has 18,015 m2 for events of up to 12,000 participants and has a capacity for banquets for up to 3,000 guests.</li>
+                                    <li className="pb-4">The Carimã Hotel has an area of 6,000m2 for events for up to 5,000 participants and a banquet hall which seats 1,000 people.</li>
+                                    <li className="pb-4">The Mabu Thermas & Resort with an area dedicated to events of 10,000m2 which can attend a public of up to 5,000.</li>
+                                </ul>
+                            </div>
                             </p>
                             <div className="mx-auto max-w-md">
                                 <p className={`pt-8 pb-32`}>
