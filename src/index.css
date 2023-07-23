@@ -260,3 +260,24 @@ body {
     padding-top:4rem; /* Adjust the value as needed */
   }
 }
+
+@font-face {
+  font-family: directorMessageFont;
+  src: url("./assets/fonts/BartleenScript.ttf");
+}
+@font-face {
+  font-family: signatureFont1;
+  src: url("./assets/fonts/Whisper.ttf");
+}
+@font-face {
+  font-family: signatureFont2;
+  src: url("./assets/fonts/KarstarFree.ttf");
+}
+
+.font-director-message {
+  font-family: "signatureFont2", sans-serif;
+}
+
+.font-director-message-body {
+  font-family: "signatureFont1", sans-serif;
+}

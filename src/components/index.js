@@ -20,6 +20,7 @@ import TransferServices from "./AppProducts/TransferServices";
 import Gastronomy from "./AppProducts/Gastronomy";
 import Hotels from "./AppProducts/Hotels";
 import GenericModal from "./Util/GenericModal";
+import AboutUs from "./AboutUs";
 
 export {
   Hero,
@@ -46,6 +47,7 @@ export {
   TransferServices,
   Gastronomy,
   Hotels,
-  GenericModal
+  GenericModal,
+  AboutUs
   
 };

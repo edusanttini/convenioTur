@@ -10,7 +10,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { cardEvents } from "../assets";
 import EventsAndIncentives from "./AppProducts/EventsAndIncentives";
 import { useNavigate } from "react-router-dom";
-import { bgYellowGradientStyle } from "../globalColorScheme";
+import { bgYellowGradientStyle, yellowText } from "../globalColorScheme";
 
 const ServiceCard = ({ index, title, icon, url }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -60,7 +60,7 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText} style={yellowText}>Overview.</h2>
       </motion.div>
 
       <motion.p

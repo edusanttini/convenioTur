@@ -151,6 +151,9 @@ import rafainpalace3 from "./company/rafainpalace3.jpg";
 import argentinaIcon from "./company/argentinaIcon.svg";
 import brazilIcon from "./company/brazilIcon.svg";
 
+//general
+import enio from "./company/enio.jpg";
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -244,7 +247,7 @@ export {
   recanto1, recanto2,
   rafainpalace1, rafainpalace2, rafainpalace3,
   hotelIcon, brazilIcon, argentinaIcon,
-  someOfTheEvents, incentiveTravel, thePrincipalVenues, eventsAndIncentives
+  someOfTheEvents, incentiveTravel, thePrincipalVenues, eventsAndIncentives, enio
 
 
 };
