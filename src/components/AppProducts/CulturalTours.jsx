@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import {
     VerticalTimeline,
     VerticalTimelineElement,
-  } from "react-vertical-timeline-component";
+} from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
 import { textVariant } from "../../utils/motion";
 import { Navbar } from "..";
@@ -10,12 +10,44 @@ import { styles } from "../../styles";
 import { culturalTours } from "../../constants";
 import { bgGrayGradientStyle, bgDarkGrayGradientStyle, yellowText } from "../../globalColorScheme";
 
+const ruralTourModal = ({ }) => {
+  return (
+    <>
+      <Button variant="primary" onClick={() => setShow(true)}>
+        Custom Width Modal
+      </Button>
+      <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-custom-modal-styling-title">
+            Custom Modal Styling
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>
+            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+            ipsam atque a dolores quisquam quisquam adipisci possimus
+            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+            deleniti rem!
+          </p>
+        </Modal.Body>
+      </Modal>
+    </>
+  );
+}
+
 const TourContainer = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        ...bgDarkGrayGradientStyle,
-        color: "#fff",
+        ...bgDarkGrayGradientStyle
       }}
       contentArrowStyle={{ borderRight: "10px solid  #FCD34D" }}
       iconStyle={{ background: experience.iconBg }}
@@ -52,6 +84,15 @@ const TourContainer = ({ experience }) => {
           </li>
         ))}
       </ul>
+      <div>
+      {experience.title === 'Rural Tour' && (
+        <p>
+          clickHereeeee to acess rural tours
+          
+        </p>
+        
+        )}
+      </div>
       <div className='mt-5 space-y-2'>
         {/* Render the images */}
         <div className='flex space-x-8 overflow-x-auto p-8'>

@@ -234,3 +234,50 @@
   position: fixed;
   height: 100%;
 }
+
+body {
+  cursor: url(./assets/selectcursor.png), auto;
+}
+
+.clickable-element {
+  cursor: url(./assets/tapcursor.png), pointer;
+}
+
+@media (max-width: 640px) {
+  .pl-sm-4 {
+    padding-left:2rem; /* Adjust the value as needed */
+  }
+  .pr-sm-4 {
+    padding-right:2rem; /* Adjust the value as needed */
+  }
+  .pt-sm-4 {
+    padding-top:2rem; /* Adjust the value as needed */
+  }
+  .pb-sm-4 {
+    padding-bottom:2rem; /* Adjust the value as needed */
+  }
+  .pt-sm-16 {
+    padding-top:4rem; /* Adjust the value as needed */
+  }
+}
+
+@font-face {
+  font-family: directorMessageFont;
+  src: url("./assets/fonts/BartleenScript.ttf");
+}
+@font-face {
+  font-family: signatureFont1;
+  src: url("./assets/fonts/Whisper.ttf");
+}
+@font-face {
+  font-family: signatureFont2;
+  src: url("./assets/fonts/KarstarFree.ttf");
+}
+
+.font-director-message {
+  font-family: "signatureFont2", sans-serif;
+}
+
+.font-director-message-body {
+  font-family: "signatureFont1", sans-serif;
+}

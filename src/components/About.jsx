@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Tilt from "react-tilt";
+import { Tilt } from 'react-tilt';
+//import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -9,7 +10,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { cardEvents } from "../assets";
 import EventsAndIncentives from "./AppProducts/EventsAndIncentives";
 import { useNavigate } from "react-router-dom";
-import { bgYellowGradientStyle } from "../globalColorScheme";
+import { bgYellowGradientStyle, yellowText } from "../globalColorScheme";
 
 const ServiceCard = ({ index, title, icon, url }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -17,7 +18,7 @@ const ServiceCard = ({ index, title, icon, url }) => {
   const navigateTo = useNavigate();
 
   return (
-    <Tilt className='xs:w-[250px] w-full'>
+    <Tilt className='xs:w-[250px] w-full clickable-element'>
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
         className='w-full p-[1px] rounded-[20px] shadow-card relative overflow-hidden'
@@ -59,7 +60,7 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText} style={yellowText}>Overview.</h2>
       </motion.div>
 
       <motion.p
@@ -82,7 +83,7 @@ const About = () => {
         of the fantastic attractions that this destination has to offer without any worries.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10 cursor-pointer'
+      <div className='mt-20 flex flex-wrap gap-10'
         >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} url={service.url} />

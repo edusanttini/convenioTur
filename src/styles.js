@@ -15,7 +15,11 @@ const styles = {
   sectionSubText:
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
   sectionSubTextBlack:
-    "text-black sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
+    "text-black sm:text-[18px] text-[14px] uppercase tracking-wider",
+  sectionSubTextGray:
+     "text-gray-700 sm:text-[18px] text-[14px] uppercase tracking-wider",
+    sectionHeadSubText:
+    "text-white font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[10px]",
 };
 
 export { styles };
