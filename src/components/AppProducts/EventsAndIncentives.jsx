@@ -1,13 +1,9 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { textVariant } from "../../utils/motion";
-import {
-    VerticalTimeline,
-    VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import { Navbar } from "../.";
+import { GenericModal, Navbar } from "../.";
 import { styles } from "../../styles";
-import { bgGrayGradientStyle, bgDarkGrayGradientStyle, yellowText } from "../../globalColorScheme";
+import { bgGrayGradientStyle, yellowText } from "../../globalColorScheme";
 import { eventsAndIncentives, incentiveTravel, someOfTheEvents, thePrincipalVenues } from "../../assets";
 
 const EventsAndIncentives = () => {
