@@ -108,4 +108,4 @@ const AppProducts = () => {
     );
 }
 
-export default SectionWrapper(AppProducts, "AppProducts") ;
+export default SectionWrapper(AppProducts, "products") ;

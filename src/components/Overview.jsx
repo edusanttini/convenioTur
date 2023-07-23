@@ -1,60 +1,11 @@
 import React, { useState } from "react";
-import { Tilt } from 'react-tilt';
-//import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { cardEvents } from "../assets";
-import EventsAndIncentives from "./AppProducts/EventsAndIncentives";
-import { useNavigate } from "react-router-dom";
 import { bgYellowGradientStyle, yellowText } from "../globalColorScheme";
 
-const ServiceCard = ({ index, title, icon, url }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const [toggle, setToggle] = useState(false);
-  const navigateTo = useNavigate();
-
-  return (
-    <Tilt className='xs:w-[250px] w-full clickable-element'>
-      <motion.div
-        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className='w-full p-[1px] rounded-[20px] shadow-card relative overflow-hidden'
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        onClick={ () => {
-          setToggle(!toggle)
-          navigateTo('/'+ url);
-        }}
-      >
-        <div className='rounded-[20px]
-          py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col relative
-          overflow-hidden'
-          style={bgYellowGradientStyle}
-          >
-          <img
-            src={icon}
-            alt='web-development'
-            className={`${
-              isHovered ? 
-               'w-full h-full object-cover scale-100 absolute transition-all duration-300 transform'
-               : 'w-32 h-32 object-contain'
-            }`}
-          />
-
-          <h3 className='text-black text-[20px] italic text-center'>
-            {title}
-          </h3>
-        </div>
-      </motion.div>
-    </Tilt>
-  );
-};
-
-
-const About = () => {
+const Overview = () => {
   
   return (
     <>
@@ -97,4 +48,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(Overview, "overview");

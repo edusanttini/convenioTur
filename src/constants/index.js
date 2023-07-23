@@ -89,12 +89,20 @@ export const bgImg = [
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: "overview",
+    title: "Overview",
+  },
+  {
+    id: "products",
+    title: "Products",
   },
   {
     id: "explore",
     title: "Explore",
+  },
+  {
+    id: "about",
+    title: "About",
   },
   {
     id: "contact",
