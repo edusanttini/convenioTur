@@ -59,8 +59,8 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText} style={yellowText}>Overview.</h2>
+        <p className="text-black font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[20px]">Never has so much beauty been seen in one place</p>
       </motion.div>
 
       <motion.p
@@ -81,14 +81,18 @@ const About = () => {
         <br/><br/>
         Convenio-Tur is here to guarantee that the traveler that arrives here can enjoy all
         of the fantastic attractions that this destination has to offer without any worries.
+        <br/><br/>
       </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10'
+      <motion.div
+        variants={textVariant()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
         >
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} url={service.url} />
-        ))}
-      </div>
+        <div className="flex justify-center">
+          <span className="font-luxury text-6xl text-center" style={yellowText}>Welcome to Paradise!</span>
+        </div>
+      </motion.div>
     </>
   );
 };

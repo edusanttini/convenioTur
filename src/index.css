@@ -273,6 +273,10 @@ body {
   font-family: signatureFont2;
   src: url("./assets/fonts/KarstarFree.ttf");
 }
+@font-face {
+  font-family: luxuryFont;
+  src: url("./assets/fonts/LuxuryImport.ttf");
+}
 
 .font-director-message {
   font-family: "signatureFont2", sans-serif;
@@ -280,4 +284,8 @@ body {
 
 .font-director-message-body {
   font-family: "signatureFont1", sans-serif;
+}
+
+.font-luxury {
+  font-family: "luxuryFont", sans-serif;
 }
