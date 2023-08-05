@@ -226,7 +226,7 @@ const AboutUs = () => {
             <motion.div variants={textVariant()}>
                 <p className={styles.sectionSubText}>About</p>
                 <h2 className={styles.sectionHeadText}>
-                    Convênio
+                    Convenio
                     <span style={yellowText}>
                         Tur
                     </span>

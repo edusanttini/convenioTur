@@ -154,6 +154,10 @@ import brazilIcon from "./company/brazilIcon.svg";
 //general
 import enio from "./company/enio.jpg";
 
+//cataratas
+import cataratas01 from "./cataratas01.jpeg"
+import cataratas02 from "./cataratas02.jpeg"
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -247,7 +251,8 @@ export {
   recanto1, recanto2,
   rafainpalace1, rafainpalace2, rafainpalace3,
   hotelIcon, brazilIcon, argentinaIcon,
-  someOfTheEvents, incentiveTravel, thePrincipalVenues, eventsAndIncentives, enio
+  someOfTheEvents, incentiveTravel, thePrincipalVenues, eventsAndIncentives, enio,
+  cataratas01, cataratas02
 
 
 };

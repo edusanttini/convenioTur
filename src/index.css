@@ -289,3 +289,21 @@ body {
 .font-luxury {
   font-family: "luxuryFont", sans-serif;
 }
+
+@keyframes zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(2);
+  }
+  to {
+    transform: scale(1);
+  }
+}

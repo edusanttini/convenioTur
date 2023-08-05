@@ -97,6 +97,10 @@ export const navLinks = [
     title: "Products",
   },
   {
+    id: "map",
+    title: "Map",
+  },
+  {
     id: "explore",
     title: "Explore",
   },

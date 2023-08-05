@@ -50,7 +50,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-secondary" : "text-yellow"
+                active === nav.title ? "text-secondary" : "text-red-500"
               } hover:text-secondary text-[18px] font-medium clickable-element`}
               onClick={() => setActive(nav.title)}
             >

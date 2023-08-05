@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
-import { Overview, AboutUs, Contact, Hero, Navbar, StarsCanvas, Explore, Works, Feedbacks,Experience, AppProducts } from "./components";
+import { Overview, AboutUs, Contact, Hero, Navbar, StarsCanvas, Explore, Works, Feedbacks,Experience, AppProducts, Map } from "./components";
 import { bgGrayGradientStyle } from "./globalColorScheme";
 
 const App = () => {
@@ -10,8 +10,10 @@ const App = () => {
                 <Navbar />
                 <Hero />
             </div>
+            <Map/>
             <Overview />
             <AppProducts />
+            
             <Explore />
             <AboutUs />
             <div className='relative z-0'>

@@ -4,6 +4,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { bgYellowGradientStyle, yellowText } from "../globalColorScheme";
+import { cataratas01, cataratas02 } from "../assets";
 
 const Overview = () => {
   
@@ -43,6 +44,9 @@ const Overview = () => {
         <div className="flex justify-center">
           <span className="font-luxury text-6xl text-center" style={yellowText}>Welcome to Paradise!</span>
         </div>
+      </motion.div>
+      <motion.div className="flex justify-center pt-8 ">
+        <img src={cataratas02} className="max-w-2xl rounded-md" />
       </motion.div>
     </>
   );

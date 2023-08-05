@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Navbar} from ".";
-import { bgGrayGradientStyle, yellowText, bgYellowGradientStyle } from "../globalColorScheme";
+import { bgGrayGradientStyle, yellowText, bgYellowGradientStyle, bgRedGradientStyle } from "../globalColorScheme";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
@@ -29,7 +29,7 @@ const ServiceCard = ({ index, title, icon, url }) => {
           <div className='rounded-[20px]
             py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col relative
             overflow-hidden'
-            style={bgYellowGradientStyle}
+            style={bgRedGradientStyle}
             >
             <img
               src={icon}
@@ -37,7 +37,7 @@ const ServiceCard = ({ index, title, icon, url }) => {
               className={`${
                 isHovered ? 
                  'w-full h-full object-cover scale-100 absolute transition-all duration-300 transform'
-                 : 'w-32 h-32 object-contain'
+                 : 'w-32 h-32 object-contain rounded-xl'
               }`}
             />
   

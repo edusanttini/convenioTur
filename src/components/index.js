@@ -21,6 +21,8 @@ import Gastronomy from "./AppProducts/Gastronomy";
 import Hotels from "./AppProducts/Hotels";
 import GenericModal from "./Util/GenericModal";
 import AboutUs from "./AboutUs";
+import Map from "./Map";
+import MapSVG from './MapSVG';
 
 export {
   Hero,
@@ -48,6 +50,8 @@ export {
   Gastronomy,
   Hotels,
   GenericModal,
-  AboutUs
+  AboutUs,
+  Map,
+  MapSVG
   
 };

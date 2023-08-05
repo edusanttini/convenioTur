@@ -7,7 +7,7 @@ import { JaguarCanvas } from "./canvas";
 import { TestCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { bgGrayGradientStyle } from "../globalColorScheme";
+import { bgDarkGrayGradientStyle, bgRedGradientStyle, bgSilverGradientStyle, bgYellowGradientStyle } from "../globalColorScheme";
 
 const Contact = () => {
   const formRef = useRef();
@@ -32,13 +32,13 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    /*e.preventDefault();
+    e.preventDefault();
     setLoading(true);
     emailjs.send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
+          from_name: form.name +" (" + form.email + ")",
           to_name: "Eduardo",
           from_email: form.email,
           to_email: "santinieduardo92@gmail.com",
@@ -63,7 +63,7 @@ const Contact = () => {
 
           alert("Ahh, something went wrong. Please try again.");
         }
-      );*/
+      );
   };
 
   return (
@@ -74,7 +74,7 @@ const Contact = () => {
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] p-8 rounded-2xl'
-        style={bgGrayGradientStyle}
+        style={bgRedGradientStyle}
       >
         <p className={styles.sectionSubTextBlack}>Get in touch</p>
         <h3 className={styles.sectionHeadTextBlack}>Contact.</h3>

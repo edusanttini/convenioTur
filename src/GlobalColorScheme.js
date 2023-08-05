@@ -7,6 +7,11 @@ export const bgYellowGradientStyle = {
   background: 'linear-gradient(to right, #FFD700, #FFDF00, #FFEC00, #FFF700, #FFEC00, #FFDF00, #FFD700)'
 }
 
+export const bgRedGradientStyle = {
+  background:
+  'linear-gradient(to right, #FF0000, #FF1A1A, #FF3333, #FF4D4D, #FF3333, #FF1A1A, #FF0000)'
+};
+
 export const bgSilverGradientStyle = {
   background: 'linear-gradient(to right, #E8E8E8, #C0C0C0, #A9A9A9, #C0C0C0, #E8E8E8)',
 };
@@ -16,25 +21,26 @@ export const bgDarkGrayGradientStyle = {
 };
 
 export const bgTxtYellowGradientStyle = {
-  background: 'linear-gradient(to right, #FCD34D, #FFBB28)',
+  background: 'linear-gradient(to right, #FF0000, #FF0000)',
   WebkitBackgroundClip: 'text',
   WebkitTextFillColor: 'transparent',
 }
 
+
 export const yellowGradientStyle = {
-  background: '#FCD34D',
-  background: 'linear-gradient(-90deg, #FCD34D 0%, rgba(60, 51, 80, 0) 100%)',
-  background: '-webkit-linear-gradient(-90deg, #FCD34D 0%, rgba(60, 51, 80, 0) 100%)'
+  background: '#FF0000',
+  background: 'linear-gradient(-90deg, #FF0000 0%, rgba(60, 51, 80, 0) 100%)',
+  background: '-webkit-linear-gradient(-90deg, #FF0000 0%, rgba(60, 51, 80, 0) 100%)'
 };
 
 export const bgYellow = {
-  background: '#FCD34D'
+  background: '#FF0000'
 }
 
 export const yellowBorder = {
-  borderColor: '#FCD34D'
+  borderColor: '#FF0000'
 }
 
 export const yellowText = {
-  color: '#FCD34D'
+  color: '#FF0000'
 }
