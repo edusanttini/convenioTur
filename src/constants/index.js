@@ -119,16 +119,19 @@ export const exploreCountries = [
     id: 'Arg',
     imgUrl: flagarg,
     title: 'Argentina',
+    url: 'arg'
   },
   {
     id: 'Br',
     imgUrl: flagbr,
     title: 'Brasil',
+    url: 'br'
   },
   {
     id: 'Py',
     imgUrl: flagpy,
     title: 'Paraguay',
+    url: 'py'
   },
 ];
 
@@ -1012,6 +1015,42 @@ const projects = [
   },
 ];
 
+const argentinaRides = [
+  {
+    title: "Cataratas",
+    country: "arg",
+    icon: flagarg,
+    iconBg: "#E6DEDD",
+    isTranslation: "There are no translations available.",
+    points: [
+      "Único hotel dentro do Parque Nacional Brasileiro, é um atrativo para aqueles que desejam vivenciar o magnífico espetáculo das Cataratas, cercado pela natureza tropical.",
+      "Situado em frente as belíssimas quedas, este encantador hotel em estilo colonial é um prédio histórico.",
+      "Propicia um ambiente de alto luxo para os mais exigentes visitantes.",
+    ],
+    images: [
+      hotelcataratas1, hotelcataratas2
+    ]
+  },
+  {
+    title: "Loi Suites Iguazu Hotel",
+    country: "Argentina",
+    icon: flagbr,
+    iconBg: "#E6DEDD",
+    isTranslation: "There are no translations available.",
+    points: [
+      "Combinando extremo luxo com um ambiente natural, o Loi Suítes Iguazu Hotel está embutido na selva a beira do Rio Iguaçu, em uma área de preservação privada de 600 hectares.",
+      "O hóspede terá a sensação de estar dentro da própria selva, porém com o conforto de cinco estrelas.",
+      "Dispomos de um conjunto de piscinas, uma arquitetura deslumbrante e apartamentos com alto grau de luxo e decoração de extremo bom gosto.",
+      "Desfrute de nosso Spa, restaurante gourmet, cais com deck de observação e atividades organizados como trekking, arvorismo, cavalgadas e caiaques."
+    ],
+    images: [
+      loisuites2, LoiSuites1
+    ]
+  },
+  
+
+];
+
 export { 
   services,
   technologies,
@@ -1020,5 +1059,13 @@ export {
   projects,
   culturalTours,
   gastronomyTour,
-  hotels
+  hotels,
+  argentinaRides
 };
+
+export const startingFeatures = [
+  'Scroll down the page to look for our tours',
+  'Find a tour the you might be interested in',
+  'No need to beat around the bush, just stay on the gas and contact us!',
+];
+

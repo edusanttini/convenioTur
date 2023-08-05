@@ -8,9 +8,14 @@ import { exploreCountries } from '../constants';
 import { staggerContainer } from '../utils/motion';
 import { ExploreCard, TitleText, TypingText } from '../components';
 import { yellowText } from '../globalColorScheme';
+import { useNavigate } from 'react-router-dom';
 
 const Explore = () => {
   const [active, setActive] = useState('world-2');
+  const navigateTo = useNavigate();
+  const [toggle, setToggle] = useState(false);
+  const [activeCardId, setActiveCardId] = useState(null);
+
 
   return (
     <section className={`${styles.paddings}`} id="explore">
@@ -41,6 +46,9 @@ const Explore = () => {
               index={index}
               active={active}
               handleClick={setActive}
+              activeCardId={activeCardId}
+              setActiveCardId={setActiveCardId}
+              url={country.url}
             />
           ))}
         </div>

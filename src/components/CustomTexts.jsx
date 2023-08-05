@@ -18,6 +18,34 @@ export const TypingText = ({ title, textStyles }) => (
   </motion.p>
 );
 
+export const TypingTextGeneric = ({ title, colorr }) => (
+  <motion.p
+    style={colorr}
+    variants={textContainer}
+    className={`font-normal text-[14px] text-secondary-white text-blue-600 ${colorr}`}
+  >
+    {Array.from(title).map((letter, index) => (
+      <motion.span variants={textVariant2} key={index}>
+        {letter === ' ' ? '\u00A0' : letter}
+      </motion.span>
+    ))}
+  </motion.p>
+);
+
+export const TypingTextGreen = ({ title, colorr }) => (
+  <motion.p
+    style={colorr}
+    variants={textContainer}
+    className={`font-normal text-[14px] text-secondary-white text-blue-600 ${colorr}`}
+  >
+    {Array.from(title).map((letter, index) => (
+      <motion.span variants={textVariant2} key={index}>
+        {letter === ' ' ? '\u00A0' : letter}
+      </motion.span>
+    ))}
+  </motion.p>
+);
+
 export const TitleText = ({ title, textStyles }) => (
   <motion.h2
     variants={textVariant2}

@@ -9,7 +9,10 @@ import {
   CulturalTours,
   TransferServices,
   Gastronomy,
-  Hotels
+  Hotels,
+  Argentina,
+  Brasil,
+  Paraguay
 } from "./components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -26,6 +29,9 @@ export default function Main() {
           <Route path="/transferservices" element={<TransferServices/>}/>
           <Route path="/gastronomy" element={<Gastronomy/>}/>
           <Route path="/hotels" element={<Hotels/>}/>
+          <Route path="/arg" element={<Argentina/>}/>
+          <Route path="/br" element={<Brasil/>}/>
+          <Route path="/py" element={<Paraguay/>}/>
           
         </Routes>
       </BrowserRouter>
@@ -37,9 +43,3 @@ export default function Main() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Main />);
-
-/*ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);*/

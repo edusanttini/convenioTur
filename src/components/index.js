@@ -23,6 +23,13 @@ import GenericModal from "./Util/GenericModal";
 import AboutUs from "./AboutUs";
 import Map from "./Map";
 import MapSVG from './MapSVG';
+import Argentina from './countries/Argentina';
+import Brasil from './countries/Brasil';
+import Paraguay from './countries/Paraguay';
+import { TypingTextGeneric } from './CustomTexts';
+import { TypingTextGreen } from './CustomTexts';
+import RidesList from './countries/RidesList';
+import ImageShape from './countries/ImageShape';
 
 export {
   Hero,
@@ -52,6 +59,13 @@ export {
   GenericModal,
   AboutUs,
   Map,
-  MapSVG
+  MapSVG,
+  Argentina,
+  Brasil,
+  Paraguay,
+  TypingTextGeneric,
+  TypingTextGreen,
+  RidesList,
+  ImageShape
   
 };

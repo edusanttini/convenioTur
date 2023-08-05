@@ -79,7 +79,7 @@ class Map extends React.Component {
           <defs />
           
           <g
-            fill-rule="evenodd"
+            fillRule="evenodd"
             stroke-width="1"
             stroke-linecap="square"
             fill="none"
