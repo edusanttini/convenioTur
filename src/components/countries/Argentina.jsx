@@ -8,6 +8,7 @@ import { Navbar, RidesList, TitleText, TypingTextGeneric } from '../../component
 import { staggerContainer, fadeIn, planetVariants, slideIn } from '../../utils/motion';
 import { flagarg, flagbr } from '../../assets';
 import { bgGrayGradientStyle } from '../../globalColorScheme';
+import FlagShape from "./FlagShape";
 
 const StartSteps = ({ number, text }) => (
   <div className={`${styles.flexCenter} flex-row`}>
@@ -67,11 +68,7 @@ const Argentina = () => {
               variants={planetVariants('left')}
               className={`flex-1 ${styles.flexCenter}`}
             >
-              <img
-                src={flagarg}
-                alt="get-started"
-                className="w-[90%] h-[90%] object-contain rounded-full pb-48"
-              />
+              <FlagShape img={flagbr}/>
             </motion.div>
             <motion.div
               variants={fadeIn('left', 'tween', 0.2, 1)}
