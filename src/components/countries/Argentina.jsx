@@ -92,8 +92,9 @@ const Argentina = () => {
         <div className={`${styles.paddings} relative z-10`}>
           {argentinaRides.map((ride, index) => (
             <RidesList
-            index={index}
-            ride={ride}
+              index={index}
+              ride={ride}
+              key={`ride-point-${index}`}
             />
           ))}
         </div>
