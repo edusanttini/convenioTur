@@ -29,8 +29,9 @@ import Paraguay from './countries/Paraguay';
 import { TypingTextGeneric } from './CustomTexts';
 import { TypingTextGreen } from './CustomTexts';
 import RidesList from './countries/RidesList';
-import ImageShape from './countries/ImageShape';
 import FlagShape from './countries/FlagShape';
+import BlobShape1 from './blobs/BlobShape1';
+import BlobShape2 from './blobs/BlobShape2';
 
 export {
   Hero,
@@ -67,7 +68,8 @@ export {
   TypingTextGeneric,
   TypingTextGreen,
   RidesList,
-  ImageShape,
+  BlobShape1,
+  BlobShape2
   
   
 };

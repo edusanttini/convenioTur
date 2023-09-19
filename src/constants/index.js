@@ -1,4 +1,4 @@
-import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas2, continentalinn1, continentalinn2, golfresort1, golfresort2, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
+import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas01, cataratas02, cataratas2, continentalinn1, continentalinn2, golfresort1, golfresort2, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
 import { macuco1 } from "../assets";
 import { macucoIcon } from "../assets";
 import { birdpark1 } from "../assets";
@@ -1017,24 +1017,74 @@ const projects = [
 
 const argentinaRides = [
   {
-    title: "Cataratas",
-    country: "arg",
-    icon: flagarg,
+    title: "Argentine Falls with Devil’s Throat",
+    country: "Argentina",
+    icon: cataratas01,
     iconBg: "#E6DEDD",
-    isTranslation: "There are no translations available.",
+    duration: "7 hours",
     points: [
-      "Único hotel dentro do Parque Nacional Brasileiro, é um atrativo para aqueles que desejam vivenciar o magnífico espetáculo das Cataratas, cercado pela natureza tropical.",
-      "Situado em frente as belíssimas quedas, este encantador hotel em estilo colonial é um prédio histórico.",
-      "Propicia um ambiente de alto luxo para os mais exigentes visitantes.",
+      "Cross the Tancredo Neves Bridge with its lovely view of the Iguassu Canyon en route to the Iguazú National Park in Argentina.",
+      "Visit the upper and lower walkways which allow a different perspective and more intimate contact with the falls adjoining rainforest filled with orchids, bromeliads, birds and other wildlife.",
+      "The highlight of the trip is a visit to the suspended platform at the very brink of the abysmal Devil’s Throat - largest of the waterfalls.",
+      "This very complete trip shows you all the different angles of the waterfalls from the Argentine side and includes not only the upper trails and the Devil's Throat but also the lower trail which winds through heavy rainforest.",
+      "On this trip, we offer several different options for lunch, which is optional."
     ],
     images: [
-      hotelcataratas1, hotelcataratas2
+      cataratas1
+    ]
+  },
+  {
+    title: "Grand Adventure",
+    country: "Argentina",
+    icon: macucoIcon,
+    iconBg: "#E6DEDD",
+    duration: "2 hours",
+    points: [
+      "This attraction is conveniently located on the Argentine side.",
+      "It starts with a ride throughn the jungle in special 4x4 vehicles.",
+      "Hike down the Iguassu canyon and board inflatable boats.",
+      "Take an exiting trip through the rapids and arrive at the base of the waterfalls with a view of the Devil`s Throat.",
+      "Get your hair wet in the mist and feel the forces of nature."
+    ],
+    images: [
+      grandadv1
+    ]
+  },
+  {
+    title: "The Jesuit Ruins of San Ignacio",
+    country: "Argentina",
+    icon: ruinsIcon,
+    iconBg: "#E6DEDD",
+    duration: "Full day",
+    points: [
+      "Visit the ruins of San Ignacio, located 250 kilometers from Iguassu Falls.",
+      "Here the Jesuits founded the Guarani Republic, which flourished in the seventeenth century.",
+      "Visit the communal houses, churches and buildings, with their baroque traits and numerous stone sculptures now invaded by the jungle.",
+      "The trip is via a paved highway winding through the picturesque Argentine countryside with its Mate-Tea plantations and well-preserved tropical rainforest.",
+      "Enroute we visit a working open-air gemstone mine. Lunch is optional"
+    ],
+    images: [
+      ruins1, ruins2
+    ]
+  },
+  {
+    title: "Cassino Iguazú in Argentina",
+    country: "Argentina",
+    icon: cassinoIcon,
+    iconBg: "#E6DEDD",
+    duration: "4 hours",
+    points: [
+      "The elegant and modern Casino Iguazú is located just across the border from Brazil.",
+      "Time for playing and entertainment.",
+    ],
+    images: [
+      cassinoiguazu
     ]
   },
   {
     title: "Loi Suites Iguazu Hotel",
     country: "Argentina",
-    icon: flagbr,
+    icon: argentinaIcon,
     iconBg: "#E6DEDD",
     isTranslation: "There are no translations available.",
     points: [
@@ -1047,8 +1097,84 @@ const argentinaRides = [
       loisuites2, LoiSuites1
     ]
   },
-  
-
+  {
+    title: "Iguazú Grand Hotel Resort & Casino",
+    country: "Argentina",
+    icon: argentinaIcon,
+    iconBg: "#E6DEDD",
+    isTranslation: "There are no translations available.",
+    points: [
+      "Um resorte que abrange elegância, prazer e entretenimento, localizado na Argentina, a 10 minutos das Cataratas.",
+      "Os apartamentos oferecem o mais alto nível de conforto e luxo.",
+      "O resorte é formado por uma diversificada área natural, jardins, variações gastronômicas, spa, cassino, enorme piscina, entre outros atrativos.",
+      "Sua arquitetura e serviços impecáveis fazem do Iguazu Grand Hotel Resort & Casino um local que proporciona o melhor para o viajante mais exigente."
+    ],
+    images: [
+      iguazuGrand1, iguazugrand2
+    ]
+  },
+  {
+    title: "Hotel Sheraton Iguazú Resort & Spa",
+    country: "Argentina",
+    icon: argentinaIcon,
+    iconBg: "#E6DEDD",
+    isTranslation: "There are no translations available.",
+    points: [
+      "Localizado no coração do Parque Nacional na Argentina, o Sheraton Iguazú Resort & Spa combina uma belíssema paisagem, cômodos estilizados com atendimento requintado.",
+      "Desfrute também dos espaços para convenções e eventos, linda psicina com vista para as quedas das Cataratas, spa, área de esportes.",
+      "Com localização privilegiada, perto das atrações das Três Fronteiras. Uma experiência sem igual para sua viagem.",
+    ],
+    images: [
+      sheratoniguazu1, sheratoniguazu2
+    ]
+  },
+  {
+    title: "Panoramic Hotel Iguazu",
+    country: "Argentina",
+    icon: argentinaIcon,
+    iconBg: "#E6DEDD",
+    isTranslation: "There are no translations available.",
+    points: [
+      "O hotel está localizado num morro próximo ao marco das Três Fronteiras e oferece uma vista panorâmica (dali o seu nome) da união dos rios Iguaçu e Paraná, os quais dividem as beiradas da Argentina, o Brasil e o Paraguai.",
+      "Rodeado de jardins e águas do rio Iguaçu, é o lugar ideal para se distender e desfrutar uma vista mágica desde o conforto de um 5 estrelas.",
+      "Localizado em Argentina, oferece o melhor da gastronomia exuberante desse país.",
+    ],
+    images: [
+      panoramic1, panoramic2
+    ]
+  },
+  {
+    title: "Yacutinga Lodge",
+    country: "Argentina",
+    icon: argentinaIcon,
+    iconBg: "#E6DEDD",
+    isTranslation: "There are no translations available.",
+    points: [
+      "O Yacutinga Lodge encontra-se no coração da Selva Missioneira e faz divisa com os parques nacionais da Argentina e Brasil.",
+      "Um paraíso para quem procura biodiversidade na fauna e na flora.",
+      "O Lodge oferece excelentes comodidades de alojamento, restaurante, piscina, guias especialistas e um inventário natural que supera 400 espécies de aves e mamíferos.",
+      "Ainda mantém uma política e um compromisso de baixo impacto ambiental longe do massivo fluxo de turismo que caracteriza a área das Cataratas do Iguaçu."
+    ],
+    images: [
+      yacutinga1, yacutinga2
+    ]
+  },
+  {
+    title: "Aldea Lodge",
+    country: "Argentina",
+    icon: argentinaIcon,
+    iconBg: "#E6DEDD",
+    isTranslation: "There are no translations available.",
+    points: [
+      "Localizado em Puerto Iguazú, Argentina, a Aldea Lodge oferece um estilo de vida natural, para levar o hospede ao íntimo da Mãe Natureza.",
+      "Relaxe, caminhe pela selva, entre em contato com a vida silvestre, se aventure no rapel ou simplesmente descubra novas experiências culinárias da mão de nosso chef.",
+      "Se acomodar no Aldea Lodge é embarcar em uma viajem fascinante.",
+      "Estamos a 17km das Cataratas Argentinas e a 20 km do aeroporto internacional de Puerto Iguazú."
+    ],
+    images: [
+      aldea1, aldea2
+    ]
+  }
 ];
 
 export { 

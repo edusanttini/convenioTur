@@ -1,4 +1,5 @@
 import { flagarg } from "../../assets";
+import { FLAGTXT } from "../Util/base64Images";
 
 const FlagShape = ({img}) => {
     console.log('hehhhe', img)
@@ -18,10 +19,12 @@ const FlagShape = ({img}) => {
     stroke-width="0.6"
   />
 
-  <image
-    xlink={img}
-    
-    
+<image
+    x="10"
+    width="300"
+    height="320"
+    xlinkHref={"data:image/png;base64," + img}
+    clip-path="url(#shape-clip)"
   />
 
   <defs>
@@ -31,6 +34,7 @@ const FlagShape = ({img}) => {
       />
     </clipPath>
   </defs>
+
 </svg>
 
 

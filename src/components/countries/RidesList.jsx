@@ -1,21 +1,20 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { bgGrayGradientStyle } from '../../globalColorScheme';
-
 import styles from '../../stylesCountries';
-import { startingFeatures } from '../../constants';
-import { ImageShape, Navbar, TitleText, TypingTextGeneric } from '../../components';
-import { staggerContainer, fadeIn, planetVariants, slideIn } from '../../utils/motion';
-import { flagarg } from '../../assets';
+import { BlobShape1, BlobShape2, TitleText, TypingTextGeneric } from '../../components';
+import { staggerContainer, fadeIn, planetVariants } from '../../utils/motion';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
 
-const RidesList = ({index, imgUrl}) => {
+const RidesList = ({index, ride}) => {
     const parentContainerStyle = {
         overflowX: 'hidden',
         overflowY: 'hidden'
-      };
-    
-    
+    };
+
     return (
         <>
             <div className=' w-full'>
@@ -28,34 +27,50 @@ const RidesList = ({index, imgUrl}) => {
                         viewport={{ once: false, amount: 0.25 }}
                         className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
                     >
-
                         {index % 2 !== 0 && (
                             <motion.div
                                 variants={planetVariants('left')}
                                 className={`flex-1 ${styles.flexCenter}`}
                             >
-                                <ImageShape
-                                img={imgUrl}
+                                <BlobShape2
+                                img={ride.icon}
                                 />
                             </motion.div>
                         )}
-                        
                         <motion.div
                             variants={fadeIn('left', 'tween', 0.2, 1)}
                             className="flex-[0.75] flex justify-center flex-col"
                         >
                             <TypingTextGeneric title="| Argentina"/>
-                            <TitleText title={<>Get to know Argentina's best attractions</>} />
-                            
+                            <TitleText title={<>{ride.title}</>} />
+                            <div className='w-full'>
+                                <Accordion>
+                                    <AccordionSummary
+                                        aria-controls="panel1a-content"
+                                        id="panel1a-header"
+                                    >
+                                        <Typography>Click for details</Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        <Typography>
+                                            {ride.points.map((point, index) => (
+                                                <li key={`ride-point-${index}`}
+                                                className='text-black'>
+                                                    {point}
+                                                </li>
+                                            ))}
+                                        </Typography>
+                                    </AccordionDetails>
+                                </Accordion>
+                            </div>
                         </motion.div>
-
                         {index % 2 === 0 && (
                             <motion.div
                                 variants={planetVariants('right')}
                                 className={`flex-1 ${styles.flexCenter}`}
                             >
-                                <ImageShape
-                                img={imgUrl}
+                                <BlobShape1
+                                    img={ride.icon}
                                 />
                             </motion.div>
                         )}
@@ -63,6 +78,7 @@ const RidesList = ({index, imgUrl}) => {
                 </section>
             </div>
         </>
-    )};
+    )
+};
 
 export default RidesList;
