@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { cataratas } from "../assets";
 import { bgTxtYellowGradientStyle, yellowGradientStyle, bgYellow, yellowBorder } from "../globalColorScheme";
+import { Tooltip } from "@mui/material";
 
 const Hero = () => {
   const dummy = {
@@ -23,10 +24,13 @@ const Hero = () => {
         </div>
 
         <div>
+          <Tooltip title="this is the title" arrow>
           <h1 className={`${styles.heroHeadText} text-black`}>
             Convenio
             <span style={bgTxtYellowGradientStyle}>Tur</span>
           </h1>
+          </Tooltip>
+          
           <p className={`${styles.heroSubText} mt-2 text-black`}>
             Your travel agency <br className='sm:block hidden' />
             in Foz do Iguassu
