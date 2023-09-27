@@ -1,5 +1,6 @@
 import { Tooltip, styled, tooltipClasses } from "@mui/material";
 import React, { useState } from "react";
+import Typography from '@mui/material/Typography';
 
 const HtmlTooltip = styled(({ className, ...props }) => (
     <Tooltip {...props} classes={{ popper: className }} />
@@ -12,6 +13,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
       border: '1px solid #dadde9',
     },
   }));
+  
 
 const MapSVG = () => {
 
@@ -254,7 +256,18 @@ const MapSVG = () => {
                 c39.832,0,72.236-32.4,72.236-72.236C264.361,85.618,231.957,53.214,192.125,53.214z M192.125,167.274
                 c-23.062,0-41.824-18.762-41.824-41.824c0-23.06,18.762-41.824,41.824-41.824c23.06,0,41.824,18.765,41.824,41.824
                 C233.949,148.512,215.186,167.274,192.125,167.274z"/>
-            <Tooltip >      
+            
+            <HtmlTooltip
+                title={
+                    <React.Fragment>
+                        <Typography color="inherit">Cataratas</Typography>
+                            <em>{"And here's "}</em>
+                            <b>{'some '}</b>
+                            <u>{'amazing content'}</u>.{' '}
+                            {"It's very engaging. Right? lorem lorem lorem"}
+                    </React.Fragment>
+                }
+            >
                 <rect
                     x="0"
                     y="0"
@@ -267,7 +280,8 @@ const MapSVG = () => {
                     }}
                     onMouseLeave={() => console.log('Mouse left')}
                 />
-            </Tooltip>    
+                
+            </HtmlTooltip>
         </g>
     </svg>
 	
