@@ -1,7 +1,35 @@
-import { Tooltip } from "@mui/material";
+import { Tooltip, styled, tooltipClasses } from "@mui/material";
 import React, { useState } from "react";
 
+const HtmlTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: '#f5f5f9',
+      color: 'rgba(0, 0, 0, 0.87)',
+      maxWidth: 220,
+      fontSize: theme.typography.pxToRem(12),
+      border: '1px solid #dadde9',
+    },
+  }));
+
 const MapSVG = () => {
+
+    const [isMouseEntered, setIsMouseEntered] = useState(false);
+    const [width, setWidth] = useState(280);
+    const [height, setHeight] = useState(350);
+
+    const handleMouseEnter = () => {
+        setIsMouseEntered(true);
+        setWidth(400);  // Adjust width as needed
+        setHeight(500); // Adjust height as needed
+    };
+
+    const handleMouseLeave = () => {
+        setIsMouseEntered(false);
+        setWidth(280);  // Reset width
+        setHeight(350); // Reset height
+    };
     
     return (
         <>
@@ -197,44 +225,55 @@ const MapSVG = () => {
     <Tooltip title="catatarars" arrow>
     </Tooltip>
   </g>
+
+  
+  <HtmlTooltip title="hehey">
   <g font-family="MS Shell Dlg 2" font-style="normal" font-weight="400" fill="url(#gradient1)" stroke="none" transform="matrix(0.26779,0,0,0.26779,1461.88,1562.78)" font-size="34.375">
    <path vector-effect="none" fill-rule="nonzero" d="M248.406,543.063 C235.406,543.063 134.023,319.087 134.023,261.139 C134.023,203.191 184.029,156.215 245.715,156.215 C307.4,156.215 357.406,203.191 357.406,261.139 C357.406,319.087 257.84,543.063 248.406,543.063 "/>
   </g>
-  <g font-family="MS Shell Dlg 2" font-style="normal" font-weight="400" fill="none" stroke="none" transform="matrix(0.26779,0,0,0.26779,1461.88,1562.78)" font-size="34.375">
-   <path vector-effect="none" fill-rule="nonzero" d="M248.406,543.063 C235.406,543.063 134.023,319.087 134.023,261.139 C134.023,203.191 184.029,156.215 245.715,156.215 C307.4,156.215 357.406,203.191 357.406,261.139 C357.406,319.087 257.84,543.063 248.406,543.063 "/>
-  </g>
-  <g stroke-miterlimit="4" stroke-width="5" font-family="MS Shell Dlg 2" stroke-opacity="1" font-style="normal" stroke-linejoin="miter" font-weight="400" stroke-linecap="butt" fill="none" stroke="#000000" transform="matrix(0.26779,0,0,0.26779,1461.88,1562.78)" font-size="34.375">
-   <path vector-effect="none" fill-rule="nonzero" d="M248.406,543.063 C235.406,543.063 134.023,319.087 134.023,261.139 C134.023,203.191 184.029,156.215 245.715,156.215 C307.4,156.215 357.406,203.191 357.406,261.139 C357.406,319.087 257.84,543.063 248.406,543.063 "/>
-  </g>
-  <g stroke-miterlimit="4" stroke-width="1" font-family="MS Shell Dlg 2" stroke-opacity="1" font-style="normal" fill-opacity="1" stroke-linejoin="miter" font-weight="400" stroke-linecap="butt" fill="#000000" stroke="#000000" transform="matrix(0.26779,0,0,0.26779,1461.88,1562.78)" font-size="34.375">
-  </g>
-  <g stroke-miterlimit="4" stroke-width="1" font-family="MS Shell Dlg 2" stroke-opacity="1" font-style="normal" fill-opacity="1" opacity="0.35" stroke-linejoin="miter" font-weight="400" stroke-linecap="butt" fill="#000000" stroke="#000000" transform="matrix(0.26779,0,0,0.26779,1461.88,1562.78)" font-size="34.375">
-  </g>
+  </HtmlTooltip>
+  
+  
   <g font-family="MS Shell Dlg 2" font-style="normal" font-weight="400" fill="url(#gradient2)" stroke="none" transform="matrix(0.26779,0,0,0.26779,1461.88,1562.78)" font-size="34.375">
    <path vector-effect="none" fill-rule="nonzero" d="M245.979,345 C204.159,345 170.258,311.099 170.258,269.279 C170.258,227.46 204.159,193.559 245.979,193.559 C287.798,193.559 321.699,227.46 321.699,269.279 C321.699,311.099 287.798,345 245.979,345 "/>
   </g>
-  <g stroke-miterlimit="4" stroke-width="1" font-family="MS Shell Dlg 2" stroke-opacity="1" font-style="normal" fill-opacity="1" stroke-linejoin="miter" font-weight="400" stroke-linecap="butt" fill="#000000" stroke="#000000" transform="matrix(0.26779,0,0,0.26779,1461.88,1562.78)" font-size="34.375">
-  </g>
-  <g stroke-width="1" font-family="MS Shell Dlg 2" stroke-opacity="1" font-style="normal" stroke-linejoin="bevel" font-weight="400" stroke-linecap="square" fill="none" stroke="#000000" transform="matrix(0.31992,0,0,0.31992,1527.56,1615.52)" font-size="34.375"/>
-  <g stroke-width="1" font-family="MS Shell Dlg 2" stroke-opacity="1" font-style="normal" stroke-linejoin="bevel" font-weight="400" stroke-linecap="square" fill="none" stroke="#000000" transform="matrix(0.999751,0,0,0.999751,1527.56,1615.52)" font-size="34.375"/>
-  <g stroke-width="1" font-family="MS Shell Dlg 2" stroke-opacity="1" font-style="normal" stroke-linejoin="bevel" font-weight="400" stroke-linecap="square" fill="none" stroke="#000000" transform="matrix(0.999751,0,0,0.999751,0,0)" font-size="34.375"/>
-  <g stroke-width="1" font-family="MS Shell Dlg 2" stroke-opacity="1" font-style="normal" stroke-linejoin="bevel" font-weight="400" stroke-linecap="square" fill="none" stroke="#000000" transform="matrix(0.999751,0,0,0.999751,1407.46,1572.29)" font-size="34.375"/>
-  <g stroke-width="1" font-family="MS Shell Dlg 2" stroke-opacity="1" font-style="normal" stroke-linejoin="bevel" font-weight="400" stroke-linecap="square" fill="none" stroke="#000000" transform="matrix(0.31992,0,0,0.31992,1407.46,1572.29)" font-size="34.375"/>
-  <g stroke-miterlimit="4" stroke-width="1" font-family="MS Shell Dlg 2" stroke-opacity="1" font-style="normal" fill-opacity="1" stroke-linejoin="miter" font-weight="400" stroke-linecap="butt" fill="#000000" stroke="#000000" transform="matrix(0.26779,0,0,0.26779,1341.78,1519.55)" font-size="34.375">
-   
-  </g>
-  <g>
-	<g fill="url(#gradient6)" transform="matrix(0.26779,0,0,0.26779,1356.78,1559.55)">
-		<path fill="black" vector-effect="none" fillRule="nonzero" d="M192.125,0C122.955,0,66.674,56.279,66.674,125.449c0,63.29,100.927,232.376,112.427,251.451
-			c2.757,4.557,7.694,7.35,13.024,7.35s10.267-2.793,13.021-7.35c11.504-19.074,112.43-188.161,112.43-251.451
-			C317.576,56.28,261.295,0,192.125,0z M192.125,339.1c-35.029-60.594-95.039-172.887-95.039-213.649
-			c0-52.404,42.635-95.035,95.039-95.035c52.404,0,95.039,42.631,95.039,95.035C287.164,166.198,227.154,278.498,192.125,339.1z"/>
-		<path fill="black" d="M192.125,53.214c-39.835,0-72.236,32.403-72.236,72.235c0,39.836,32.401,72.236,72.236,72.236
-			c39.832,0,72.236-32.4,72.236-72.236C264.361,85.618,231.957,53.214,192.125,53.214z M192.125,167.274
-			c-23.062,0-41.824-18.762-41.824-41.824c0-23.06,18.762-41.824,41.824-41.824c23.06,0,41.824,18.765,41.824,41.824
-			C233.949,148.512,215.186,167.274,192.125,167.274z"/>
-	</g>
-</g>
+  
+  
+  
+    <svg>
+        <g transform={`matrix(0.26779, 0, 0, 0.26779, 1356.78, 1569.55) scale(${isMouseEntered ? 1.5 : 1})`}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className={isMouseEntered ? 'enlarged' : ''}>
+
+            <path fill="black" fillRule="nonzero" d="M192.125,0C122.955,0,66.674,56.279,66.674,125.449c0,63.29,100.927,232.376,112.427,251.451
+                c2.757,4.557,7.694,7.35,13.024,7.35s10.267-2.793,13.021-7.35c11.504-19.074,112.43-188.161,112.43-251.451
+                C317.576,56.28,261.295,0,192.125,0z M192.125,339.1c-35.029-60.594-95.039-172.887-95.039-213.649
+                c0-52.404,42.635-95.035,95.039-95.035c52.404,0,95.039,42.631,95.039,95.035C287.164,166.198,227.154,278.498,192.125,339.1z"/>
+            <path fill="black" d="M192.125,53.214c-39.835,0-72.236,32.403-72.236,72.235c0,39.836,32.401,72.236,72.236,72.236
+                c39.832,0,72.236-32.4,72.236-72.236C264.361,85.618,231.957,53.214,192.125,53.214z M192.125,167.274
+                c-23.062,0-41.824-18.762-41.824-41.824c0-23.06,18.762-41.824,41.824-41.824c23.06,0,41.824,18.765,41.824,41.824
+                C233.949,148.512,215.186,167.274,192.125,167.274z"/>
+            <Tooltip >      
+                <rect
+                    x="0"
+                    y="0"
+                    width="280"
+                    height="350"
+                    fill="transparent" // Make the rectangle transparent
+                    stroke="none"
+                    onMouseEnter={() => {
+                        console.log('Mouse entered')
+                    }}
+                    onMouseLeave={() => console.log('Mouse left')}
+                />
+            </Tooltip>    
+        </g>
+    </svg>
+	
+    
+
+
   
   
   
