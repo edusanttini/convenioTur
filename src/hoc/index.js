@@ -1,3 +1,4 @@
 import SectionWrapper from "./SectionWrapper";
+import MapWrapper from "./MapWrapper";
 
-export { SectionWrapper };
+export { SectionWrapper, MapWrapper };

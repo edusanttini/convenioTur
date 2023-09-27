@@ -13,7 +13,7 @@ const ServiceCard = ({ index, title, icon, url }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [toggle, setToggle] = useState(false);
     const navigateTo = useNavigate();
-  
+
     return (
       <Tilt className='xs:w-[250px] w-full clickable-element'>
         <motion.div
@@ -54,7 +54,6 @@ const ServiceCard = ({ index, title, icon, url }) => {
 
 
 const AppProducts = () => {
-    
     return (
         <>
             <motion.div variants={textVariant()}>
@@ -94,11 +93,10 @@ const AppProducts = () => {
                      className="font-luxury text-6xl text-center"
                      style={yellowText}
                     >
-                         Click on the desired service bellow for more information.
+                      Click on the desired service bellow for more information.
                     </span>
                 </div>
             </motion.div>
-    
             <div className='mt-20 flex flex-wrap gap-10'>
                 {services.map((service, index) => (
                     <ServiceCard key={service.title} index={index} {...service} url={service.url} />

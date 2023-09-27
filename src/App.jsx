@@ -10,7 +10,7 @@ const App = () => {
                 <Navbar />
                 <Hero />
             </div>
-            
+            <Map className="object-center" />
             <Overview />
             <AppProducts />
             <Explore />
