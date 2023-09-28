@@ -1015,6 +1015,128 @@ const projects = [
   },
 ];
 
+const map = [
+  {
+    name: "Cataratas",
+    local: "Brasil",
+    description: "Want to experience nature's most astonishing piece of art? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1476.78,1599.55)"
+  },
+  {
+    name: "Macuco Safari",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1356.78,1569.55)"
+  },
+  {
+    name: "Passeio3",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1246.1,1535.53)"
+  },
+  {
+    name: "Passeio4",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1246.29,1742.09)"
+  },
+  {
+    name: "Passeio5",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1934.29,2086.3)"
+  },
+  {
+    name: "Passeio6",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1798.38,2071.09)"
+  },
+  {
+    name: "Passeio7",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1830.96,1869.4)"
+  },
+  {
+    name: "Passeio8",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1753.1,1715.67)"
+  },
+  {
+    name: "Passeio9",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1658.02,1605.18)"
+  },
+  {
+    name: "Passeio10",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1224.67,1326.56)"
+  },
+  {
+    name: "Passeio11",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1558.95,1644.01)"
+  },
+  {
+    name: "Passeio12",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1299.54,947.249)"
+  },
+  {
+    name: "Passeio13",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1149.62,1110.39)"
+  },
+  {
+    name: "Passeio14",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1245.69,1167.23)"
+  },
+  {
+    name: "Passeio15",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1367.79,1134.6)"
+  },
+  {
+    name: "Passeio16",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1423.44,1379.4)"
+  },
+  {
+    name: "Passeio17",
+    local: "Paraguay",
+    description: "Feeling a little adventurous? Click ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1042.33,1530.44)"
+  },
+];
+
 const argentinaRides = [
   {
     title: "Argentine Falls with Devil’s Throat",
@@ -1186,7 +1308,8 @@ export {
   culturalTours,
   gastronomyTour,
   hotels,
-  argentinaRides
+  argentinaRides,
+  map
 };
 
 export const startingFeatures = [

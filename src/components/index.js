@@ -69,7 +69,7 @@ export {
   TypingTextGreen,
   RidesList,
   BlobShape1,
-  BlobShape2
+  BlobShape2,
   
   
 };
