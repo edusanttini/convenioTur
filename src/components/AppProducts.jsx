@@ -17,7 +17,7 @@ const ServiceCard = ({ index, title, icon, url }) => {
     return (
       <Tilt className='xs:w-[250px] w-full clickable-element'>
         <motion.div
-          variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+          variants={fadeIn("right", "", index * 0.5, 0.5)}
           className='w-full p-[1px] rounded-[20px] shadow-card relative overflow-hidden'
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -25,6 +25,9 @@ const ServiceCard = ({ index, title, icon, url }) => {
             setToggle(!toggle)
             navigateTo('/'+ url);
           }}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
         >
           <div className='rounded-[20px]
             py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col relative
@@ -53,7 +56,10 @@ const ServiceCard = ({ index, title, icon, url }) => {
 const AppProducts = () => {
     return (
         <>
-            <motion.div variants={textVariant()}>
+            <motion.div 
+              variants={textVariant()}
+              initial="hidden"
+              whileInView="show">
                 <p className="text-black font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[20px]">Our</p>
                 <h2 className={styles.sectionHeadText} style={yellowText}>Products.</h2>
             </motion.div>
@@ -61,6 +67,8 @@ const AppProducts = () => {
             <motion.p
              variants={fadeIn("", "", 0.1, 1)}
              className='mt-4 text-black text-[17px] max-w-3xl leading-[30px]'
+             initial="hidden"
+             whileInView="show"
             >
                 Convenio-Tur offers a large variety of products. Have a look at the
                 different travel products available bellow.

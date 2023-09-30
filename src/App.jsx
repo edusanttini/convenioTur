@@ -12,13 +12,12 @@ const App = () => {
                 <Hero />
             </div>
             <Overview />
-            <div className="flex items-center">
-                <img className="absolute" class="map-size absolute" src={southAmerica}/>
-                <Map />
-            </div>
-            
             <AppProducts />
             <Explore />
+            <div className="items-center mobile-hide flex">
+                <img className="absolute map-size" src={southAmerica}/>                
+                <Map />
+            </div>
             <AboutUs />
             <div className='relative z-0'>
                 <Contact />

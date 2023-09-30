@@ -46,7 +46,7 @@ const Overview = () => {
         </div>
       </motion.div>
       <motion.div className="flex justify-center pt-8 ">
-        <img src={cataratas02} className="max-w-2xl rounded-md" />
+        <img src={cataratas02} className="rounded-md" />
       </motion.div>
     </>
   );
