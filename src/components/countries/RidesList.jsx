@@ -10,6 +10,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 
 const RidesList = ({index, ride}) => {
+    const isInView = true;
     const parentContainerStyle = {
         overflowX: 'hidden',
         overflowY: 'hidden'
@@ -21,14 +22,12 @@ const RidesList = ({index, ride}) => {
                 <section className={`${styles.paddings} relative z-10 pt-32 `}
                     style={parentContainerStyle}>
                     <motion.div
-                        variants={staggerContainer}
-                        initial="hidden"
-                        whileInView="show"
-                        viewport={{ once: false, amount: 0.25 }}
                         className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
                     >
                         {index % 2 !== 0 && (
                             <motion.div
+                                initial="hidden"
+                                whileInView="show"
                                 variants={planetVariants('left')}
                                 className={`flex-1 ${styles.flexCenter}`}
                             >
@@ -66,6 +65,8 @@ const RidesList = ({index, ride}) => {
                         </motion.div>
                         {index % 2 === 0 && (
                             <motion.div
+                                initial="hidden"
+                                whileInView="show"
                                 variants={planetVariants('right')}
                                 className={`flex-1 ${styles.flexCenter}`}
                             >

@@ -114,7 +114,7 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
 
 export const planetVariants = (direction) => ({
   hidden: {
-    x: direction === 'left' ? '-100%' : '100%',
+    x: direction === 'left' ? '-140%' : '140%',
     rotate: 120,
   },
   show: {
