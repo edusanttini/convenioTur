@@ -50,9 +50,6 @@ const ServiceCard = ({ index, title, icon, url }) => {
     );
   };
 
-
-
-
 const AppProducts = () => {
     return (
         <>

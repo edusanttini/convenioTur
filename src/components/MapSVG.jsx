@@ -2,6 +2,7 @@ import { Tooltip, styled, tooltipClasses } from "@mui/material";
 import React, { useState } from "react";
 import Typography from '@mui/material/Typography';
 import { map } from "../constants";
+import { useNavigate } from "react-router-dom";
 
 const HtmlTooltip = styled(({ className, ...props }) => (
     <Tooltip {...props} classes={{ popper: className }} />
@@ -19,6 +20,7 @@ const MapPin = ({ name, local, desc, keyword }) => {
     const [isMouseEntered, setIsMouseEntered] = useState(false);
     const [width, setWidth] = useState(280);
     const [height, setHeight] = useState(350);
+    const navigateTo = useNavigate();
 
     const handleMouseEnter = () => {
         setIsMouseEntered(true);
@@ -51,10 +53,20 @@ const MapPin = ({ name, local, desc, keyword }) => {
                 title={
                 <React.Fragment>
                     <Typography color="inherit">{name}</Typography>
+                    <br/>
                     <em>{desc}</em>
-                    <b>{local}</b>
-                    <u>{keyword}</u>.{' '}
-                    {"It's very engaging. Right? lorem lorem lorem"}
+                    Click
+                    <u className="cursor-pointer"> {keyword} </u>
+                    and let's get going!
+                    <br/><br/>
+                    Tour in
+                    <u 
+                        onClick={ () => { navigateTo('/arg') }}
+                        className={ local === 'Brasil' ? 'text-green-700 cursor-pointer' :
+                                    local === 'Argentina' ? 'text-blue-700 cursor-pointer' : 
+                                    'text-red-700 cursor-pointer'
+                        }
+                    > {local}.</u>
                 </React.Fragment>
                 }
                 >
@@ -63,7 +75,7 @@ const MapPin = ({ name, local, desc, keyword }) => {
                     y="0"
                     width="280"
                     height="350"
-                    fill="transparent" // Make the rectangle transparent
+                    fill="transparent"
                     stroke="none"
                 />
             </HtmlTooltip>
@@ -72,23 +84,6 @@ const MapPin = ({ name, local, desc, keyword }) => {
 };
 
 const MapSVG = () => {
-
-    const [isMouseEntered, setIsMouseEntered] = useState(false);
-    const [width, setWidth] = useState(280);
-    const [height, setHeight] = useState(350);
-
-    const handleMouseEnter = () => {
-        setIsMouseEntered(true);
-        setWidth(400);  // Adjust width as needed
-        setHeight(500); // Adjust height as needed
-    };
-
-    const handleMouseLeave = () => {
-        setIsMouseEntered(false);
-        setWidth(280);  // Reset width
-        setHeight(350); // Reset height
-    };
-    
     return (
         <>
             <g stroke-width="1" fill-rule="evenodd" stroke-linejoin="bevel" stroke-linecap="square" fill="none" stroke="black">
@@ -107,7 +102,7 @@ const MapSVG = () => {
                 {/* Location Pins */}
                 {map.map((pin, index) => (
                     <g key={index} transform={pin.coordinates}>
-                        <MapPin name={pin.name} local={pin.local} desc={pin.desc} keyword={pin.keyword} />
+                        <MapPin name={pin.name} local={pin.local} desc={pin.description} keyword={pin.keyword} />
                     </g>
                 ))}
             </g>

@@ -5,12 +5,14 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, headerLogo } from "../assets";
 
-const Navbar = () => {
+const Navbar = ({ isMain }) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    const sectionId = location.hash.replace('#', '');
+    const element = document.getElementById(sectionId);
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 100) {
@@ -19,11 +21,12 @@ const Navbar = () => {
         setScrolled(false);
       }
     };
-
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [location]);
 
   return (
     <nav
@@ -52,9 +55,12 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? "text-secondary" : "text-red-500"
               } hover:text-secondary text-[18px] font-medium clickable-element`}
+              
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              { isMain ? 
+                <a href={`#${nav.id}`}>{nav.title}</a> :
+                <Link to={`/#${nav.id}`}>{nav.title}</Link> }
             </li>
           ))}
         </ul>

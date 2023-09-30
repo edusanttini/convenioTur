@@ -169,6 +169,9 @@ import cardTransfer from "./cardTransfer.jpg";
 import cardGastronomia from "./cardGastronomia.jpeg";
 import cardHotels from "./cardHotels.jpg";
 
+//map
+import southAmerica from "./southAmerica.svg"
+
 export {
   logo,
   backend,
@@ -252,7 +255,8 @@ export {
   rafainpalace1, rafainpalace2, rafainpalace3,
   hotelIcon, brazilIcon, argentinaIcon,
   someOfTheEvents, incentiveTravel, thePrincipalVenues, eventsAndIncentives, enio,
-  cataratas01, cataratas02
+  cataratas01, cataratas02,
+  southAmerica
 
 
 };

@@ -155,7 +155,7 @@ const NatureTours = () => {
         <>
           <div className='relative z-0' style={bgGrayGradientStyle}>
             <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center '>
-              <Navbar />
+              <Navbar isMain={false}/>
             </div>
             <div className="pt-32">
               <motion.div 
