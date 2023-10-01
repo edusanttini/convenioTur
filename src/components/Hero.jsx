@@ -22,26 +22,20 @@ const Hero = () => {
           <div className='w-5 h-5 rounded-full' style={bgYellow} />
           <div className='w-1 sm:h-80 h-40 ' style={yellowGradientStyle} />
         </div>
-
         <div>
-          <Tooltip title="this is the title" arrow>
           <h1 className={`${styles.heroHeadText} text-black`}>
             Convenio
             <span style={bgTxtYellowGradientStyle}>Tur</span>
           </h1>
-          </Tooltip>
-          
           <p className={`${styles.heroSubText} mt-2 text-black`}>
             Your travel agency <br className='sm:block hidden' />
             in Foz do Iguassu
           </p>
         </div>
-        
       </div>
       <div className="xl:w-4/5 h-5/6 pt-96 xl:pl-96">
         {/*<img className="rounded-lg" src={cataratas} />*/}
       </div>
-      
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#overview'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4  flex justify-center items-start p-2 clickable-element'
