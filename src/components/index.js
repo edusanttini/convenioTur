@@ -32,6 +32,8 @@ import RidesList from './countries/RidesList';
 import FlagShape from './countries/FlagShape';
 import BlobShape1 from './blobs/BlobShape1';
 import BlobShape2 from './blobs/BlobShape2';
+import LanguageSelectionPopup from './LanguageSelectionPopup';
+import i18n from '../i18n/i18n';
 
 export {
   Hero,
@@ -70,6 +72,8 @@ export {
   RidesList,
   BlobShape1,
   BlobShape2,
+  LanguageSelectionPopup,
+  i18n
   
   
 };

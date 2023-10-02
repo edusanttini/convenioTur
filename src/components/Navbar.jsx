@@ -9,6 +9,7 @@ const Navbar = ({ isMain }) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const links = navLinks();
 
   useEffect(() => {
     const sectionId = location.hash.replace('#', '');
@@ -49,19 +50,21 @@ const Navbar = ({ isMain }) => {
         </Link>
 
         <ul className='list-none hidden sm:flex flex-row gap-10'>
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
+          {links.map(link => (
+            <div key={link.id}>
+              <li
               className={`${
-                active === nav.title ? "text-secondary" : "text-red-500"
+                active === link.title ? "text-secondary" : "text-red-500"
               } hover:text-secondary text-[18px] font-medium clickable-element`}
-              
-              onClick={() => setActive(nav.title)}
-            >
+              onClick={() => setActive(link.title)}
+              >
+
               { isMain ? 
-                <a href={`#${nav.id}`}>{nav.title}</a> :
-                <Link to={`/#${nav.id}`}>{nav.title}</Link> }
-            </li>
+                <a href={`#${link.id}`}>{link.title}</a> :
+                <Link to={`/#${link.id}`}>{link.title}</Link> }
+
+              </li>
+            </div>
           ))}
         </ul>
 
@@ -74,26 +77,28 @@ const Navbar = ({ isMain }) => {
             }`}
             onClick={() => setToggle(!toggle)}
           />
-
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-slate-700 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4 '>
-              {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
+            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+              {links.map(link => (
+                <div key={link.id}>
+                  <li
                   className={`clickable-element ${
-                    active === nav.title ? "text-yellow-300" : "text-secondary"
+                    active === link.title ? "text-yellow-300" : "text-secondary"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
+                    setActive(link.title);
                   }}
-                >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
-                </li>
+                  >
+                  { isMain ? 
+                    <a href={`#${link.id}`}>{link.title}</a> :
+                    <Link to={`/#${link.id}`}>{link.title}</Link> }
+                  </li>
+                </div>
               ))}
             </ul>
           </div>

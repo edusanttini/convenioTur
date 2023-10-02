@@ -7,6 +7,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import headerLogo from "./convenioturlogo.png";
+import languageIcon from "./languageIcon.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -256,7 +257,8 @@ export {
   hotelIcon, brazilIcon, argentinaIcon,
   someOfTheEvents, incentiveTravel, thePrincipalVenues, eventsAndIncentives, enio,
   cataratas01, cataratas02,
-  southAmerica
+  southAmerica,
+  languageIcon
 
 
 };

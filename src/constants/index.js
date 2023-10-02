@@ -78,6 +78,8 @@ import {
   ruralTourIcon, ruralTour1, ruralTour2, ruralTour3,
   pyIcon, py1, py2, py3
 } from "../assets";
+import { useTranslation } from "react-i18next";
+
 
 export const bgImg = [
   {
@@ -87,32 +89,35 @@ export const bgImg = [
   },
 ];
 
-export const navLinks = [
-  {
-    id: "overview",
-    title: "Overview",
-  },
-  {
-    id: "products",
-    title: "Products",
-  },
-  {
-    id: "explore",
-    title: "Explore",
-  },
-  {
-    id: "map",
-    title: "Map",
-  },
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-];
+export const navLinks = () => {
+  const { t } = useTranslation();
+  return [
+    {
+      id: "overview",
+      title: t('overview'),
+    },
+    {
+      id: "products",
+      title: t('products'),
+    },
+    {
+      id: "explore",
+      title: t('explore'),
+    },
+    {
+      id: "map",
+      title: t('map'),
+    },
+    {
+      id: "about",
+      title: t('about'),
+    },
+    {
+      id: "contact",
+      title: t('contact'),
+    },
+  ]
+}
 
 export const exploreCountries = [
   {

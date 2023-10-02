@@ -1,0 +1,15 @@
+[
+    {
+        "key": "res_First",        
+        "default": "This is the first text being translated",
+        "en-US": "This is the first text being translated",
+        "de-DE": "Dies ist der erste Text, der übersetzt wird",
+        "es-ES": "Este es el primer texto traducido",
+        "fr-FR": "C'est le premier texte traduit",
+        "it-IT": "Questo è il primo testo tradotto",
+        "pt-BR": "Este é o primeiro texto a ser traduzido"
+    },
+    {
+        "key": "hey"
+    }
+]
