@@ -8,6 +8,7 @@ import { services } from "../constants";
 import { useNavigate } from "react-router-dom";
 import { Tilt } from 'react-tilt';
 import { SectionWrapper } from "../hoc";
+import { useTranslation } from "react-i18next";
 
 const ServiceCard = ({ index, title, icon, url }) => {
     const [isHovered, setIsHovered] = useState(false);
@@ -54,14 +55,16 @@ const ServiceCard = ({ index, title, icon, url }) => {
   };
 
 const AppProducts = () => {
+  const { t } = useTranslation();
+  const serv = services();
     return (
         <>
             <motion.div 
               variants={textVariant()}
               initial="hidden"
               whileInView="show">
-                <p className="text-black font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[20px]">Our</p>
-                <h2 className={styles.sectionHeadText} style={yellowText}>Products.</h2>
+                <p className="text-black font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[20px]"> { t('products_subtitle') } </p>
+                <h2 className={styles.sectionHeadText} style={yellowText}> { t('products') } </h2>
             </motion.div>
 
             <motion.p
@@ -70,20 +73,11 @@ const AppProducts = () => {
              initial="hidden"
              whileInView="show"
             >
-                Convenio-Tur offers a large variety of products. Have a look at the
-                different travel products available bellow.
+                {t('products_first_p')}
                 <br/><br/>
-                Each product that we offer, be it an excursion, restaurant or hotel
-                has been thoroughly researched so that only the best attractions and
-                establishments are included in our itineraries. Our many years of
-                logistic operations in the Iguassu region has allowed us to develop a
-                relationship of confidence with our suppliers and clients so that we
-                can constantly perfect the art of hospitality.
+                {t('products_sec_p')}
                 <br/><br/>
-                Check out the products and information here on our site to organize your
-                itinerary. The Iguassu region offers the raw material for memories that
-                will last a lifetime. Let us take care of the details, letting our clients
-                simply enjoy one of the most dazzling destinations in the world without worries.
+                {t('products_third_p')}
             </motion.p>
 
             <motion.div
@@ -98,12 +92,12 @@ const AppProducts = () => {
                      className="font-luxury text-6xl text-center"
                      style={yellowText}
                     >
-                      Click on the desired service bellow for more information.
+                      {t('products_more_info')}
                     </span>
                 </div>
             </motion.div>
             <div className='mt-20 flex flex-wrap gap-10'>
-                {services.map((service, index) => (
+                {serv.map((service, index) => (
                     <ServiceCard key={service.title} index={index} {...service} url={service.url} />
                 ))}
             </div>

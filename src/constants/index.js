@@ -35,29 +35,9 @@ import { macuco2 } from "../assets";
 import { cataratasArg } from "../assets";
 import { cataratas1 } from "../assets";
 import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
   flagpy,
   flagbr,
   flagarg,
@@ -119,114 +99,65 @@ export const navLinks = () => {
   ]
 }
 
-export const exploreCountries = [
-  {
-    id: 'Arg',
-    imgUrl: flagarg,
-    title: 'Argentina',
-    url: 'arg'
-  },
-  {
-    id: 'Br',
-    imgUrl: flagbr,
-    title: 'Brasil',
-    url: 'br'
-  },
-  {
-    id: 'Py',
-    imgUrl: flagpy,
-    title: 'Paraguay',
-    url: 'py'
-  },
-];
+export const exploreCountries = () => {
+  const { t } = useTranslation();
+  return [
+    {
+      id: 'Arg',
+      imgUrl: flagarg,
+      title: t('arg'),
+      url: 'arg'
+    },
+    {
+      id: 'Br',
+      imgUrl: flagbr,
+      title: t('br'),
+      url: 'br'
+    },
+    {
+      id: 'Py',
+      imgUrl: flagpy,
+      title: t('py'),
+      url: 'py'
+    },
+  ]
+}
 
-const services = [
-  {
-    title: "Events and Incentives",
-    icon: cardEvents,
-    url: "eventsandincentives",
-  },
-  {
-    title: "Cataratas and Nature Tours",
-    icon: cardCataratas,
-    url: "naturetours",
-  },
-  {
-    title: "Technologic/Cultural Tours",
-    icon: cardTechnologic,
-    url: "culturaltours",
-  },
-  {
-    title: "Transfer/Receptive Services",
-    icon: cardTransfer,
-    url: "transferservices",
-  },
-  {
-    title: "Gastronomy and Entertainment",
-    icon: cardGastronomia,
-    url: "gastronomy",
-  },
-  {
-    title: "Hotels",
-    icon: cardHotels,
-    url: "hotels",
-  },
-];
-
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-];
+const services = () => {
+  const { t } = useTranslation();
+  return [
+    {
+      title: t('service_card_events'),
+      icon: cardEvents,
+      url: "eventsandincentives",
+    },
+    {
+      title: t('service_card_nature'),
+      icon: cardCataratas,
+      url: "naturetours",
+    },
+    {
+      title: t('service_card_cultural'),
+      icon: cardTechnologic,
+      url: "culturaltours",
+    },
+    {
+      title: t('service_card_Transfer'),
+      icon: cardTransfer,
+      url: "transferservices",
+    },
+    {
+      title: t('service_card_gastronomy'),
+      icon: cardGastronomia,
+      url: "gastronomy",
+    },
+    {
+      title: t('service_card_hotels'),
+      icon: cardHotels,
+      url: "hotels",
+    },
+  ]
+}
 
 const natureTours = [
   {
@@ -1306,7 +1237,6 @@ const argentinaRides = [
 
 export { 
   services,
-  technologies,
   natureTours,
   testimonials,
   projects,

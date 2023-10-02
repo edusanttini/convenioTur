@@ -8,16 +8,18 @@ import { TestCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { bgDarkGrayGradientStyle, bgRedGradientStyle, bgSilverGradientStyle, bgYellowGradientStyle } from "../globalColorScheme";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const formRef = useRef();
+  const [loading, setLoading] = useState(false);
+  const { t } = useTranslation();
+
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
-
-  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { target } = e;
@@ -76,8 +78,8 @@ const Contact = () => {
         className='flex-[0.75] p-8 rounded-2xl'
         style={bgRedGradientStyle}
       >
-        <p className={styles.sectionSubTextBlack}>Get in touch</p>
-        <h3 className={styles.sectionHeadTextBlack}>Contact.</h3>
+        <p className={styles.sectionSubTextBlack}> {t('contact_touch')} </p>
+        <h3 className={styles.sectionHeadTextBlack}> {t('contact')}. </h3>
 
         <form
           ref={formRef}
@@ -85,35 +87,35 @@ const Contact = () => {
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-black font-medium mb-4'>Name</span>
+            <span className='text-black font-medium mb-4'> {t('name')} </span>
             <input
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="Your Name"
+              placeholder={t('u_name')}
               className='bg-neutral-900 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-black font-medium mb-4'>Email</span>
+            <span className='text-black font-medium mb-4'> {t('email')} </span>
             <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="example@conveniotur.com"
+              placeholder={t('example')}
               className='bg-neutral-900 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-black font-medium mb-4'>Message</span>
+            <span className='text-black font-medium mb-4'> {t('message')} </span>
             <textarea
               rows={7}
               name='message'
               value={form.message}
               onChange={handleChange}
-              placeholder='Tell us more about you...'
+              placeholder={t('contact_tell_more')}
               className='bg-neutral-900 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>

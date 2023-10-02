@@ -37,7 +37,7 @@ const App = () => {
             <AppProducts />
             <Explore />
             <div className="items-center mobile-hide flex">
-                <img className="absolute map-size" src={southAmerica}/>                
+                <img className="absolute map-size" src={southAmerica}/>
                 <Map />
             </div>
             <AboutUs />

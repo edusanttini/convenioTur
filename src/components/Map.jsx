@@ -6,6 +6,7 @@ import { MapWrapper } from "../hoc";
 import { bgYellowGradientStyle, yellowText } from "../globalColorScheme";
 import { styles } from "../styles";
 import { southAmerica } from '../assets';
+import { useTranslation } from 'react-i18next';
 
 const Map = () => {
   const svgRef = useRef(null);
@@ -13,12 +14,13 @@ const Map = () => {
   const [zoomOriginX, setZoomOriginX] = useState(0);
   const [zoomOriginY, setZoomOriginY] = useState(0);
   const [isZoomed, setIsZoomed] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText} style={yellowText}>Triple Border Map.</h2>
-        <p className="text-black font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[20px]">Interact to find the tour that best fits you</p>
+        <h2 className={styles.sectionHeadText} style={yellowText}> {t('map_title')} </h2>
+        <p className="text-black font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[20px]"> {t('map_subtitle')} </p>
       </motion.div>
       
       <motion.div

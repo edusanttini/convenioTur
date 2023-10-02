@@ -9,12 +9,15 @@ import { staggerContainer } from '../utils/motion';
 import { ExploreCard, TitleText, TypingText } from '../components';
 import { yellowText } from '../globalColorScheme';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Explore = () => {
   const [active, setActive] = useState('world-2');
   const navigateTo = useNavigate();
   const [toggle, setToggle] = useState(false);
   const [activeCardId, setActiveCardId] = useState(null);
+  const { t } = useTranslation();
+  const expCard = exploreCountries();
 
 
   return (
@@ -26,20 +29,20 @@ const Explore = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
-        <TypingText title="| The World" textStyles="text-center"/>
+        <TypingText title={t('explore_sub_title')} textStyles="text-center"/>
         <TitleText
           title={
             <>
-              Choose the country you want
+              {t('explore_title')}
               <br className="md:block hidden" />
-              to
-                <span style={yellowText}> explore.</span>
+              {t('explore_to_title')}
+                <span style={yellowText}> {t('explore_exp_title')}</span>
             </>
           }
           textStyles="text-center"
         />
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
-          {exploreCountries.map((country, index) => (
+          {expCard.map((country, index) => (
             <ExploreCard
               key={country.id}
               {...country}

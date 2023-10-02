@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Typography from '@mui/material/Typography';
 import { map } from "../constants";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const HtmlTooltip = styled(({ className, ...props }) => (
     <Tooltip {...props} classes={{ popper: className }} />
@@ -21,6 +22,7 @@ const MapPin = ({ name, local, desc, keyword }) => {
     const [width, setWidth] = useState(280);
     const [height, setHeight] = useState(350);
     const navigateTo = useNavigate();
+    const { t } = useTranslation();
 
     const handleMouseEnter = () => {
         setIsMouseEntered(true);
@@ -55,11 +57,11 @@ const MapPin = ({ name, local, desc, keyword }) => {
                     <Typography color="inherit">{name}</Typography>
                     <br/>
                     <em>{desc}</em>
-                    Click
+                    {t('click')}
                     <u className="cursor-pointer"> {keyword} </u>
-                    and let's get going!
+                    {t('map_tooltip')}
                     <br/><br/>
-                    Tour in
+                    {t('map_tour')}
                     <u 
                         onClick={ () => { navigateTo('/arg') }}
                         className={ local === 'Brasil' ? 'text-green-700 cursor-pointer' :

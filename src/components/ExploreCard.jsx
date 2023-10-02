@@ -5,9 +5,11 @@ import { motion } from 'framer-motion';
 import { styles } from "../styles";
 import { fadeIn } from '../utils/motion';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, activeCardId, setActiveCardId, url }) => {
   const navigateTo = useNavigate();
+  const { t } = useTranslation();
   
   return (
   <motion.div
@@ -36,7 +38,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, activeCard
       <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
         
         <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase">
-          Clique para conhecer os passeios
+          {t('explore_card')}
         </p>
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
           {title}

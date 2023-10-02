@@ -1,28 +1,22 @@
 import React, { useState } from "react";
-import { Tilt } from 'react-tilt';
-//import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { yellowText } from "../globalColorScheme";
-import {aldea1, enio} from "../assets/index.js"
 import {CEOTxt} from "./Util/base64Images"
+import { useTranslation } from "react-i18next";
 
 
 const Papyrus = () => {
     const base64Img = "data:image/png;base64," + CEOTxt;
+    const { t } = useTranslation();
     return (
         <>
             <div className="flex justify-center items-center h-screen">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                     width="1280.000000pt" height="1198.000000pt" viewBox="0 0 1280.000000 1198.000000"
                     preserveAspectRatio="xMidYMid meet">
-                    <metadata>
-                        Created by potrace 1.15, written by Peter Selinger 2001-2017
-                    </metadata>
                     <g transform="translate(0.000000,1198.000000) scale(0.100000,-0.100000)"
                         fill="#000000" stroke="none">
                         <path d="M1753 11958 c-55 -62 -100 -294 -116 -598 l-2 -45 -59 -3 c-80 -4
@@ -73,82 +67,82 @@ const Papyrus = () => {
                         -32 -22z"/>
                     </g>
                     <text className="font-director-message-body" x="375" y="170" fontSize="38" fill="white">
-                        Dear Operator,
+                        {t('txt_1')}
                     </text>
                     <text className="font-director-message-body" x="325" y="250" fontSize="22" fill="white">
-                        Convenio-tur, a company specialized in International Incoming Travel
+                        {t('txt_2')}
                     </text>
                     <text className="font-director-message-body" x="300" y="280" fontSize="22" fill="white">
-                        and Events, has cultivated a relationship with the international travel
+                        {t('txt_3')}
                     </text>
                     <text className="font-director-message-body" x="300" y="310" fontSize="22" fill="white">
-                        market by fulfilling the most demanding needs in leisure and business
+                        {t('txt_4')}
                     </text>
                     <text className="font-director-message-body" x="300" y="340" fontSize="22" fill="white">
-                        travel. With a modern infrastructure and a staff of qualified profes-
+                        {t('txt_5')}
                     </text>
                     <text className="font-director-message-body" x="300" y="370" fontSize="22" fill="white">
-                        sionals, Convenio-tur is capacitated to act as a “full agency” providing
+                        {t('txt_6')}
                     </text>
                     <text className="font-director-message-body" x="300" y="400" fontSize="22" fill="white">
-                        the appropriate solutions for our clients, from the most sophisticated 
+                        {t('txt_7')}
                     </text>
                     <text className="font-director-message-body" x="300" y="430" fontSize="22" fill="white">
-                        event in a five-star hotel to expeditions and radical sports in the
+                        {t('txt_8')}
                     </text>
                     <text className="font-director-message-body" x="300" y="460" fontSize="22" fill="white">
-                        middle of the jungle. We are prepared and accustomed to the variables
+                        {t('txt_9')}
                     </text>
                     <text className="font-director-message-body" x="300" y="490" fontSize="22" fill="white">
-                        of our beautiful theatre of operations – the Cataratas and the Three
+                        {t('txt_10')}
                     </text>
                     <text className="font-director-message-body" x="300" y="520" fontSize="22" fill="white">
-                        Borders region.
+                        {t('txt_11')}
                     </text>
                     <text className="font-director-message-body" x="325" y="550" fontSize="22" fill="white">
-                        For Convenio-tur, strict quality control, personalized service and
+                        {t('txt_12')}
                     </text>
                     <text className="font-director-message-body" x="300" y="580" fontSize="22" fill="white">
-                        the rigorous fulfillment of all contracted orders is not only part
+                        {t('txt_13')}
                     </text>
                     <text className="font-director-message-body" x="300" y="610" fontSize="22" fill="white">
-                        of our professional philosophy but also orients our relationship
+                        {t('txt_14')}
                     </text>
                     <text className="font-director-message-body" x="300" y="640" fontSize="22" fill="white">
-                        with all of our clients and suppliers. Our agency is totally
+                        {t('txt_15')}
                     </text>
                     <text className="font-director-message-body" x="300" y="670" fontSize="22" fill="white">
-                        computerized and on-line, guaranteeing agility and total control
+                        {t('txt_16')}
                     </text>
                     <text className="font-director-message-body" x="300" y="700" fontSize="22" fill="white">
-                        of all of our operations.
+                        {t('txt_17')}
                     </text>
                     <text className="font-director-message-body" x="325" y="730" fontSize="22" fill="white">
-                        Our objective is to serve your client in the best possible manner.
+                        {t('txt_18')}
                     </text>
                     <text className="font-director-message-body" x="300" y="760" fontSize="22" fill="white">
-                        If your passenger thanks you, we will have fulfilled our goal.
+                        {t('txt_19')}
                     </text>
                     <text className="font-director-message-body" x="300" y="790" fontSize="22" fill="white">
-                        Iguassu Falls is a fascinating destination with superlative attractions,
+                        {t('txt_20')}
                     </text>
                     <text className="font-director-message-body" x="300" y="820" fontSize="22" fill="white">
-                        both natural and man-made. We want to punctuate our visitors’ stays
+                        {t('txt_21')}
                     </text>
                     <text className="font-director-message-body" x="300" y="850" fontSize="22" fill="white">
-                        with unforgettable experiences. Besides the enjoyment of the
+                        {t('txt_22')}
                     </text>
                     <text className="font-director-message-body" x="300" y="880" fontSize="22" fill="white">
-                        attractions, we strive so that punctuality, respect, safety,
+                        {t('txt_23')}
                     </text>
                     <text className="font-director-message-body" x="300" y="910" fontSize="22" fill="white">
-                        comfort and quality information become part of our visitors´ stay.
+                        {t('txt_24')}
                     </text>
                     <text className="font-director-message-body" x="300" y="940" fontSize="22" fill="white">
-                        We are at your service and are ready for any special requests or 
+                        {t('txt_25')}                        
                     </text>
                     <text className="font-director-message-body" x="310" y="970" fontSize="22" fill="white">
-                        suggestions for improvement, after all, our staff works for you!
+                        {t('txt_26')}
                     </text>
                     <text className="font-director-message-body" x="300" y="1050" fontSize="22" fill="white">
                         Enio Eidt - CEO
@@ -221,10 +215,11 @@ const Papyrus = () => {
 }
 
 const AboutUs = () => {
+    const { t } = useTranslation();
     return (
         <>
             <motion.div variants={textVariant()}>
-                <p className={styles.sectionSubText}>About</p>
+                <p className={styles.sectionSubText}> {t('about')} </p>
                 <h2 className={styles.sectionHeadText}>
                     Convenio
                     <span style={yellowText}>
@@ -239,14 +234,9 @@ const AboutUs = () => {
             >
                 <p>
                     <span>
-                        With more than twelve years of experience, Convenio-Tur is the benchmark
-                        agency for incoming national and international travel in the Cataratas
-                        region, and one of the few that can operate as a “Full Agency” guaranteeing
-                        the success of any type of travel, be it a family vacation, eco-tourism,
-                        events, business travel or even adventure tours. Whatever your desire in travel
-                        products.
+                        {t('about_first_p')}
                     </span>
-                    <span style={yellowText}> Convenio-Tur is at your service.</span>
+                    <span style={yellowText}> {t('about_sec_p')} </span>
                 </p>
             </motion.div>
 
@@ -260,7 +250,7 @@ const AboutUs = () => {
                 <h1 className="font-director-message md:text-[100px]
                  sm:text-[90px] xs:text-[80px] text-[60px]"
                  style={yellowText}>
-                    Message from the CEO
+                    {t('message_ceo')}
                 </h1>
             </motion.div>
             <Papyrus />

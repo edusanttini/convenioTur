@@ -4,8 +4,10 @@ import { styles } from "../styles";
 import { cataratas } from "../assets";
 import { bgTxtYellowGradientStyle, yellowGradientStyle, bgYellow, yellowBorder } from "../globalColorScheme";
 import { Tooltip } from "@mui/material";
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t } = useTranslation();
   const dummy = {
     background: 'bg-tertiary',
     WebkitBackgroundClip: 'text',
@@ -28,8 +30,8 @@ const Hero = () => {
             <span style={bgTxtYellowGradientStyle}>Tur</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-black`}>
-            Your travel agency <br className='sm:block hidden' />
-            in Foz do Iguassu
+            {t('main_subtitle')} <br className='sm:block hidden' />
+            {t('sec_subtitle')}
           </p>
         </div>
       </div>
