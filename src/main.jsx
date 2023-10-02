@@ -30,6 +30,7 @@ export default function Main() {
           <Route path="/gastronomy" element={<Gastronomy/>}/>
           <Route path="/hotels" element={<Hotels/>}/>
           <Route path="/arg" element={<Argentina/>}/>
+          <Route path="arg/:rideIndex" element={< Argentina />} />
           <Route path="/br" element={<Brasil/>}/>
           <Route path="/py" element={<Paraguay/>}/>
           

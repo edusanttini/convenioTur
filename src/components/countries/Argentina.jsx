@@ -10,6 +10,7 @@ import { flagarg, flagbr } from '../../assets';
 import { bgGrayGradientStyle } from '../../globalColorScheme';
 import FlagShape from "./FlagShape";
 import { FLAGTXT } from "../Util/base64Images";
+import { useParams } from "react-router-dom";
 
 const StartSteps = ({ number, text }) => (
   <div className={`${styles.flexCenter} flex-row`}>
@@ -28,9 +29,16 @@ const StartSteps = ({ number, text }) => (
 
 
 const Argentina = () => {
+  const { rideIndex } = useParams();
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+    const rideElement = document.getElementById(rideIndex);
+    if (rideElement) {
+      rideElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [rideIndex]);
   
   return (
     <div className='relative z-0 w-full' style={bgGrayGradientStyle}>
@@ -90,11 +98,12 @@ const Argentina = () => {
         </section>
         <div className={`${styles.paddings} relative z-10`}>
           {argentinaRides.map((ride, index) => (
-            <RidesList
-              index={index}
-              ride={ride}
-              key={`ride-point-${index}`}
-            />
+            <div id={`ride-point-${index}`} key={`rides-point-${index}`}>
+              <RidesList
+                index={index}
+                ride={ride}
+              />
+            </div>
           ))}
         </div>
       </div>

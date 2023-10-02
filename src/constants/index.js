@@ -957,119 +957,153 @@ const map = [
     local: "Brasil",
     description: "Want to experience nature's most astonishing piece of art? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1476.78,1599.55)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1476.78,1599.55)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Macuco Safari",
-    local: "Argentina",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1356.78,1569.55)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1356.78,1569.55)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio3",
-    local: "Paraguay",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1246.1,1535.53)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1246.1,1535.53)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio4",
-    local: "Paraguay",
+    local: "Argentina",
     description: "Feeling a little adventurous?",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1246.29,1742.09)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1246.29,1742.09)",
+    rideIndex: "ride-point-1",
+    path: "arg"
   },
   {
     name: "Iguassu Falls",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1900.29,2036.3)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1900.29,2036.3)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Iguassu Falls",
     local: "Argentina",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1798.38,2071.09)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1798.38,2071.09)",
+    rideIndex: "ride-point-0",
+    path: "arg"
   },
   {
     name: "Passeio7",
-    local: "Paraguay",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1830.96,1869.4)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1830.96,1869.4)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio8",
-    local: "Paraguay",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1753.1,1715.67)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1753.1,1715.67)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio9",
-    local: "Paraguay",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1658.02,1605.18)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1658.02,1605.18)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio10",
-    local: "Paraguay",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1224.67,1326.56)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1224.67,1326.56)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio11",
-    local: "Paraguay",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1558.95,1644.01)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1558.95,1644.01)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio12",
-    local: "Paraguay",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1299.54,947.249)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1299.54,947.249)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio13",
-    local: "Paraguay",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1149.62,1110.39)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1149.62,1110.39)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio14",
-    local: "Paraguay",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1245.69,1167.23)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1245.69,1167.23)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio15",
-    local: "Paraguay",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1367.79,1134.6)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1367.79,1134.6)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio16",
-    local: "Paraguay",
+    local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1423.44,1379.4)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1423.44,1379.4)",
+    rideIndex: "ride-point-1",
+    path: "br"
   },
   {
     name: "Passeio17",
     local: "Paraguay",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1042.33,1530.44)"
+    coordinates: "matrix(0.26779,0,0,0.26779,1042.33,1530.44)",
+    rideIndex: "ride-point-1",
+    path: "py"
   },
 ];
 
