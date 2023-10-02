@@ -82,7 +82,7 @@ const Argentina = () => {
               variants={fadeIn('left', 'tween', 0.2, 1)}
               className="flex-[0.75] flex justify-center flex-col"
             >
-              <TypingTextGeneric title="| Argentina"/>
+              <TypingTextGeneric title="| Argentina" colorr="text-blue-600"/>
               <TitleText title={<>Get to know Argentina's best attractions</>} />
               <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
                 {startingFeatures.map((feature, index) => (

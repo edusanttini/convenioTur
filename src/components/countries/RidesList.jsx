@@ -10,7 +10,6 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 
 const RidesList = ({index, ride}) => {
-    const isInView = true;
     const parentContainerStyle = {
         overflowX: 'hidden',
         overflowY: 'hidden'
@@ -31,7 +30,7 @@ const RidesList = ({index, ride}) => {
                                 variants={planetVariants('left')}
                                 className={`flex-1 ${styles.flexCenter}`}
                             >
-                                <BlobShape2
+                                <BlobShape1
                                 img={ride.icon}
                                 />
                             </motion.div>
@@ -70,7 +69,7 @@ const RidesList = ({index, ride}) => {
                                 variants={planetVariants('right')}
                                 className={`flex-1 ${styles.flexCenter}`}
                             >
-                                <BlobShape1
+                                <BlobShape2
                                     img={ride.icon}
                                 />
                             </motion.div>

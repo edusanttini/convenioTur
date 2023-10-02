@@ -20,9 +20,8 @@ export const TypingText = ({ title, textStyles }) => (
 
 export const TypingTextGeneric = ({ title, colorr }) => (
   <motion.p
-    style={colorr}
     variants={textContainer}
-    className={`font-normal text-[14px] text-secondary-white text-blue-600 ${colorr}`}
+    className={`font-normal text-[14px] text-secondary-white ${colorr}`}
   >
     {Array.from(title).map((letter, index) => (
       <motion.span variants={textVariant2} key={index}>
