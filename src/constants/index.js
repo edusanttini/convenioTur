@@ -151,11 +151,6 @@ const services = () => {
       icon: cardGastronomia,
       url: "gastronomy",
     },
-    {
-      title: t('service_card_hotels'),
-      icon: cardHotels,
-      url: "hotels",
-    },
   ]
 }
 
@@ -457,20 +452,6 @@ const gastronomyTour = [
     ]
   },
   {
-    title: "Teatro Plaza Foz Night Club Extravaganza",
-    country: "Brasil",
-    icon: teatroplazaIcon,
-    iconBg: "#E6DEDD",
-    duration: "3 hours",
-    points: [
-      "Enjoy a musical production which is a mixture of Las Vegas and local folklore, highlighting the exuberant cultures of Brazil, Argentina and Paraguay.",
-      "Option: Dine at the Night Club or other restaurant of your choice."
-    ],
-    images: [
-      teatroPlaza
-    ]
-  },
-  {
     title: "Cassino Iguazú in Argentina",
     country: "Argentina",
     icon: cassinoIcon,
@@ -495,37 +476,6 @@ const gastronomyTour = [
     ],
     images: [
       brazilianBarbcue
-    ]
-  },
-  {
-    title: "Yacht Club (Restaurant)",
-    country: "Brasil",
-    icon: restaurantIcon,
-    iconBg: "#E6DEDD",
-    duration: "~1 hour",
-    points: [
-      "Option for lunch or dinner.",
-      "Savor several different types of fresh fish from the Paraná basin in a rustic setting on the banks of the scenic Parana River.",
-    ],
-    images: [
-      yatchclub
-    ]
-  },
-  {
-    title: "Gaucho Ranch",
-    country: "Brasil",
-    icon: brazilianbarbecueIcon,
-    iconBg: "#E6DEDD",
-    duration: "~1 hour",
-    points: [
-      "Enjoy real gaucho hospitality and culture while savoring the best of grazed beef in a traditional Brazilian Churrasco (barbecue).",
-      "The Estancia maintains its typical gaucho architecture and setting and during your meal enjoy an authentic regional folkloric show with music and dancers in full gaucho costume.",
-      "You may join in on the spacious dance floor.",
-      "Afterwards, enjoy an exhibition of gaucho horsemanship.",
-      "Playground for the children."
-    ],
-    images: [
-      gauchoranch
     ]
   },
 ];
@@ -953,11 +903,17 @@ const projects = [
 
 const map = [
   {
-    name: "Cataratas",
+    name: "Ruínas Jesuíticas",
     local: "Brasil",
-    description: "Want to experience nature's most astonishing piece of art? ",
+    description: [
+      "Estas missões, também chamadas de reduções, foram fundadas e organizadas por padres jesuítas. Esses 30 cortes ocupam os atuais territórios do Brasil, Paraguai, Argentina e Uruguai. Havia povos indígenas de diferentes raças nessas missões, mas a maioria eram guaranis.",
+      "Os Guarani foram os primeiros a sentir a influência europeia com a chegada dos padres jesuítas espanhóis em 1626.",
+      "Os jesuítas chegaram à região com o intuito de catequizar e “civilizar” sob as autoridades espanholas. Ficar, no entanto, é um oxímoro. As brigas entre bandidos e nativos eram comuns no século XVII.",
+      "O conflito foi caracterizado pela destruição da missão e pelo primeiro êxodo do povo Guarani. Em tempos de paz, os indígenas regressavam aos seus locais de origem com o apoio dos jesuítas.",
+      "Um dos desafios para os padres jesuítas foi convencer os povos indígenas da sua necessidade de vida sedentária e monogamia. Os Guarani são povos nômades que praticam a poligamia. Além disso, eles eram politeístas.",
+    ],
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1476.78,1599.55)",
+    coordinates: "matrix(0.26779,0,0,0.26779,676.78,2199.55)",
     rideIndex: "ride-point-1",
     path: "br"
   },
@@ -966,25 +922,25 @@ const map = [
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1356.78,1569.55)",
+    coordinates: "matrix(0.26779,0,0,0.26779,1854.78,1969.55)",
     rideIndex: "ride-point-1",
     path: "br"
   },
   {
-    name: "Passeio3",
+    name: "Marco das 3 fronteiras",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1246.1,1535.53)",
+    coordinates: "matrix(0.26779,0,0,0.26779,1216.1,1565.53)",
     rideIndex: "ride-point-1",
     path: "br"
   },
   {
-    name: "Passeio4",
+    name: "Hito de las 3 fronteiras",
     local: "Argentina",
     description: "Feeling a little adventurous?",
     keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1246.29,1742.09)",
+    coordinates: "matrix(0.26779,0,0,0.26779,1246.29,1702.09)",
     rideIndex: "ride-point-1",
     path: "arg"
   },
@@ -1007,7 +963,7 @@ const map = [
     path: "arg"
   },
   {
-    name: "Passeio7",
+    name: "Parque das Aves",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
@@ -1016,7 +972,7 @@ const map = [
     path: "br"
   },
   {
-    name: "Passeio8",
+    name: "Helisul panoramic",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
@@ -1025,7 +981,7 @@ const map = [
     path: "br"
   },
   {
-    name: "Passeio9",
+    name: "Movie car",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
@@ -1034,7 +990,7 @@ const map = [
     path: "br"
   },
   {
-    name: "Passeio10",
+    name: "Navegação - rios Paraná e Iguaçu",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
@@ -1043,7 +999,7 @@ const map = [
     path: "br"
   },
   {
-    name: "Passeio11",
+    name: "Dreams Park Show",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
@@ -1052,7 +1008,7 @@ const map = [
     path: "br"
   },
   {
-    name: "Passeio12",
+    name: "Itaipu",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
@@ -1061,7 +1017,7 @@ const map = [
     path: "br"
   },
   {
-    name: "Passeio13",
+    name: "Templo Budista (chen tien)",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
@@ -1070,7 +1026,7 @@ const map = [
     path: "br"
   },
   {
-    name: "Passeio14",
+    name: "Mesquita Muçulmana",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
@@ -1079,7 +1035,7 @@ const map = [
     path: "br"
   },
   {
-    name: "Passeio15",
+    name: "Catedral Nossa Sra. de Guadalupe",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
@@ -1088,18 +1044,18 @@ const map = [
     path: "br"
   },
   {
-    name: "Passeio16",
-    local: "Brasil",
-    description: "Feeling a little adventurous? ",
-    keyword: "here",
-    coordinates: "matrix(0.26779,0,0,0.26779,1423.44,1379.4)",
-    rideIndex: "ride-point-1",
-    path: "br"
-  },
-  {
-    name: "Passeio17",
+    name: "Hito de las 3 fronteiras",
     local: "Paraguay",
     description: "Feeling a little adventurous? ",
+    keyword: "here",
+    coordinates: "matrix(0.26779,0,0,0.26779,1143.44,1579.4)",
+    rideIndex: "ride-point-1",
+    path: "py"
+  },
+  {
+    name: "Saltos de Monday",
+    local: "Paraguay",
+    description: "In the Presidential District of Franco, the area's natural landscape presents a wonder above the water, the majestic Monday Falls, an extraordinary natural wonder with a long history and a stop on the route of the Guaraní people in pre-Hispania. The waterfall is more than 40 meters high and consists of three main cascades and additional secondary cascades that cascade near the mouth of the Mono River, one of the largest tributaries on the right bank of the Paraná River.",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1042.33,1530.44)",
     rideIndex: "ride-point-1",

@@ -84,15 +84,6 @@ const TourContainer = ({ experience }) => {
           </li>
         ))}
       </ul>
-      <div>
-      {experience.title === 'Rural Tour' && (
-        <p>
-          clickHereeeee to acess rural tours
-          
-        </p>
-        
-        )}
-      </div>
       <div className='mt-5 space-y-2'>
         {/* Render the images */}
         <div className='flex space-x-8 overflow-x-auto p-8'>
