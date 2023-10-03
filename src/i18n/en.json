@@ -143,6 +143,7 @@
     "br_kata_t3": "Conveniently located at the Itaipu Lake, the Kattamaram plies the water of this gigantic reservoir with its forested shoreline.",
     "br_kata_t4": "Daily departures. We suggest that this tour be done with the visit to the Itaipu Dam.",
     "br_bertoni_museum_title": "Navegation on the Paraná and Iguassu Rivers with Visit to the Bertoni Museum",
+    "br_bertoni_museum_sub_title": "Navegation with Visit to the Bertoni Museum",
     "br_bertoni_museum_t1": "Departure from the Cataratas Yacht Club.",
     "br_bertoni_museum_t2": "We board modern boats with experienced pilots for an unforgettable trip on the Paraná River observing the International Friendship Bridge, Acaray Island and the Three Borders enroute to the Bertoni Parque and Museum on the Paraguayan side.",
     "br_bertoni_museum_t3": "On board refreshments included.",
@@ -177,7 +178,13 @@
     "br_gaucho_t2": "The Estancia maintains its typical gaucho architecture and setting and during your meal enjoy an authentic regional folkloric show with music and dancers in full gaucho costume.",
     "br_gaucho_t3": "You may join in on the spacious dance floor.",
     "br_gaucho_t4": "Afterwards, enjoy an exhibition of gaucho horsemanship.",
-    "br_gaucho_t5": "Playground for the children."
+    "br_gaucho_t5": "Playground for the children.",
+
+    "py_visit_title": "Visit to Paraguay",
+    "py_visit_t1": "Cross the picturesque Friendship Bridge to Ciudad Del Este, Paraguay.",
+    "py_visit_t2": "Ample time to shop for duty-free imported goods and local handicrafts.",
+    "py_visit_t3": "Accompanied by guide.",
+    "py_visit_t4": "Please bring passport or valid I.D."
     
 
 }

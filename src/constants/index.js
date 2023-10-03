@@ -151,6 +151,46 @@ const services = () => {
       icon: cardGastronomia,
       url: "gastronomy",
     },
+    {
+      title: t('br_dam_title'),
+      icon: itaipu2,
+      url: "itaipu",
+    },
+    {
+      title: t('arg_ruins_title'),
+      icon: ruinsIcon,
+      url: "ruins",
+    },
+    {
+      title: t('br_kata_title'),
+      icon: katalogo,
+      url: "katamaram",
+    },
+    {
+      title: t('br_bertoni_museum_sub_title'),
+      icon: bertoniMuseumIcon,
+      url: "museum",
+    },
+    {
+      title: t('br_fish_title'),
+      icon: sportFishingIcon,
+      url: "fishing",
+    },
+    {
+      title: t('br_marco_title'),
+      icon: bordersIcon,
+      url: "borders",
+    },
+    {
+      title: t('py_visit_title'),
+      icon: pyIcon,
+      url: "gastronomy",
+    },
+    {
+      title: t('br_rural_title'),
+      icon: ruralTourIcon,
+      url: "rural",
+    },
   ]
 }
 
@@ -1456,21 +1496,6 @@ const brasilRides = () => {
       ]
     },
     {
-      title: t('br_teatro_title'),
-      countryKey: "br",
-      country: t('br'),
-      icon: teatroplazaIcon,
-      iconBg: "#E6DEDD",
-      duration: `3 ${t('hours')}`,
-      points: [
-        t('br_teatro_t1'),
-        t('br_teatro_t2'),
-      ],
-      images: [
-        cassinoiguazu
-      ]
-    },
-    {
       title: t('br_barbcue_title'),
       countryKey: "br",
       country: t('br'),
@@ -1479,39 +1504,6 @@ const brasilRides = () => {
       duration: `~1 ${t('hour')}`,
       points: [
         t('br_barbcue_t1'),
-      ],
-      images: [
-        cassinoiguazu
-      ]
-    },
-    {
-      title: t('br_yatch_club_title'),
-      countryKey: "br",
-      country: t('br'),
-      icon: restaurantIcon,
-      iconBg: "#E6DEDD",
-      duration: `~1 ${t('hour')}`,
-      points: [
-        t('br_yatch_club_t1'),
-        t('br_yatch_club_t2'),
-      ],
-      images: [
-        cassinoiguazu
-      ]
-    },
-    {
-      title: t('br_gaucho_title'),
-      countryKey: "br",
-      country: t('br'),
-      icon: brazilianbarbecueIcon,
-      iconBg: "#E6DEDD",
-      duration: `~1 ${t('hour')}`,
-      points: [
-        t('br_gaucho_t1'),
-        t('br_gaucho_t2'),
-        t('br_gaucho_t3'),
-        t('br_gaucho_t4'),
-        t('br_gaucho_t5'),
       ],
       images: [
         cassinoiguazu
