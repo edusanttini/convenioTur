@@ -34,7 +34,7 @@ const RidesList = ({index, ride}) => {
                                          'text-red-600' } />
                             <TitleText title={<>{ride.title}</>} />
                             <div className={`pb-32 justify-center flex`}>
-                                <Carousel />
+                                <Carousel ride={ride}/>
                             </div>
                             <motion.div className='custom-width pl-16'
                                 variants={fadeIn("down", "", 0.5, 0.5)}

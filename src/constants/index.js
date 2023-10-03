@@ -1296,7 +1296,7 @@ const brasilRides = () => {
         t('br_falls_t5'),
       ],
       images: [
-        cataratas1
+        cataratas01, cataratas02, cataratas
       ]
     },
     {

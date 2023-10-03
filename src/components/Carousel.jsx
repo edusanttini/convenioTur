@@ -6,7 +6,7 @@ import { cataratas02, cataratas01 } from '../assets';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from "../utils/motion";
 
-const Carousel = () => {
+const Carousel = ({ride}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -23,15 +23,11 @@ const Carousel = () => {
         viewport={{ once: false, amount: 0.25 }}
         >
         <Slider {...settings}>
-            <div>
-                <img src={cataratas01} className='rounded-lg  ' />
-            </div>
-            <div>
-                <img src={cataratas02} className='rounded-lg  '/>
-            </div>
-            <div>
-                <img src={cataratas01} className='rounded-lg  ' />
-            </div>
+            {ride.images.map((img, index) => (
+              <div>
+                <img src={img} className='rounded-lg'/>
+              </div>
+            ))}
         </Slider>
     </motion.div>
   );
