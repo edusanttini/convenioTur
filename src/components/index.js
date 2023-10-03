@@ -33,6 +33,7 @@ import BlobShape1 from './blobs/BlobShape1';
 import BlobShape2 from './blobs/BlobShape2';
 import LanguageSelectionPopup from './LanguageSelectionPopup';
 import i18n from '../i18n/i18n';
+import Carousel from './carousel';
 
 export {
   Hero,
@@ -71,7 +72,8 @@ export {
   BlobShape1,
   BlobShape2,
   LanguageSelectionPopup,
-  i18n
+  i18n,
+  Carousel
   
   
 };

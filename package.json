@@ -29,8 +29,10 @@
     "react-parallax-tilt": "^1.7.154",
     "react-particles": "^2.9.3",
     "react-router-dom": "^6.16.0",
+    "react-slick": "^0.29.0",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
+    "slick-carousel": "^1.8.1",
     "three": "^0.154.0",
     "tsparticles": "^2.9.3",
     "uuid": "^9.0.0"

@@ -101,7 +101,7 @@ const Argentina = () => {
         </section>
         <div className={`${styles.paddings} relative z-10`}>
           {argRides.map((ride, index) => (
-            <div id={`ride-point-${index}`} key={`rides-point-${index}`}>
+            <div id={`ride-point-${index}`} key={`rides-point-${index}`} className="pb-32">
               <RidesList
                 index={index}
                 ride={ride}

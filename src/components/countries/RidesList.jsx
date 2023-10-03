@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import styles from '../../stylesCountries';
-import { BlobShape1, BlobShape2, TitleText, TypingTextGeneric } from '../../components';
+import { BlobShape1, BlobShape2, Carousel, TitleText, TypingTextGeneric } from '../../components';
 import { staggerContainer, fadeIn, planetVariants } from '../../utils/motion';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -22,23 +22,10 @@ const RidesList = ({index, ride}) => {
             <div className=' w-full'>
                 <section className={`${styles.paddings} relative z-10 pt-32 `}
                     style={parentContainerStyle}>
-                    <motion.div
-                        className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+                    <div
+                        className={`${styles.innerWidth} mx-auto lg:flex-row flex-col gap-8`}
                     >
-                        {index % 2 !== 0 && (
-                            <motion.div
-                                initial="hidden"
-                                whileInView="show"
-                                variants={planetVariants('left')}
-                                className={`flex-1 ${styles.flexCenter}`}
-                            >
-                                <BlobShape1
-                                img={ride.icon}
-                                />
-                            </motion.div>
-                        )}
-                        <motion.div
-                            variants={fadeIn('left', 'tween', 0.2, 1)}
+                        <div
                             className="flex-[0.75] flex justify-center flex-col"
                         >
                             <TypingTextGeneric title={`| ${ride.country}`} 
@@ -46,7 +33,14 @@ const RidesList = ({index, ride}) => {
                                          ride.countryKey === 'arg' ? 'text-blue-600':
                                          'text-red-600' } />
                             <TitleText title={<>{ride.title}</>} />
-                            <div className='w-full'>
+                            <div className={`pb-32 justify-center flex`}>
+                                <Carousel />
+                            </div>
+                            <motion.div className='custom-width pl-16'
+                                variants={fadeIn("down", "", 0.5, 0.5)}
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: false, amount: 0.25 }}>
                                 <Accordion>
                                     <AccordionSummary
                                         aria-controls="panel1a-content"
@@ -65,21 +59,9 @@ const RidesList = ({index, ride}) => {
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
-                            </div>
-                        </motion.div>
-                        {index % 2 === 0 && (
-                            <motion.div
-                                initial="hidden"
-                                whileInView="show"
-                                variants={planetVariants('right')}
-                                className={`flex-1 ${styles.flexCenter}`}
-                            >
-                                <BlobShape2
-                                    img={ride.icon}
-                                />
                             </motion.div>
-                        )}
-                    </motion.div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </>
