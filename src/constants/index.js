@@ -1107,167 +1107,462 @@ const map = [
   },
 ];
 
-const argentinaRides = [
-  {
-    title: "Argentine Falls with Devil’s Throat",
-    country: "Argentina",
-    icon: cataratas01,
-    iconBg: "#E6DEDD",
-    duration: "7 hours",
-    points: [
-      "Cross the Tancredo Neves Bridge with its lovely view of the Iguassu Canyon en route to the Iguazú National Park in Argentina.",
-      "Visit the upper and lower walkways which allow a different perspective and more intimate contact with the falls adjoining rainforest filled with orchids, bromeliads, birds and other wildlife.",
-      "The highlight of the trip is a visit to the suspended platform at the very brink of the abysmal Devil’s Throat - largest of the waterfalls.",
-      "This very complete trip shows you all the different angles of the waterfalls from the Argentine side and includes not only the upper trails and the Devil's Throat but also the lower trail which winds through heavy rainforest.",
-      "On this trip, we offer several different options for lunch, which is optional."
-    ],
-    images: [
-      cataratas1
-    ]
-  },
-  {
-    title: "Grand Adventure",
-    country: "Argentina",
-    icon: macucoIcon,
-    iconBg: "#E6DEDD",
-    duration: "2 hours",
-    points: [
-      "This attraction is conveniently located on the Argentine side.",
-      "It starts with a ride throughn the jungle in special 4x4 vehicles.",
-      "Hike down the Iguassu canyon and board inflatable boats.",
-      "Take an exiting trip through the rapids and arrive at the base of the waterfalls with a view of the Devil`s Throat.",
-      "Get your hair wet in the mist and feel the forces of nature."
-    ],
-    images: [
-      grandadv1
-    ]
-  },
-  {
-    title: "The Jesuit Ruins of San Ignacio",
-    country: "Argentina",
-    icon: ruinsIcon,
-    iconBg: "#E6DEDD",
-    duration: "Full day",
-    points: [
-      "Visit the ruins of San Ignacio, located 250 kilometers from Iguassu Falls.",
-      "Here the Jesuits founded the Guarani Republic, which flourished in the seventeenth century.",
-      "Visit the communal houses, churches and buildings, with their baroque traits and numerous stone sculptures now invaded by the jungle.",
-      "The trip is via a paved highway winding through the picturesque Argentine countryside with its Mate-Tea plantations and well-preserved tropical rainforest.",
-      "Enroute we visit a working open-air gemstone mine. Lunch is optional"
-    ],
-    images: [
-      ruins1, ruins2
-    ]
-  },
-  {
-    title: "Cassino Iguazú in Argentina",
-    country: "Argentina",
-    icon: cassinoIcon,
-    iconBg: "#E6DEDD",
-    duration: "4 hours",
-    points: [
-      "The elegant and modern Casino Iguazú is located just across the border from Brazil.",
-      "Time for playing and entertainment.",
-    ],
-    images: [
-      cassinoiguazu
-    ]
-  },
-  {
-    title: "Loi Suites Iguazu Hotel",
-    country: "Argentina",
-    icon: argentinaIcon,
-    iconBg: "#E6DEDD",
-    isTranslation: "There are no translations available.",
-    points: [
-      "Combinando extremo luxo com um ambiente natural, o Loi Suítes Iguazu Hotel está embutido na selva a beira do Rio Iguaçu, em uma área de preservação privada de 600 hectares.",
-      "O hóspede terá a sensação de estar dentro da própria selva, porém com o conforto de cinco estrelas.",
-      "Dispomos de um conjunto de piscinas, uma arquitetura deslumbrante e apartamentos com alto grau de luxo e decoração de extremo bom gosto.",
-      "Desfrute de nosso Spa, restaurante gourmet, cais com deck de observação e atividades organizados como trekking, arvorismo, cavalgadas e caiaques."
-    ],
-    images: [
-      loisuites2, LoiSuites1
-    ]
-  },
-  {
-    title: "Iguazú Grand Hotel Resort & Casino",
-    country: "Argentina",
-    icon: argentinaIcon,
-    iconBg: "#E6DEDD",
-    isTranslation: "There are no translations available.",
-    points: [
-      "Um resorte que abrange elegância, prazer e entretenimento, localizado na Argentina, a 10 minutos das Cataratas.",
-      "Os apartamentos oferecem o mais alto nível de conforto e luxo.",
-      "O resorte é formado por uma diversificada área natural, jardins, variações gastronômicas, spa, cassino, enorme piscina, entre outros atrativos.",
-      "Sua arquitetura e serviços impecáveis fazem do Iguazu Grand Hotel Resort & Casino um local que proporciona o melhor para o viajante mais exigente."
-    ],
-    images: [
-      iguazuGrand1, iguazugrand2
-    ]
-  },
-  {
-    title: "Hotel Sheraton Iguazú Resort & Spa",
-    country: "Argentina",
-    icon: argentinaIcon,
-    iconBg: "#E6DEDD",
-    isTranslation: "There are no translations available.",
-    points: [
-      "Localizado no coração do Parque Nacional na Argentina, o Sheraton Iguazú Resort & Spa combina uma belíssema paisagem, cômodos estilizados com atendimento requintado.",
-      "Desfrute também dos espaços para convenções e eventos, linda psicina com vista para as quedas das Cataratas, spa, área de esportes.",
-      "Com localização privilegiada, perto das atrações das Três Fronteiras. Uma experiência sem igual para sua viagem.",
-    ],
-    images: [
-      sheratoniguazu1, sheratoniguazu2
-    ]
-  },
-  {
-    title: "Panoramic Hotel Iguazu",
-    country: "Argentina",
-    icon: argentinaIcon,
-    iconBg: "#E6DEDD",
-    isTranslation: "There are no translations available.",
-    points: [
-      "O hotel está localizado num morro próximo ao marco das Três Fronteiras e oferece uma vista panorâmica (dali o seu nome) da união dos rios Iguaçu e Paraná, os quais dividem as beiradas da Argentina, o Brasil e o Paraguai.",
-      "Rodeado de jardins e águas do rio Iguaçu, é o lugar ideal para se distender e desfrutar uma vista mágica desde o conforto de um 5 estrelas.",
-      "Localizado em Argentina, oferece o melhor da gastronomia exuberante desse país.",
-    ],
-    images: [
-      panoramic1, panoramic2
-    ]
-  },
-  {
-    title: "Yacutinga Lodge",
-    country: "Argentina",
-    icon: argentinaIcon,
-    iconBg: "#E6DEDD",
-    isTranslation: "There are no translations available.",
-    points: [
-      "O Yacutinga Lodge encontra-se no coração da Selva Missioneira e faz divisa com os parques nacionais da Argentina e Brasil.",
-      "Um paraíso para quem procura biodiversidade na fauna e na flora.",
-      "O Lodge oferece excelentes comodidades de alojamento, restaurante, piscina, guias especialistas e um inventário natural que supera 400 espécies de aves e mamíferos.",
-      "Ainda mantém uma política e um compromisso de baixo impacto ambiental longe do massivo fluxo de turismo que caracteriza a área das Cataratas do Iguaçu."
-    ],
-    images: [
-      yacutinga1, yacutinga2
-    ]
-  },
-  {
-    title: "Aldea Lodge",
-    country: "Argentina",
-    icon: argentinaIcon,
-    iconBg: "#E6DEDD",
-    isTranslation: "There are no translations available.",
-    points: [
-      "Localizado em Puerto Iguazú, Argentina, a Aldea Lodge oferece um estilo de vida natural, para levar o hospede ao íntimo da Mãe Natureza.",
-      "Relaxe, caminhe pela selva, entre em contato com a vida silvestre, se aventure no rapel ou simplesmente descubra novas experiências culinárias da mão de nosso chef.",
-      "Se acomodar no Aldea Lodge é embarcar em uma viajem fascinante.",
-      "Estamos a 17km das Cataratas Argentinas e a 20 km do aeroporto internacional de Puerto Iguazú."
-    ],
-    images: [
-      aldea1, aldea2
-    ]
-  }
-];
+const argentinaRides = () => {
+  const { t } = useTranslation();
+  return [
+    {
+      title: t('arg_falls_title'),
+      countryKey: "arg",
+      country: t('arg'),
+      icon: cataratas01,
+      iconBg: "#E6DEDD",
+      duration: `7 ${t('hours')}`,
+      points: [
+        t('arg_falls_t1'),
+        t('arg_falls_t2'),
+        t('arg_falls_t3'),
+        t('arg_falls_t4'),
+        t('arg_falls_t5'),
+      ],
+      images: [
+        cataratas1
+      ]
+    },
+    {
+      title: t('arg_gran_adventure_title'),
+      countryKey: "arg",
+      country: t('arg'),
+      icon: macucoIcon,
+      iconBg: "#E6DEDD",
+      duration: `2 ${t('hours')}`,
+      points: [
+        t('arg_gran_adventure_t1'),
+        t('arg_gran_adventure_t2'),
+        t('arg_gran_adventure_t3'),
+        t('arg_gran_adventure_t4'),
+        t('arg_gran_adventure_t5'),
+      ],
+      images: [
+        grandadv1
+      ]
+    },
+    {
+      title: t('arg_ruins_title'),
+      countryKey: "arg",
+      country: t('arg'),
+      icon: ruinsIcon,
+      iconBg: "#E6DEDD",
+      duration: t('full_day'),
+      points: [
+        t('arg_ruins_t1'),
+        t('arg_ruins_t2'),
+        t('arg_ruins_t3'),
+        t('arg_ruins_t4'),
+        t('arg_ruins_t5'),
+      ],
+      images: [
+        ruins1, ruins2
+      ]
+    },
+    {
+      title: t('arg_cassino_title'),
+      countryKey: "arg",
+      country: t('arg'),
+      icon: cassinoIcon,
+      iconBg: "#E6DEDD",
+      duration: `4 ${t('hours')}`,
+      points: [
+        t('arg_cassino_t1'),
+        t('arg_cassino_t2'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: "Loi Suites Iguazu Hotel",
+      countryKey: "arg",
+      country: "Argentina",
+      icon: argentinaIcon,
+      iconBg: "#E6DEDD",
+      isTranslation: "There are no translations available.",
+      points: [
+        "Combinando extremo luxo com um ambiente natural, o Loi Suítes Iguazu Hotel está embutido na selva a beira do Rio Iguaçu, em uma área de preservação privada de 600 hectares.",
+        "O hóspede terá a sensação de estar dentro da própria selva, porém com o conforto de cinco estrelas.",
+        "Dispomos de um conjunto de piscinas, uma arquitetura deslumbrante e apartamentos com alto grau de luxo e decoração de extremo bom gosto.",
+        "Desfrute de nosso Spa, restaurante gourmet, cais com deck de observação e atividades organizados como trekking, arvorismo, cavalgadas e caiaques."
+      ],
+      images: [
+        loisuites2, LoiSuites1
+      ]
+    },
+    {
+      title: "Iguazú Grand Hotel Resort & Casino",
+      countryKey: "arg",
+      country: "Argentina",
+      icon: argentinaIcon,
+      iconBg: "#E6DEDD",
+      isTranslation: "There are no translations available.",
+      points: [
+        "Um resorte que abrange elegância, prazer e entretenimento, localizado na Argentina, a 10 minutos das Cataratas.",
+        "Os apartamentos oferecem o mais alto nível de conforto e luxo.",
+        "O resorte é formado por uma diversificada área natural, jardins, variações gastronômicas, spa, cassino, enorme piscina, entre outros atrativos.",
+        "Sua arquitetura e serviços impecáveis fazem do Iguazu Grand Hotel Resort & Casino um local que proporciona o melhor para o viajante mais exigente."
+      ],
+      images: [
+        iguazuGrand1, iguazugrand2
+      ]
+    },
+    {
+      title: "Hotel Sheraton Iguazú Resort & Spa",
+      countryKey: "arg",
+      country: "Argentina",
+      icon: argentinaIcon,
+      iconBg: "#E6DEDD",
+      isTranslation: "There are no translations available.",
+      points: [
+        "Localizado no coração do Parque Nacional na Argentina, o Sheraton Iguazú Resort & Spa combina uma belíssema paisagem, cômodos estilizados com atendimento requintado.",
+        "Desfrute também dos espaços para convenções e eventos, linda psicina com vista para as quedas das Cataratas, spa, área de esportes.",
+        "Com localização privilegiada, perto das atrações das Três Fronteiras. Uma experiência sem igual para sua viagem.",
+      ],
+      images: [
+        sheratoniguazu1, sheratoniguazu2
+      ]
+    },
+    {
+      title: "Panoramic Hotel Iguazu",
+      countryKey: "arg",
+      country: "Argentina",
+      icon: argentinaIcon,
+      iconBg: "#E6DEDD",
+      isTranslation: "There are no translations available.",
+      points: [
+        "O hotel está localizado num morro próximo ao marco das Três Fronteiras e oferece uma vista panorâmica (dali o seu nome) da união dos rios Iguaçu e Paraná, os quais dividem as beiradas da Argentina, o Brasil e o Paraguai.",
+        "Rodeado de jardins e águas do rio Iguaçu, é o lugar ideal para se distender e desfrutar uma vista mágica desde o conforto de um 5 estrelas.",
+        "Localizado em Argentina, oferece o melhor da gastronomia exuberante desse país.",
+      ],
+      images: [
+        panoramic1, panoramic2
+      ]
+    },
+    {
+      title: "Yacutinga Lodge",
+      countryKey: "arg",
+      country: "Argentina",
+      icon: argentinaIcon,
+      iconBg: "#E6DEDD",
+      isTranslation: "There are no translations available.",
+      points: [
+        "O Yacutinga Lodge encontra-se no coração da Selva Missioneira e faz divisa com os parques nacionais da Argentina e Brasil.",
+        "Um paraíso para quem procura biodiversidade na fauna e na flora.",
+        "O Lodge oferece excelentes comodidades de alojamento, restaurante, piscina, guias especialistas e um inventário natural que supera 400 espécies de aves e mamíferos.",
+        "Ainda mantém uma política e um compromisso de baixo impacto ambiental longe do massivo fluxo de turismo que caracteriza a área das Cataratas do Iguaçu."
+      ],
+      images: [
+        yacutinga1, yacutinga2
+      ]
+    },
+    {
+      title: "Aldea Lodge",
+      countryKey: "arg",
+      country: "Argentina",
+      icon: argentinaIcon,
+      iconBg: "#E6DEDD",
+      isTranslation: "There are no translations available.",
+      points: [
+        "Localizado em Puerto Iguazú, Argentina, a Aldea Lodge oferece um estilo de vida natural, para levar o hospede ao íntimo da Mãe Natureza.",
+        "Relaxe, caminhe pela selva, entre em contato com a vida silvestre, se aventure no rapel ou simplesmente descubra novas experiências culinárias da mão de nosso chef.",
+        "Se acomodar no Aldea Lodge é embarcar em uma viajem fascinante.",
+        "Estamos a 17km das Cataratas Argentinas e a 20 km do aeroporto internacional de Puerto Iguazú."
+      ],
+      images: [
+        aldea1, aldea2
+      ]
+    }
+  ]
+}
+
+const brasilRides = () => {
+  const { t } = useTranslation();
+  return [
+    {
+      title: t('br_falls_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: cataratas01,
+      iconBg: "#E6DEDD",
+      duration: `3 ${t('hours')}`,
+      points: [
+        t('br_falls_t1'),
+        t('br_falls_t2'),
+        t('br_falls_t3'),
+        t('br_falls_t4'),
+        t('br_falls_t5'),
+      ],
+      images: [
+        cataratas1
+      ]
+    },
+    {
+      title: t('br_macuco_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: macucoIcon,
+      iconBg: "#E6DEDD",
+      duration: `2 ${t('hours')}`,
+      points: [
+        t('br_macuco_t1'),
+        t('br_macuco_t2'),
+      ],
+      images: [
+        macuco1, macuco2
+      ]
+    },
+    {
+      title: t('br_bird_park_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: birdparkicon,
+      iconBg: "#E6DEDD",
+      duration: `1 ${t('hour')}`,
+      points: [
+        t('br_bird_park_t1'),
+        t('br_bird_park_t2'),
+      ],
+      images: [
+        ruins1, ruins2
+      ]
+    },
+    {
+      title: t('br_heli_flight_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: panoramicheliIcon,
+      iconBg: "#E6DEDD",
+      duration: `10 to 35 ${t('minutes')}`,
+      points: [
+        t('br_heli_flight_t1'),
+        t('br_heli_flight_t2'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_eco_trail_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: ecoadventureicon,
+      iconBg: "#E6DEDD",
+      duration: `3 ${t('hours')} and 30 ${t('minutes')}`,
+      points: [
+        t('br_eco_trail_t1'),
+        t('br_eco_trail_t2'),
+        t('br_eco_trail_t3'),
+        t('br_eco_trail_t4'),
+        t('br_eco_trail_t5'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_eco_black_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: ecoadventureBlackIcon,
+      iconBg: "#E6DEDD",
+      duration: `4 ${t('hours')}`,
+      points: [
+        t('br_eco_black_t1'),
+        t('br_eco_black_t2'),
+        t('br_eco_black_t3'),
+        t('br_eco_black_t4'),
+        t('br_eco_black_t5'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_dam_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: itaipuLogo,
+      iconBg: "#E6DEDD",
+      duration: `2 ${t('hours')} and 30 ${t('minutes')}`,
+      points: [
+        t('br_dam_t1'),
+        t('br_dam_t2'),
+        t('br_dam_t3'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_kata_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: katalogo,
+      iconBg: "#E6DEDD",
+      duration: `3 ${t('hours')}`,
+      points: [
+        t('br_kata_t1'),
+        t('br_kata_t2'),
+        t('br_kata_t3'),
+        t('br_kata_t4'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_bertoni_museum_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: bertoniMuseumIcon,
+      iconBg: "#E6DEDD",
+      duration: `4 ${t('hours')}`,
+      points: [
+        t('br_bertoni_museum_t1'),
+        t('br_bertoni_museum_t2'),
+        t('br_bertoni_museum_t3'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_fish_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: sportFishingIcon,
+      iconBg: "#E6DEDD",
+      duration: `4 ${t('hours')}`,
+      points: [
+        t('br_fish_t1'),
+        t('br_fish_t2'),
+        t('br_fish_t3'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_marco_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: bordersIcon,
+      iconBg: "#E6DEDD",
+      duration: `1 ${t('hour')}`,
+      points: [
+        t('br_marco_t1'),
+        t('br_marco_t2'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_rural_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: ruralTourIcon,
+      iconBg: "#E6DEDD",
+      duration: t('full_day'),
+      points: [
+        t('br_rural_t1'),
+        t('br_rural_t2'),
+        t('br_rural_t3'),
+        t('br_rural_t4'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_porto_canoas_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: restaurantIcon,
+      iconBg: "#E6DEDD",
+      duration: `~1 ${t('hour')}`,
+      points: [
+        t('br_porto_canoas_t1'),
+        t('br_porto_canoas_t2'),
+        t('br_porto_canoas_t3'),
+        t('br_porto_canoas_t4'),
+        t('br_porto_canoas_t5'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_teatro_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: teatroplazaIcon,
+      iconBg: "#E6DEDD",
+      duration: `3 ${t('hours')}`,
+      points: [
+        t('br_teatro_t1'),
+        t('br_teatro_t2'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_barbcue_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: brazilianbarbecueIcon,
+      iconBg: "#E6DEDD",
+      duration: `~1 ${t('hour')}`,
+      points: [
+        t('br_barbcue_t1'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_yatch_club_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: restaurantIcon,
+      iconBg: "#E6DEDD",
+      duration: `~1 ${t('hour')}`,
+      points: [
+        t('br_yatch_club_t1'),
+        t('br_yatch_club_t2'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      title: t('br_gaucho_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: brazilianbarbecueIcon,
+      iconBg: "#E6DEDD",
+      duration: `~1 ${t('hour')}`,
+      points: [
+        t('br_gaucho_t1'),
+        t('br_gaucho_t2'),
+        t('br_gaucho_t3'),
+        t('br_gaucho_t4'),
+        t('br_gaucho_t5'),
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+  ]
+} 
 
 export { 
   services,
@@ -1278,12 +1573,16 @@ export {
   gastronomyTour,
   hotels,
   argentinaRides,
-  map
+  map,
+  brasilRides
 };
 
-export const startingFeatures = [
-  'Scroll down the page to look for our tours',
-  'Find a tour the you might be interested in',
-  'No need to beat around the bush, just stay on the gas and contact us!',
-];
+export const startingFeatures = () => {
+  const { t } = useTranslation();
+  return [
+    t('star_steps_first'),
+    t('star_steps_sec'),
+    t('star_steps_thi'),
+  ]
+} 
 

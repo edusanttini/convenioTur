@@ -29,6 +29,7 @@ const StartSteps = ({ number, text }) => (
 
 const Paraguay = () => {
   const { rideIndex } = useParams();
+  const starFeatures = startingFeatures();
 
   useEffect(() => {
     const rideElement = document.getElementById(rideIndex);
@@ -84,7 +85,7 @@ const Paraguay = () => {
               <TypingTextGeneric title="| Paraguay" colorr="text-red-600"/>
               <TitleText title={<>Get to know Paraguay's best attractions</>} />
               <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
-                {startingFeatures.map((feature, index) => (
+                {starFeatures.map((feature, index) => (
                   <StartSteps
                     key={feature}
                     number={`${index < 10 ? '0' : ''} ${index + 1}`}

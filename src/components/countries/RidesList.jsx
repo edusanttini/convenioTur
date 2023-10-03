@@ -8,8 +8,10 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
+import { useTranslation } from 'react-i18next';
 
 const RidesList = ({index, ride}) => {
+    const { t } = useTranslation();
     const parentContainerStyle = {
         overflowX: 'hidden',
         overflowY: 'hidden'
@@ -39,7 +41,10 @@ const RidesList = ({index, ride}) => {
                             variants={fadeIn('left', 'tween', 0.2, 1)}
                             className="flex-[0.75] flex justify-center flex-col"
                         >
-                            <TypingTextGeneric title="| Argentina"/>
+                            <TypingTextGeneric title={`| ${ride.country}`} 
+                                colorr={ ride.countryKey === 'br' ? 'text-green-600' :
+                                         ride.countryKey === 'arg' ? 'text-blue-600':
+                                         'text-red-600' } />
                             <TitleText title={<>{ride.title}</>} />
                             <div className='w-full'>
                                 <Accordion>
@@ -47,7 +52,7 @@ const RidesList = ({index, ride}) => {
                                         aria-controls="panel1a-content"
                                         id="panel1a-header"
                                     >
-                                        <Typography>Click for details</Typography>
+                                        <Typography> {t('click_details')} </Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography>

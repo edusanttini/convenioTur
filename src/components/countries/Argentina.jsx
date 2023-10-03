@@ -11,6 +11,7 @@ import { bgGrayGradientStyle } from '../../globalColorScheme';
 import FlagShape from "./FlagShape";
 import { FLAGTXT } from "../Util/base64Images";
 import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const StartSteps = ({ number, text }) => (
   <div className={`${styles.flexCenter} flex-row`}>
@@ -27,9 +28,11 @@ const StartSteps = ({ number, text }) => (
   </div>
 );
 
-
 const Argentina = () => {
   const { rideIndex } = useParams();
+  const { t } = useTranslation()
+  const starFeatures = startingFeatures();
+  const argRides = argentinaRides();
 
   useEffect(() => {
     const rideElement = document.getElementById(rideIndex);
@@ -82,10 +85,10 @@ const Argentina = () => {
               variants={fadeIn('left', 'tween', 0.2, 1)}
               className="flex-[0.75] flex justify-center flex-col"
             >
-              <TypingTextGeneric title="| Argentina" colorr="text-blue-600"/>
-              <TitleText title={<>Get to know Argentina's best attractions</>} />
+              <TypingTextGeneric title={`| ${t('arg')}`} colorr="text-blue-600"/>
+              <TitleText title={<> {t('arg_title')} </>} />
               <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
-                {startingFeatures.map((feature, index) => (
+                {starFeatures.map((feature, index) => (
                   <StartSteps
                     key={feature}
                     number={`${index < 10 ? '0' : ''} ${index + 1}`}
@@ -97,7 +100,7 @@ const Argentina = () => {
           </motion.div>
         </section>
         <div className={`${styles.paddings} relative z-10`}>
-          {argentinaRides.map((ride, index) => (
+          {argRides.map((ride, index) => (
             <div id={`ride-point-${index}`} key={`rides-point-${index}`}>
               <RidesList
                 index={index}

@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { motion } from 'framer-motion';
 
 import styles from '../../stylesCountries';
-import { argentinaRides, startingFeatures } from '../../constants';
+import { brasilRides, startingFeatures } from '../../constants';
 import { Navbar, RidesList, TitleText, TypingTextGeneric } from '../../components';
 import { staggerContainer, fadeIn, planetVariants, slideIn } from '../../utils/motion';
 import { flagbr } from '../../assets';
@@ -30,6 +30,8 @@ const StartSteps = ({ number, text }) => (
 
 const Brasil = () => {
   const { rideIndex } = useParams();
+  const starFeatures = startingFeatures();
+  const brRides = brasilRides();
 
   useEffect(() => {
     const rideElement = document.getElementById(rideIndex);
@@ -85,7 +87,7 @@ const Brasil = () => {
               <TypingTextGeneric title="| Brasil" colorr="text-green-600"/>
               <TitleText title={<>Get to know Brasil's best attractions</>} />
               <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
-                {startingFeatures.map((feature, index) => (
+                {starFeatures.map((feature, index) => (
                   <StartSteps
                     key={feature}
                     number={`${index < 10 ? '0' : ''} ${index + 1}`}
@@ -97,7 +99,7 @@ const Brasil = () => {
           </motion.div>
         </section>
         <div className={`${styles.paddings} relative z-10`}>
-          {argentinaRides.map((ride, index) => (
+          {brRides.map((ride, index) => (
             <div id={`ride-point-${index}`} key={`rides-point-${index}`}>
               <RidesList
                 index={index}
