@@ -173,6 +173,9 @@ import cardHotels from "./cardHotels.jpg";
 //map
 import southAmerica from "./southAmerica.svg"
 
+//qualityImsg
+import cataratasbr1 from "./qualityImgs/cataratasbr1.jpeg";
+
 export {
   logo,
   backend,
@@ -258,7 +261,8 @@ export {
   someOfTheEvents, incentiveTravel, thePrincipalVenues, eventsAndIncentives, enio,
   cataratas01, cataratas02,
   southAmerica,
-  languageIcon
+  languageIcon,
+  cataratasbr1
 
 
 };
