@@ -209,7 +209,7 @@ const natureTours = [
       "Take the glass elevator up the cliff face for a view from the upper deck.",
     ],
     images: [
-      cataratas1, cataratas2, cataratasbr1
+      cataratas01, cataratas02, cataratasbr1
     ]
   },
   {

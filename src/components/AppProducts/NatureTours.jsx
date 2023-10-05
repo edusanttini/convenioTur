@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { textVariant } from "../../utils/motion";
-import { SectionWrapper } from "../../hoc";
 import { Navbar } from "..";
 import { styles } from "../../styles";
 import { bgGrayGradientStyle, bgDarkGrayGradientStyle, yellowText } from "../../globalColorScheme";
@@ -10,10 +9,22 @@ import {
     VerticalTimelineElement,
   } from "react-vertical-timeline-component";
 import { natureTours } from "../../constants";
+import FsLightbox from "fslightbox-react";
 
 const TourContainer = ({tour}) => {
     const argFallsHalfDayTour = tour.points.slice(0,3);
     const argFallsFullDayTour = tour.points.slice(3,5);
+    const [lightboxController, setLightboxController] = useState({
+        toggler: false,
+        sourceIndex: 0
+      });
+      const handleImageClick = (index) => {
+        setLightboxController({
+          toggler: !lightboxController.toggler,
+          sourceIndex: index
+        });
+      };
+
     return (
         <VerticalTimelineElement
             contentStyle={{
@@ -123,16 +134,24 @@ const TourContainer = ({tour}) => {
                 </div>
             )}
             <div className='mt-5 space-y-2'>
-                {/* Render the images */}
-                <div className='flex space-x-8 overflow-x-auto p-8'>
-                    {tour.images.map((imageUrl, index) => (
-                        <img
-                            key={`tour-image-${index}`}
-                            src={imageUrl}
-                            alt={`Image ${index + 1}`}
-                            className='max-w-[200px] h-auto'
-                        />
-                    ))}
+                {/* Render images */}
+                <div className='flex overflow-x-auto p-8'>
+                {tour.images.map((imageUrl, index) => (
+                    <img
+                        key={index}
+                        src={imageUrl}
+                        alt={`Image ${index + 1}`}
+                        style={{ cursor: 'pointer', marginRight: '10px' }}
+                        onClick={() => handleImageClick(index)}
+                        className="w-1/2 rounded-lg"
+                    />
+                ))}
+                {/* Expand images */}
+                <FsLightbox
+                    toggler={lightboxController.toggler}
+                    sources={tour.images}
+                    sourceIndex={lightboxController.sourceIndex}
+                />
                 </div>
             </div>
             {tour.title !== 'Panoramic Helicopter Flight' && tour.title !== 'Argentine Falls with Devil’s Throat' ? (
