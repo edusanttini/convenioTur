@@ -1,8 +1,8 @@
-import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas01, cataratas02, cataratas2, cataratasbr1, continentalinn1, continentalinn2, golfresort1, golfresort2, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
+import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas01, cataratas02, cataratas2, cataratasbr, cataratasbr1, cataratasbr10, cataratasbr11, cataratasbr12, cataratasbr13, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5, cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, continentalinn1, continentalinn2, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2, devilsthroat3, golfresort1, golfresort2, heli, heli1, heli2, heli3, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
 import { macuco1 } from "../assets";
 import { macucoIcon } from "../assets";
 import { birdpark1 } from "../assets";
-import { birdpark3 } from "../assets";
+import { birdpark } from "../assets";
 import { panoramicheli } from "../assets";
 import { ecoadventure1 } from "../assets";
 import { ecoadventure3 } from "../assets";
@@ -31,7 +31,6 @@ import { panoramicheliIcon } from "../assets";
 import { birdparkicon } from "../assets";
 import { birdpark2 } from "../assets";
 import { grandadv1 } from "../assets";
-import { macuco2 } from "../assets";
 import { cataratasArg } from "../assets";
 import { cataratas1 } from "../assets";
 import {
@@ -51,7 +50,7 @@ import {
   waterfall, wf1, wf2,
   itaipuLogo, itaipu1, itaipu2, itaipu3,
   ruinsIcon, ruins1, ruins2,
-  katalogo, kata1, kata2, kata3,
+  katalogo, kata1,
   bertoniMuseumIcon, bertoniMuseum,
   sportFishingIcon, sportFishing1,
   bordersIcon, borders1,
@@ -209,7 +208,10 @@ const natureTours = [
       "Take the glass elevator up the cliff face for a view from the upper deck.",
     ],
     images: [
-      cataratas01, cataratas02, cataratasbr1
+      cataratasbr, cataratasbr1, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5,
+      cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, cataratasbr10, cataratasbr11,
+      cataratasbr12, cataratasbr13, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2,
+      devilsthroat3
     ]
   },
   {
@@ -226,7 +228,8 @@ const natureTours = [
       "On this trip, we offer several different options for lunch, which is optional."
     ],
     images: [
-      cataratasArg
+      cataratasArg, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2,
+      devilsthroat3
     ]
   },
   {
@@ -240,7 +243,7 @@ const natureTours = [
       "We continue on foot up to the margin of the Iguassu River where a inflatable motor boat takes the tourist on one of the most moving trips, where one has a close-up view of the falls, hearing the thunder of the waters, and getting wet in the mist of the falls, unforgettable.",
     ],
     images: [
-      macuco1, macuco2
+      macuco1
     ]
   },
   {
@@ -271,7 +274,7 @@ const natureTours = [
       "Mingle with and photograph hundreds of different native and exotic birds, snakes, caimans, marmosets and butterflies in spacious walk-through aviaries and trails that wind through the jungle.",
     ],
     images: [
-      birdpark1, birdpark2, birdpark3
+      birdpark1, birdpark2, birdpark
     ]
   },
   {
@@ -284,7 +287,7 @@ const natureTours = [
       "Thrilling and informative, a helicopter flight over the falls affords a completely different perspective of the Cataratas.",
     ],
     images: [
-      panoramicheli
+      heli, heli1, heli2, heli3
     ]
   },
   {
@@ -392,7 +395,7 @@ const culturalTours = [
       "Daily departures. We suggest that this tour be done with the visit to the Itaipu Dam.",
     ],
     images: [
-      kata1, kata2, kata3
+      kata1
     ]
   },
   {
@@ -1311,7 +1314,7 @@ const brasilRides = () => {
         t('br_macuco_t2'),
       ],
       images: [
-        macuco1, macuco2
+        macuco1
       ]
     },
     {

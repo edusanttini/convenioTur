@@ -44,12 +44,7 @@ import itaipu1 from "./company/itaipu1.png"
 import itaipu2 from "./company/itaipu2.png"
 import itaipu3 from "./company/itaipu3.png"
 import ruinsIcon from "./company/ruins.svg"
-import ruins1 from "./company/ruins1.png"
-import ruins2 from "./company/ruins2.png"
 import katalogo from "./company/katalogo.svg"
-import kata1 from "./company/kata1.png"
-import kata2 from "./company/kata2.png"
-import kata3 from "./company/kata3.png"
 import bertoniMuseumIcon from "./company/bertoniMuseum.svg"
 import bertoniMuseum from "./company/bertoniMuseum.jpg"
 import sportFishingIcon from "./company/sportFishing.svg"
@@ -68,14 +63,8 @@ import py3 from "./company/py3.jpg"
 //nature tours
 import cataratas1 from "./company/cataratas1.png";
 import cataratas2 from "./company/cataratas2.png";
-import cataratasArg from "./company/cataratasArg.png";
-import macuco1 from "./company/macuco1.png";
-import macuco2 from "./company/macuco2.png";
 import macucoIcon from "./company/macucoIcon.svg";
 import grandadv1 from "./company/grandadv1.jpg";
-import birdpark1 from "./company/birdpark1.png";
-import birdpark2 from "./company/birdpark2.png";
-import birdpark3 from "./company/birdpark3.jpg";
 import birdparkicon from "./company/birdparkicon.svg";
 import panoramicheli from "./company/panoramicheli.png";
 import panoramicheliIcon from "./company/panoramicheliIcon.svg";
@@ -174,7 +163,46 @@ import cardHotels from "./cardHotels.jpg";
 import southAmerica from "./southAmerica.svg"
 
 //qualityImsg
+import birdpark from "./qualityImgs/birdpark.jpeg";
+import birdpark1 from "./qualityImgs/birdpark1.jpeg";
+import birdpark2 from "./qualityImgs/birdpark2.jpeg";
+import cataratasArg from "./qualityImgs/cataratasarg.jpeg";
+import cataratasbr from "./qualityImgs/cataratasbr.jpeg"
 import cataratasbr1 from "./qualityImgs/cataratasbr1.jpeg";
+import cataratasbr2 from "./qualityImgs/cataratasbr2.jpeg"
+import cataratasbr3 from "./qualityImgs/cataratasbr3.jpeg"
+import cataratasbr4 from "./qualityImgs/cataratasbr4.jpeg"
+import cataratasbr5 from "./qualityImgs/cataratasbr5.jpeg"
+import cataratasbr6 from "./qualityImgs/cataratasbr6.jpeg";
+import cataratasbr7 from "./qualityImgs/cataratasbr7.jpeg";
+import cataratasbr8 from "./qualityImgs/cataratasbr8.jpeg";
+import cataratasbr9 from "./qualityImgs/cataratasbr9.jpeg";
+import cataratasbr10 from "./qualityImgs/cataratasbr10.jpeg";
+import cataratasbr11 from "./qualityImgs/cataratasbr11.jpeg";
+import cataratasbr12 from "./qualityImgs/cataratasbr12.jpeg";
+import cataratasbr13 from "./qualityImgs/cataratasbr13.jpeg";
+import devilsthroat from "./qualityImgs/devilsthroat.jpeg";
+import devilsthroat1 from "./qualityImgs/devilsthroat1.jpeg";
+import devilsthroat2 from "./qualityImgs/devilsthroat2.jpeg";
+import devilsthroat3 from "./qualityImgs/devilsthroat3.jpeg";
+import devilsthoat4 from "./qualityImgs/devilsthoat4.jpeg";
+import heli from "./qualityImgs/heli.jpeg";
+import heli1 from "./qualityImgs/heli1.jpeg";
+import heli2 from "./qualityImgs/heli2.jpeg";
+import heli3 from "./qualityImgs/heli3.jpeg";
+import kata1 from "./qualityImgs/katamaram.jpeg";
+import macuco1 from "./qualityImgs/macuco.jpeg";
+import mesquita from "./qualityImgs/mesquitafoz.jpeg";
+import ruins1 from "./qualityImgs/ruins.jpeg";
+import ruins2 from "./qualityImgs/ruins2.jpeg";
+import ruins3 from "./qualityImgs/ruins3.jpeg";
+import ruins4 from "./qualityImgs/ruins4.jpeg";
+import ruins5 from "./qualityImgs/ruins5.jpeg";
+import ruins6 from "./qualityImgs/ruins6.jpeg";
+import ruins7 from "./qualityImgs/ruins7.jpeg";
+import templo from "./qualityImgs/temploB.jpeg";
+import templo1 from "./qualityImgs/temploB1.jpeg";
+import templo2 from "./qualityImgs/temploB2.jpeg";
 
 export {
   logo,
@@ -217,17 +245,17 @@ export {
   cardCataratas,
   waterfall, wf1, wf2,
   itaipuLogo, itaipu1, itaipu2, itaipu3,
-  ruinsIcon, ruins1, ruins2,
-  katalogo, kata1, kata2, kata3,
+  ruinsIcon,
+  katalogo, kata1,
   bertoniMuseumIcon, bertoniMuseum,
   sportFishingIcon, sportFishing1,
   bordersIcon, borders1,
   ruralTourIcon, ruralTour1, ruralTour2, ruralTour3,
   pyIcon, py1, py2, py3,
   cataratas1, cataratas2, cataratasArg,
-  macuco1, macuco2, macucoIcon,
+  macuco1, macucoIcon,
   grandadv1,
-  birdpark1, birdpark2, birdpark3, birdparkicon,
+  birdpark1, birdpark2, birdpark, birdparkicon,
   panoramicheli, panoramicheliIcon,
   ecoadventure1, ecoadventure2, ecoadventure3, ecoadventureicon,
   ecoadventureBlack1, ecoadventureBlack2, ecoadventureBlackIcon,
@@ -262,7 +290,13 @@ export {
   cataratas01, cataratas02,
   southAmerica,
   languageIcon,
-  cataratasbr1
+  cataratasbr, cataratasbr1, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5,
+  cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, cataratasbr10, cataratasbr11,
+  cataratasbr12, cataratasbr13,
+  devilsthroat, devilsthoat4, devilsthroat1, devilsthroat2, devilsthroat3,
+  heli, heli1, heli2, heli3,
+  mesquita, ruins3, ruins4, ruins5, ruins6, ruins7, ruins1, ruins2,
+  templo, templo1, templo2
 
 
 };

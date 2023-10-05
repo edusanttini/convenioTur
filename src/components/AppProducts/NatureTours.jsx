@@ -143,7 +143,7 @@ const TourContainer = ({tour}) => {
                         alt={`Image ${index + 1}`}
                         style={{ cursor: 'pointer', marginRight: '10px' }}
                         onClick={() => handleImageClick(index)}
-                        className="w-1/2 rounded-lg"
+                        className="w-1/2 rounded-lg max-h-80"
                     />
                 ))}
                 {/* Expand images */}
