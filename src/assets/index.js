@@ -85,7 +85,6 @@ import portocanoas1 from "./company/portocanoas1.jpg";
 import restaurantIcon from "./company/restaurantIcon.svg";
 import teatroplazaIcon from "./company/teatroplazaIcon.svg";
 import teatroPlaza from "./company/teatroPlaza.png";
-import cassinoIcon from "./company/cassinoIcon.svg";
 import cassinoiguazu from "./company/cassinoiguazu.png";
 import brazilianbarbecueIcon from "./company/brazilianbarbecueIcon.svg";
 import brazilianBarbcue from "./company/brazilianBarbcue.png";
@@ -211,7 +210,7 @@ import damIcon from "./icons/damIcon.svg";
 import fallIcon from "./icons/fallIcon.svg";
 import gastronomyIcon from "./icons/gastronomyIcon.svg";
 import transferIcon from "./icons/transferIcon.svg";
-
+import cassinoIcon from "./icons/cassinoIcon.svg";
 
 export {
   logo,

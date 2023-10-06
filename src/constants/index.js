@@ -31,7 +31,6 @@ import { panoramicheliIcon } from "../assets";
 import { birdparkicon } from "../assets";
 import { birdpark2 } from "../assets";
 import { grandadv1 } from "../assets";
-import { cataratasArg } from "../assets";
 import { cataratas1 } from "../assets";
 import {
   carrent,
@@ -55,7 +54,8 @@ import {
   sportFishingIcon, sportFishing1,
   bordersIcon, borders1,
   ruralTourIcon, ruralTour1, ruralTour2, ruralTour3,
-  pyIcon, py1, py2, py3
+  pyIcon, py1, py2, py3,
+  cataratasArg
 } from "../assets";
 import { useTranslation } from "react-i18next";
 
@@ -190,6 +190,12 @@ const services = () => {
       icon: bordersIcon,
       img: borders1,
       url: "borders",
+    },
+    {
+      title: t('arg_cassino_title'),
+      icon: cassinoIcon,
+      img: cassinoiguazu,
+      url: "cassino",
     },
     {
       title: t('br_rural_title'),
@@ -519,6 +525,7 @@ const gastronomyTour = [
     ]
   },
   {
+    id: "cassino",
     title: "Cassino Iguazú in Argentina",
     country: "Argentina",
     icon: cassinoIcon,
@@ -1137,7 +1144,7 @@ const argentinaRides = () => {
       title: t('arg_falls_title'),
       countryKey: "arg",
       country: t('arg'),
-      icon: cataratas01,
+      icon: cataratasArg,
       iconBg: "#E6DEDD",
       duration: `7 ${t('hours')}`,
       points: [
@@ -1148,7 +1155,7 @@ const argentinaRides = () => {
         t('arg_falls_t5'),
       ],
       images: [
-        cataratas1
+        cataratasArg, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2, devilsthroat3
       ]
     },
     {

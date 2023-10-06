@@ -43,6 +43,7 @@ export default function Main() {
           <Route path="/fishing" element={<BaseProduct id="fishing"/>}/>
           <Route path="/borders" element={<BaseProduct id="borders"/>}/>
           <Route path="/rural" element={<BaseProduct id="rural"/>}/>
+          <Route path="/cassino" element={<BaseProduct id="cassino"/>}/>
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

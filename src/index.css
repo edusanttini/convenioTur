@@ -355,3 +355,7 @@ body {
 .custom-width {
   width: 76rem;
 }
+
+.h-100 {
+  height: 36rem;
+}

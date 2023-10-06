@@ -1,24 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { bgGrayGradientStyle } from "../../globalColorScheme";
 import Navbar from "../Navbar";
-import { cataratas01 } from "../../assets";
-import Contact from "../Contact";
 import { motion } from 'framer-motion';
-import BlobShape2 from "../blobs/BlobShape2";
 import { TitleText, TypingTextGeneric } from "../CustomTexts";
-import { culturalTours, natureTours } from "../../constants";
+import { culturalTours, gastronomyTour, natureTours } from "../../constants";
 import FsLightbox from "fslightbox-react";
 
 const BaseProduct = ({ id }) => {
-    const allProductArrays = [culturalTours, natureTours];
+    const allProductArrays = [culturalTours, natureTours, gastronomyTour];
     const selectedProduct = allProductArrays.reduce((foundProduct, pArray) => {
         if (!foundProduct) {
-            //product.title
             return pArray.find(tour => tour.id === id)
         }
         return foundProduct;
     }, null );
-    //const selectedProduct = culturalTours.find(tour => tour.title === 'The Jesuit Ruins of San Ignacio');
     const [lightboxController, setLightboxController] = useState({
         toggler: false,
         sourceIndex: 0
@@ -38,33 +33,31 @@ const BaseProduct = ({ id }) => {
             <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
                 <Navbar isMain={false}/>
             </div>
-            <div className="pt-32 relative flex items-center">
+            <div className="pt-8 lg:pt-32 relative flex items-center ml-4 mr-4">
                 <motion.div
                  className="h-96 flex pl-4">
                     <img src={selectedProduct.icon} />
                 </motion.div>
-                <motion.div className="pt-32  mx-auto pr-96">
-                    {/* product.country */}
+                <motion.div className="lg:pt-32  mx-auto lg:pr-96">
                     <TypingTextGeneric title={selectedProduct.country} colorr="text-red-600"/>
-                    {/* product.title */}
                     <TitleText title={selectedProduct.title} />
                 </motion.div>
             </div>
-            <div className="pt-32">
+            <div className="lg:pt-32">
                 {selectedProduct.points.map((point, index) => (
-                    <div className="text-[22px] text-center pb-8" key={index} >
+                    <div className="lg:text-[22px] ml-4 mr-4 text-center pb-8" key={index} >
                         - {point}
                     </div>
                 ))}
             </div>
-            <div className="justify-center pt-48 grid grid-cols-3 gap-4 pl-4 pr-4 pb-16">
+            <div className="justify-center pt-16 lg:pt-48 grid grid-cols-1 lg:grid-cols-3 gap-4 pl-4 pr-4 pb-16">
                 {selectedProduct && selectedProduct.images.map((image, index) => (
                         <img
                             key={index}
                             src={image}
                             alt={`Image ${index + 1}`}
                             onClick={() => handleImageClick(index)}
-                            className="w-full h-96 rounded-3xl"
+                            className="w-full lg:h-96 lg:rounded-3xl rounded-md"
                             style={{ cursor: 'pointer' }}
                         />
                 ))}
