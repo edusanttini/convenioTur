@@ -12,7 +12,8 @@ import {
   Hotels,
   Argentina,
   Brasil,
-  Paraguay
+  Paraguay,
+  BaseProduct
 } from "./components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -35,6 +36,13 @@ export default function Main() {
           <Route path="arg/:rideIndex" element={< Argentina />} />
           <Route path="br/:rideIndex" element={< Brasil />} />
           <Route path="py/:rideIndex" element={< Paraguay />} />
+          <Route path="/itaipu" element={<BaseProduct id="itaipu"/>}/>
+          <Route path="/ruins" element={<BaseProduct id="ruins"/>}/>
+          <Route path="/katamaram" element={<BaseProduct id="kata"/>}/>
+          <Route path="/museum" element={<BaseProduct id="museum"/>}/>
+          <Route path="/fishing" element={<BaseProduct id="fishing"/>}/>
+          <Route path="/borders" element={<BaseProduct id="borders"/>}/>
+          <Route path="/rural" element={<BaseProduct id="rural"/>}/>
         </Routes>
       </BrowserRouter>
     </React.StrictMode>

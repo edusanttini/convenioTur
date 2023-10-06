@@ -176,31 +176,25 @@ const services = () => {
     {
       title: t('br_bertoni_museum_sub_title'),
       icon: bertoniMuseumIcon,
-      img: kata1,
+      img: bertoniMuseum,
       url: "museum",
     },
     {
       title: t('br_fish_title'),
       icon: sportFishingIcon,
-      img: kata1,
+      img: sportFishing1,
       url: "fishing",
     },
     {
       title: t('br_marco_title'),
       icon: bordersIcon,
-      img: kata1,
+      img: borders1,
       url: "borders",
-    },
-    {
-      title: t('py_visit_title'),
-      icon: pyIcon,
-      img: kata1,
-      url: "gastronomy",
     },
     {
       title: t('br_rural_title'),
       icon: ruralTourIcon,
-      img: kata1,
+      img: ruralTour2,
       url: "rural",
     },
   ]
@@ -208,6 +202,7 @@ const services = () => {
 
 const natureTours = [
   {
+    id: "brfall",
     title: "The Brazillian Falls",
     country: "Brasil",
     icon: waterfall,
@@ -228,6 +223,7 @@ const natureTours = [
     ]
   },
   {
+    id: "argfall",
     title: "Argentine Falls with Devil’s Throat",
     country: "Argentina",
     icon: waterfall,
@@ -246,6 +242,7 @@ const natureTours = [
     ]
   },
   {
+    id: "macuco",
     title: "Macuco Boat Safari",
     country: "Brasil",
     icon: macucoIcon,
@@ -260,6 +257,7 @@ const natureTours = [
     ]
   },
   {
+    id: "gadv",
     title: "Grand Adventure",
     country: "Argentina",
     icon: macucoIcon,
@@ -277,6 +275,7 @@ const natureTours = [
     ]
   },
   {
+    id: "birdpark",
     title: "Parque das Aves",
     country: "Brasil",
     icon: birdparkicon,
@@ -291,6 +290,7 @@ const natureTours = [
     ]
   },
   {
+    id: "heli",
     title: "Panoramic Helicopter Flight",
     country: "Brasil",
     icon: panoramicheliIcon,
@@ -304,6 +304,7 @@ const natureTours = [
     ]
   },
   {
+    id: "eadv",
     title: "EcoAdventure Bananeira Trail",
     country: "Brasil",
     icon: ecoadventureicon,
@@ -321,6 +322,7 @@ const natureTours = [
     ]
   },
   {
+    id: "ecoadv",
     title: "EcoAdventure Black Well/Upper Iguassu",
     country: "Brasil",
     icon: ecoadventureBlackIcon,
@@ -338,6 +340,7 @@ const natureTours = [
     ]
   },
   {
+    id: "otherAtt",
     title: "Other Attractions",
     country: "Brasil & Argentina",
     icon: otherAttractionsIcon,
@@ -364,9 +367,10 @@ const natureTours = [
 
 const culturalTours = [
   {
+    id: "itaipu",
     title: "The Itaipu Dam",
     country: "Brasil",
-    icon: itaipuLogo,
+    icon: damIcon,
     iconBg: "#E6DEDD",
     duration: "2 hours and 30 minutes",
     points: [
@@ -379,6 +383,7 @@ const culturalTours = [
     ]
   },
   {
+    id: "ruins",
     title: "The Jesuit Ruins of San Ignacio",
     country: "Argentina",
     icon: ruinsIcon,
@@ -396,6 +401,7 @@ const culturalTours = [
     ]
   },
   {
+    id: "kata",
     title: "Kattamaram",
     country: "Brasil",
     icon: katalogo,
@@ -412,7 +418,8 @@ const culturalTours = [
     ]
   },
   {
-    title: "Navegation on the Paraná and Iguassu Rivers with Visit to the Bertoni Museum",
+    id: "museum",
+    title: "Navegation with visit to Bertoni Museum",
     country: "Brasil",
     icon: bertoniMuseumIcon,
     iconBg: "#E6DEDD",
@@ -427,6 +434,7 @@ const culturalTours = [
     ]
   },
   {
+    id: "fishing",
     title: "Sport Fishing",
     country: "Brasil",
     icon: sportFishingIcon,
@@ -442,6 +450,7 @@ const culturalTours = [
     ]
   },
   {
+    id: "borders",
     title: "Three Borders",
     country: "Brasil",
     icon: bordersIcon,
@@ -456,6 +465,7 @@ const culturalTours = [
     ]
   },
   {
+    id: "paraguay",
     title: "Visit to Paraguay",
     country_name: "Paraguay",
     icon: pyIcon,
@@ -472,6 +482,7 @@ const culturalTours = [
     ]
   },
   {
+    id: "rural",
     title: "Rural Tour",
     country: "Brasil",
     icon: ruralTourIcon,

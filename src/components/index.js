@@ -34,6 +34,7 @@ import BlobShape2 from './blobs/BlobShape2';
 import LanguageSelectionPopup from './LanguageSelectionPopup';
 import i18n from '../i18n/i18n';
 import Carousel from './carousel';
+import BaseProduct from './AppProducts/BaseProduct';
 
 export {
   Hero,
@@ -73,7 +74,8 @@ export {
   BlobShape2,
   LanguageSelectionPopup,
   i18n,
-  Carousel
+  Carousel,
+  BaseProduct
   
   
 };
