@@ -10,7 +10,7 @@ import { Tilt } from 'react-tilt';
 import { SectionWrapper } from "../hoc";
 import { useTranslation } from "react-i18next";
 
-const ServiceCard = ({ index, title, icon, url }) => {
+const ServiceCard = ({ index, title, icon, url, img }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [toggle, setToggle] = useState(false);
     const navigateTo = useNavigate();
@@ -36,7 +36,7 @@ const ServiceCard = ({ index, title, icon, url }) => {
             style={bgRedGradientStyle}
             >
             <img
-              src={icon}
+              src={isHovered ? img : icon}
               alt='web-development'
               className={`${
                 isHovered ? 
@@ -98,7 +98,7 @@ const AppProducts = () => {
             </motion.div>
             <div className='mt-20 flex flex-wrap gap-10'>
                 {serv.map((service, index) => (
-                    <ServiceCard key={service.title} index={index} {...service} url={service.url} />
+                    <ServiceCard key={service.title} index={index} {...service} url={service.url} img={service.img} />
                 ))}
             </div>
         </>

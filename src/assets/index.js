@@ -204,6 +204,14 @@ import templo from "./qualityImgs/temploB.jpeg";
 import templo1 from "./qualityImgs/temploB1.jpeg";
 import templo2 from "./qualityImgs/temploB2.jpeg";
 
+//icons
+import eventsIcon from "./icons/eventsIcon.svg";
+import damIcon from "./icons/damIcon.svg";
+import fallIcon from "./icons/fallIcon.svg";
+import gastronomyIcon from "./icons/gastronomyIcon.svg";
+import transferIcon from "./icons/transferIcon.svg";
+
+
 export {
   logo,
   backend,
@@ -296,7 +304,8 @@ export {
   devilsthroat, devilsthoat4, devilsthroat1, devilsthroat2, devilsthroat3,
   heli, heli1, heli2, heli3,
   mesquita, ruins3, ruins4, ruins5, ruins6, ruins7, ruins1, ruins2,
-  templo, templo1, templo2
+  templo, templo1, templo2,
+  eventsIcon, damIcon, fallIcon, gastronomyIcon, transferIcon
 
 
 };

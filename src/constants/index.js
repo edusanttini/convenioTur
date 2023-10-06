@@ -1,4 +1,4 @@
-import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas01, cataratas02, cataratas2, cataratasbr, cataratasbr1, cataratasbr10, cataratasbr11, cataratasbr12, cataratasbr13, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5, cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, continentalinn1, continentalinn2, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2, devilsthroat3, golfresort1, golfresort2, heli, heli1, heli2, heli3, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
+import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas01, cataratas02, cataratas2, cataratasbr, cataratasbr1, cataratasbr10, cataratasbr11, cataratasbr12, cataratasbr13, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5, cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, continentalinn1, continentalinn2, damIcon, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2, devilsthroat3, eventsIcon, fallIcon, golfresort1, golfresort2, heli, heli1, heli2, heli3, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, ruins3, ruins5, ruins7, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, transferIcon, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
 import { macuco1 } from "../assets";
 import { macucoIcon } from "../assets";
 import { birdpark1 } from "../assets";
@@ -127,67 +127,80 @@ const services = () => {
   return [
     {
       title: t('service_card_events'),
-      icon: cardEvents,
+      icon: eventsIcon,
+      img: cardEvents,
       url: "eventsandincentives",
     },
     {
       title: t('service_card_nature'),
-      icon: cardCataratas,
+      icon: fallIcon,
+      img: cardCataratas,
       url: "naturetours",
     },
     {
       title: t('service_card_cultural'),
-      icon: cardTechnologic,
+      icon: katalogo,
+      img: cardTechnologic,
       url: "culturaltours",
     },
     {
       title: t('service_card_Transfer'),
-      icon: cardTransfer,
+      icon: transferIcon,
+      img: cardTransfer,
       url: "transferservices",
     },
     {
       title: t('service_card_gastronomy'),
-      icon: cardGastronomia,
+      icon: restaurantIcon,
+      img: cardGastronomia,
       url: "gastronomy",
     },
     {
       title: t('br_dam_title'),
-      icon: itaipu2,
+      icon: damIcon,
+      img: itaipu2,
       url: "itaipu",
     },
     {
       title: t('arg_ruins_title'),
       icon: ruinsIcon,
+      img: ruins2,
       url: "ruins",
     },
     {
       title: t('br_kata_title'),
       icon: katalogo,
+      img: kata1,
       url: "katamaram",
     },
     {
       title: t('br_bertoni_museum_sub_title'),
       icon: bertoniMuseumIcon,
+      img: kata1,
       url: "museum",
     },
     {
       title: t('br_fish_title'),
       icon: sportFishingIcon,
+      img: kata1,
       url: "fishing",
     },
     {
       title: t('br_marco_title'),
       icon: bordersIcon,
+      img: kata1,
       url: "borders",
     },
     {
       title: t('py_visit_title'),
       icon: pyIcon,
+      img: kata1,
       url: "gastronomy",
     },
     {
       title: t('br_rural_title'),
       icon: ruralTourIcon,
+      img: kata1,
       url: "rural",
     },
   ]
