@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import headerLogo from "./convenioturlogo.png";
 import languageIcon from "./languageIcon.svg";
+import comingSoon from "./comingSoon.jpg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -305,7 +306,8 @@ export {
   heli, heli1, heli2, heli3,
   mesquita, ruins3, ruins4, ruins5, ruins6, ruins7, ruins1, ruins2,
   templo, templo1, templo2,
-  eventsIcon, damIcon, fallIcon, gastronomyIcon, transferIcon
+  eventsIcon, damIcon, fallIcon, gastronomyIcon, transferIcon,
+  comingSoon
 
 
 };

@@ -25,7 +25,7 @@ const Carousel = ({ride}) => {
         <Slider {...settings}>
             {ride.images.map((img, index) => (
               <div>
-                <img src={img} className='rounded-lg'/>
+                <img src={img} className='rounded-lg max-h-screen'/>
               </div>
             ))}
         </Slider>
