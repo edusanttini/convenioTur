@@ -1,4 +1,4 @@
-import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas01, cataratas02, cataratas2, cataratasbr, cataratasbr1, cataratasbr10, cataratasbr11, cataratasbr12, cataratasbr13, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5, cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, comingSoon, continentalinn1, continentalinn2, damIcon, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2, devilsthroat3, eventsIcon, fallIcon, golfresort1, golfresort2, heli, heli1, heli2, heli3, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, ruins3, ruins5, ruins7, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, transferIcon, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
+import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas01, cataratas02, cataratas2, cataratasbr, cataratasbr1, cataratasbr10, cataratasbr11, cataratasbr12, cataratasbr13, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5, cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, comingSoon, continentalinn1, continentalinn2, damIcon, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2, devilsthroat3, eventsIcon, fallIcon, golfresort1, golfresort2, heli, heli1, heli2, heli3, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, ruins3, ruins4, ruins5, ruins6, ruins7, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, transferIcon, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
 import { macuco1 } from "../assets";
 import { macucoIcon } from "../assets";
 import { birdpark1 } from "../assets";
@@ -1006,7 +1006,7 @@ const map = [
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1216.1,1565.53)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-10",
     path: "br"
   },
   {
@@ -1024,7 +1024,7 @@ const map = [
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1900.29,2036.3)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-0",
     path: "br"
   },
   {
@@ -1042,7 +1042,7 @@ const map = [
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1830.96,1869.4)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-2",
     path: "br"
   },
   {
@@ -1051,7 +1051,7 @@ const map = [
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1753.1,1715.67)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-3",
     path: "br"
   },
   {
@@ -1069,7 +1069,7 @@ const map = [
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1224.67,1326.56)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-8",
     path: "br"
   },
   {
@@ -1087,7 +1087,7 @@ const map = [
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1299.54,947.249)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-6",
     path: "br"
   },
   {
@@ -1132,7 +1132,7 @@ const map = [
     description: "In the Presidential District of Franco, the area's natural landscape presents a wonder above the water, the majestic Monday Falls, an extraordinary natural wonder with a long history and a stop on the route of the Guaraní people in pre-Hispania. The waterfall is more than 40 meters high and consists of three main cascades and additional secondary cascades that cascade near the mouth of the Mono River, one of the largest tributaries on the right bank of the Paraná River.",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1042.33,1530.44)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-2",
     path: "py"
   },
 ];
@@ -1191,7 +1191,7 @@ const argentinaRides = () => {
         t('arg_ruins_t5'),
       ],
       images: [
-        ruins1, ruins2
+        ruins1, ruins2, ruins3, ruins4, ruins5, ruins6, ruins7
       ]
     },
     {
@@ -1209,106 +1209,6 @@ const argentinaRides = () => {
         cassinoiguazu
       ]
     },
-    {
-      title: "Loi Suites Iguazu Hotel",
-      countryKey: "arg",
-      country: "Argentina",
-      icon: argentinaIcon,
-      iconBg: "#E6DEDD",
-      isTranslation: "There are no translations available.",
-      points: [
-        "Combinando extremo luxo com um ambiente natural, o Loi Suítes Iguazu Hotel está embutido na selva a beira do Rio Iguaçu, em uma área de preservação privada de 600 hectares.",
-        "O hóspede terá a sensação de estar dentro da própria selva, porém com o conforto de cinco estrelas.",
-        "Dispomos de um conjunto de piscinas, uma arquitetura deslumbrante e apartamentos com alto grau de luxo e decoração de extremo bom gosto.",
-        "Desfrute de nosso Spa, restaurante gourmet, cais com deck de observação e atividades organizados como trekking, arvorismo, cavalgadas e caiaques."
-      ],
-      images: [
-        loisuites2, LoiSuites1
-      ]
-    },
-    {
-      title: "Iguazú Grand Hotel Resort & Casino",
-      countryKey: "arg",
-      country: "Argentina",
-      icon: argentinaIcon,
-      iconBg: "#E6DEDD",
-      isTranslation: "There are no translations available.",
-      points: [
-        "Um resorte que abrange elegância, prazer e entretenimento, localizado na Argentina, a 10 minutos das Cataratas.",
-        "Os apartamentos oferecem o mais alto nível de conforto e luxo.",
-        "O resorte é formado por uma diversificada área natural, jardins, variações gastronômicas, spa, cassino, enorme piscina, entre outros atrativos.",
-        "Sua arquitetura e serviços impecáveis fazem do Iguazu Grand Hotel Resort & Casino um local que proporciona o melhor para o viajante mais exigente."
-      ],
-      images: [
-        iguazuGrand1, iguazugrand2
-      ]
-    },
-    {
-      title: "Hotel Sheraton Iguazú Resort & Spa",
-      countryKey: "arg",
-      country: "Argentina",
-      icon: argentinaIcon,
-      iconBg: "#E6DEDD",
-      isTranslation: "There are no translations available.",
-      points: [
-        "Localizado no coração do Parque Nacional na Argentina, o Sheraton Iguazú Resort & Spa combina uma belíssema paisagem, cômodos estilizados com atendimento requintado.",
-        "Desfrute também dos espaços para convenções e eventos, linda psicina com vista para as quedas das Cataratas, spa, área de esportes.",
-        "Com localização privilegiada, perto das atrações das Três Fronteiras. Uma experiência sem igual para sua viagem.",
-      ],
-      images: [
-        sheratoniguazu1, sheratoniguazu2
-      ]
-    },
-    {
-      title: "Panoramic Hotel Iguazu",
-      countryKey: "arg",
-      country: "Argentina",
-      icon: argentinaIcon,
-      iconBg: "#E6DEDD",
-      isTranslation: "There are no translations available.",
-      points: [
-        "O hotel está localizado num morro próximo ao marco das Três Fronteiras e oferece uma vista panorâmica (dali o seu nome) da união dos rios Iguaçu e Paraná, os quais dividem as beiradas da Argentina, o Brasil e o Paraguai.",
-        "Rodeado de jardins e águas do rio Iguaçu, é o lugar ideal para se distender e desfrutar uma vista mágica desde o conforto de um 5 estrelas.",
-        "Localizado em Argentina, oferece o melhor da gastronomia exuberante desse país.",
-      ],
-      images: [
-        panoramic1, panoramic2
-      ]
-    },
-    {
-      title: "Yacutinga Lodge",
-      countryKey: "arg",
-      country: "Argentina",
-      icon: argentinaIcon,
-      iconBg: "#E6DEDD",
-      isTranslation: "There are no translations available.",
-      points: [
-        "O Yacutinga Lodge encontra-se no coração da Selva Missioneira e faz divisa com os parques nacionais da Argentina e Brasil.",
-        "Um paraíso para quem procura biodiversidade na fauna e na flora.",
-        "O Lodge oferece excelentes comodidades de alojamento, restaurante, piscina, guias especialistas e um inventário natural que supera 400 espécies de aves e mamíferos.",
-        "Ainda mantém uma política e um compromisso de baixo impacto ambiental longe do massivo fluxo de turismo que caracteriza a área das Cataratas do Iguaçu."
-      ],
-      images: [
-        yacutinga1, yacutinga2
-      ]
-    },
-    {
-      title: "Aldea Lodge",
-      countryKey: "arg",
-      country: "Argentina",
-      icon: argentinaIcon,
-      iconBg: "#E6DEDD",
-      isTranslation: "There are no translations available.",
-      points: [
-        "Localizado em Puerto Iguazú, Argentina, a Aldea Lodge oferece um estilo de vida natural, para levar o hospede ao íntimo da Mãe Natureza.",
-        "Relaxe, caminhe pela selva, entre em contato com a vida silvestre, se aventure no rapel ou simplesmente descubra novas experiências culinárias da mão de nosso chef.",
-        "Se acomodar no Aldea Lodge é embarcar em uma viajem fascinante.",
-        "Estamos a 17km das Cataratas Argentinas e a 20 km do aeroporto internacional de Puerto Iguazú."
-      ],
-      images: [
-        aldea1, aldea2
-      ]
-    }
   ]
 }
 
