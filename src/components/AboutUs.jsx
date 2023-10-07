@@ -256,8 +256,29 @@ const AboutUs = () => {
                     {t('message_ceo')}
                 </h1>
             </motion.div>
-            <Papyrus />
-            
+            <div className="hidden md:block" >
+                <Papyrus />
+            </div>
+            <div className="block md:hidden">
+                <h2 className="text-[20px]" >
+                    {t('txt_all_title')}
+                </h2>
+                <p className="indent-8 pt-8" >
+                    <em>
+                        {t('txt_all_1p')}
+                    </em>
+                </p>
+                <p className="indent-8 pt-4" >
+                    <em>
+                        {t('txt_all_2p')}
+                    </em>
+                </p>
+                <p className="indent-8 pt-4" >
+                    <em>
+                        {t('txt_all_3p')}
+                    </em>
+                </p>
+            </div>
         </>
     );
 };
