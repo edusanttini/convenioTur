@@ -144,6 +144,9 @@ const Papyrus = () => {
                     <text className="font-director-message-body" x="310" y="970" fontSize="22" fill="white">
                         {t('txt_26')}
                     </text>
+                    <text className="font-director-message-body" x="310" y="1000" fontSize="22" fill="white">
+                        {t('txt_27')}
+                    </text>
                     <text className="font-director-message-body" x="300" y="1050" fontSize="22" fill="white">
                         Enio Eidt - CEO
                     </text>

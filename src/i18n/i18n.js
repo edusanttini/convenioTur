@@ -29,7 +29,7 @@ i18n.use(initReactI18next).init({
         translation: ptTranslation
     },
   },
-  lng: 'en',  // Default language
+  lng: 'it',  // Default language
   fallbackLng: 'en',
   interpolation: {
     escapeValue: false,
