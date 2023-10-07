@@ -135,7 +135,7 @@ const TourContainer = ({tour}) => {
             )}
             <div className='mt-5 space-y-2'>
                 {/* Render images */}
-                <div className='flex overflow-x-auto p-8'>
+                <div className='flex horizontal-scrolling p-8'>
                 {tour.images.map((imageUrl, index) => (
                     <img
                         key={index}
@@ -143,7 +143,7 @@ const TourContainer = ({tour}) => {
                         alt={`Image ${index + 1}`}
                         style={{ cursor: 'pointer', marginRight: '10px' }}
                         onClick={() => handleImageClick(index)}
-                        className="w-1/2 rounded-lg max-h-80"
+                        className="lg:w-1/2 rounded-lg max-h-32 lg:max-h-80"
                     />
                 ))}
                 {/* Expand images */}
@@ -154,6 +154,7 @@ const TourContainer = ({tour}) => {
                 />
                 </div>
             </div>
+            <br/>
             {tour.title !== 'Panoramic Helicopter Flight' && tour.title !== 'Argentine Falls with Devil’s Throat' ? (
                 <p className='text-[16px] italic' style={yellowText}>
                     {"Duration: " + tour.duration}
