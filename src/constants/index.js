@@ -1,4 +1,4 @@
-import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas01, cataratas02, cataratas2, cataratasbr, cataratasbr1, cataratasbr10, cataratasbr11, cataratasbr12, cataratasbr13, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5, cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, continentalinn1, continentalinn2, damIcon, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2, devilsthroat3, eventsIcon, fallIcon, golfresort1, golfresort2, heli, heli1, heli2, heli3, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, ruins3, ruins5, ruins7, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, transferIcon, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
+import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas01, cataratas02, cataratas2, cataratasbr, cataratasbr1, cataratasbr10, cataratasbr11, cataratasbr12, cataratasbr13, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5, cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, comingSoon, continentalinn1, continentalinn2, damIcon, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2, devilsthroat3, eventsIcon, fallIcon, golfresort1, golfresort2, heli, heli1, heli2, heli3, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, ruins3, ruins5, ruins7, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, transferIcon, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
 import { macuco1 } from "../assets";
 import { macucoIcon } from "../assets";
 import { birdpark1 } from "../assets";
@@ -1330,7 +1330,9 @@ const brasilRides = () => {
         t('br_falls_t5'),
       ],
       images: [
-        cataratas01, cataratas02, cataratas
+        cataratasbr, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5, cataratasbr6,
+        cataratasbr7, cataratasbr8, cataratasbr9, cataratasbr10, cataratasbr11, cataratasbr12,
+        cataratasbr13
       ]
     },
     {
@@ -1345,7 +1347,7 @@ const brasilRides = () => {
         t('br_macuco_t2'),
       ],
       images: [
-        macuco1
+        devilsthoat4, macuco1
       ]
     },
     {
@@ -1360,7 +1362,7 @@ const brasilRides = () => {
         t('br_bird_park_t2'),
       ],
       images: [
-        ruins1, ruins2
+        birdpark, birdpark1, birdpark2
       ]
     },
     {
@@ -1375,7 +1377,7 @@ const brasilRides = () => {
         t('br_heli_flight_t2'),
       ],
       images: [
-        cassinoiguazu
+        heli, heli1, heli2, heli3
       ]
     },
     {
@@ -1393,7 +1395,7 @@ const brasilRides = () => {
         t('br_eco_trail_t5'),
       ],
       images: [
-        cassinoiguazu
+        ecoadventure1, ecoadventure2, ecoadventure3
       ]
     },
     {
@@ -1411,7 +1413,7 @@ const brasilRides = () => {
         t('br_eco_black_t5'),
       ],
       images: [
-        cassinoiguazu
+        ecoadventureBlack1, ecoadventureBlack2
       ]
     },
     {
@@ -1427,7 +1429,7 @@ const brasilRides = () => {
         t('br_dam_t3'),
       ],
       images: [
-        cassinoiguazu
+        itaipu1, itaipu2, itaipu3
       ]
     },
     {
@@ -1444,7 +1446,7 @@ const brasilRides = () => {
         t('br_kata_t4'),
       ],
       images: [
-        cassinoiguazu
+        kata1
       ]
     },
     {
@@ -1460,7 +1462,7 @@ const brasilRides = () => {
         t('br_bertoni_museum_t3'),
       ],
       images: [
-        cassinoiguazu
+        bertoniMuseum
       ]
     },
     {
@@ -1476,7 +1478,7 @@ const brasilRides = () => {
         t('br_fish_t3'),
       ],
       images: [
-        cassinoiguazu
+        sportFishing1
       ]
     },
     {
@@ -1491,7 +1493,7 @@ const brasilRides = () => {
         t('br_marco_t2'),
       ],
       images: [
-        cassinoiguazu
+        borders1
       ]
     },
     {
@@ -1508,7 +1510,7 @@ const brasilRides = () => {
         t('br_rural_t4'),
       ],
       images: [
-        cassinoiguazu
+        ruralTour1, ruralTour2, ruralTour3
       ]
     },
     {
@@ -1526,7 +1528,7 @@ const brasilRides = () => {
         t('br_porto_canoas_t5'),
       ],
       images: [
-        cassinoiguazu
+        portocanoas1
       ]
     },
     {
@@ -1540,7 +1542,62 @@ const brasilRides = () => {
         t('br_barbcue_t1'),
       ],
       images: [
-        cassinoiguazu
+        brazilianBarbcue
+      ]
+    },
+  ]
+} 
+
+const paraguayRides = () => {
+  const { t } = useTranslation();
+  return [
+    {
+      title: t('py_visit_title'),
+      countryKey: "py",
+      country: t('py'),
+      icon: cataratas01,
+      iconBg: "#E6DEDD",
+      duration: `3 ${t('hours')}`,
+      points: [
+        t('py_visit_t1'),
+        t('py_visit_t2'),
+        t('py_visit_t3'),
+        t('py_visit_t4'),
+      ],
+      images: [
+        py1, py2, py3
+      ]
+    },
+    {
+      title: t('py_marco_title'),
+      countryKey: "py",
+      country: t('py'),
+      icon: macucoIcon,
+      iconBg: "#E6DEDD",
+      duration: `2 ${t('hours')}`,
+      points: [
+        t('py_marco_t1'),
+        t('py_marco_t2'),
+        t('py_marco_t3'),
+      ],
+      images: [
+        comingSoon
+      ]
+    },
+    {
+      title: t('py_monday_title'),
+      countryKey: "py",
+      country: t('py'),
+      icon: birdparkicon,
+      iconBg: "#E6DEDD",
+      duration: `1 ${t('hour')}`,
+      points: [
+        t('py_monday_t1'),
+        t('py_monday_t2'),
+        t('py_monday_t3'),
+      ],
+      images: [
+        comingSoon
       ]
     },
   ]
@@ -1556,7 +1613,8 @@ export {
   hotels,
   argentinaRides,
   map,
-  brasilRides
+  brasilRides,
+  paraguayRides
 };
 
 export const startingFeatures = () => {

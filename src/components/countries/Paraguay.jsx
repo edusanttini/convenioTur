@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import { motion } from 'framer-motion';
 
 import styles from '../../stylesCountries';
-import { argentinaRides, startingFeatures } from '../../constants';
+import { paraguayRides, startingFeatures } from '../../constants';
 import { Navbar, RidesList, TitleText, TypingTextGeneric } from '../../components';
 import { staggerContainer, fadeIn, planetVariants, slideIn } from '../../utils/motion';
 import { flagpy } from '../../assets';
@@ -30,6 +30,7 @@ const StartSteps = ({ number, text }) => (
 const Paraguay = () => {
   const { rideIndex } = useParams();
   const starFeatures = startingFeatures();
+  const pyRides = paraguayRides();
 
   useEffect(() => {
     const rideElement = document.getElementById(rideIndex);
@@ -97,7 +98,7 @@ const Paraguay = () => {
           </motion.div>
         </section>
         <div className={`${styles.paddings} relative z-10`}>
-          {argentinaRides.map((ride, index) => (
+          {pyRides.map((ride, index) => (
             <div id={`ride-point-${index}`} key={`rides-point-${index}`}>
               <RidesList
                 index={index}
