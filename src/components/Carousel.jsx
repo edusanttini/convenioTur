@@ -24,7 +24,7 @@ const Carousel = ({ride}) => {
         >
         <Slider {...settings}>
             {ride.images.map((img, index) => (
-              <img src={img} className='rounded-lg h-100' key={index}/>
+              <img src={img} className='rounded-2xl h-100 object-contain' key={index}/>
             ))}
         </Slider>
     </motion.div>
