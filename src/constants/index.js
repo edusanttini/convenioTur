@@ -1,4 +1,4 @@
-import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas01, cataratas02, cataratas2, cataratasbr, cataratasbr1, cataratasbr10, cataratasbr11, cataratasbr12, cataratasbr13, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5, cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, comingSoon, continentalinn1, continentalinn2, damIcon, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2, devilsthroat3, eventsIcon, fallIcon, golfresort1, golfresort2, heli, heli1, heli2, heli3, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, ruins3, ruins4, ruins5, ruins6, ruins7, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, transferIcon, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
+import { LoiSuites1, aldea1, aldea2, bestwetern1, bestwetern2, bourbon1, bourbon2, carima1, carima2, cataratas01, cataratas02, cataratas2, cataratasbr, cataratasbr1, cataratasbr10, cataratasbr11, cataratasbr12, cataratasbr13, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5, cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, comingSoon, continentalinn1, continentalinn2, damIcon, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2, devilsthroat3, eventsIcon, fallIcon, golfresort1, golfresort2, heli, heli1, heli2, heli3, hotelcassino1, hotelcassino2, hotelcataratas1, hotelcataratas2, iguazuGrand1, iguazugrand2, loisuites2, mabu1, mabu2, mabu3, mercure1, mercure2, mercure3, panoramic1, panoramic2, rafaincentro1, rafaincentro2, rafainpalace1, rafainpalace2, rafainpalace3, recanto1, recanto2, ruins3, ruins4, ruins5, ruins6, ruins7, san_martin1, san_martin2, sanrafael1, sanrafael2, sheratoniguazu1, sheratoniguazu2, templo, templo1, templo2, transferIcon, turrance1, turrance2, yacutinga1, yacutinga2 } from "../assets";
 import { macuco1 } from "../assets";
 import { macucoIcon } from "../assets";
 import { birdpark1 } from "../assets";
@@ -1015,7 +1015,7 @@ const map = [
     description: "Feeling a little adventurous?",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1246.29,1702.09)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-4",
     path: "arg"
   },
   {
@@ -1060,7 +1060,7 @@ const map = [
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1658.02,1605.18)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-18",
     path: "br"
   },
   {
@@ -1078,7 +1078,7 @@ const map = [
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1558.95,1644.01)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-17",
     path: "br"
   },
   {
@@ -1096,7 +1096,7 @@ const map = [
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1149.62,1110.39)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-14",
     path: "br"
   },
   {
@@ -1105,7 +1105,7 @@ const map = [
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1245.69,1167.23)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-15",
     path: "br"
   },
   {
@@ -1114,7 +1114,7 @@ const map = [
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1367.79,1134.6)",
-    rideIndex: "ride-point-1",
+    rideIndex: "ride-point-16",
     path: "br"
   },
   {
@@ -1129,7 +1129,7 @@ const map = [
   {
     name: "Saltos de Monday",
     local: "Paraguay",
-    description: "In the Presidential District of Franco, the area's natural landscape presents a wonder above the water, the majestic Monday Falls, an extraordinary natural wonder with a long history and a stop on the route of the Guaraní people in pre-Hispania. The waterfall is more than 40 meters high and consists of three main cascades and additional secondary cascades that cascade near the mouth of the Mono River, one of the largest tributaries on the right bank of the Paraná River.",
+    description: "Feeling a little adventurours? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1042.33,1530.44)",
     rideIndex: "ride-point-2",
@@ -1207,6 +1207,22 @@ const argentinaRides = () => {
       ],
       images: [
         cassinoiguazu
+      ]
+    },
+    {
+      title: t('py_marco_title'),
+      countryKey: "arg",
+      country: t('arg'),
+      icon: cassinoIcon,
+      iconBg: "#E6DEDD",
+      duration: `4 ${t('hours')}`,
+      points: [
+        t('arg_marco_t1'),
+        t('arg_marco_t2'),
+        t('arg_marco_t3'),
+      ],
+      images: [
+        comingSoon
       ]
     },
   ]
@@ -1445,6 +1461,86 @@ const brasilRides = () => {
         brazilianBarbcue
       ]
     },
+    {
+      title: t('br_templo_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: brazilianbarbecueIcon,
+      iconBg: "#E6DEDD",
+      duration: `~1 ${t('hour')}`,
+      points: [
+        t('br_templo_t1'),
+        t('br_templo_t2'),
+        t('br_templo_t3'),
+      ],
+      images: [
+        templo, templo1, templo2
+      ]
+    },
+    {
+      title: t('br_mesquita_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: brazilianbarbecueIcon,
+      iconBg: "#E6DEDD",
+      duration: `~1 ${t('hour')}`,
+      points: [
+        t('br_mesquita_t1'),
+        t('br_mesquita_t2'),
+        t('br_mesquita_t3'),
+      ],
+      images: [
+        comingSoon
+      ]
+    },
+    {
+      title: t('br_cated_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: brazilianbarbecueIcon,
+      iconBg: "#E6DEDD",
+      duration: `~1 ${t('hour')}`,
+      points: [
+        t('br_cated_t1'),
+        t('br_cated_t2'),
+        t('br_cated_t3'),
+      ],
+      images: [
+        comingSoon
+      ]
+    },
+    {
+      title: t('br_dreampark_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: brazilianbarbecueIcon,
+      iconBg: "#E6DEDD",
+      duration: `~1 ${t('hour')}`,
+      points: [
+        t('br_dreampark_t1'),
+        t('br_dreampark_t2'),
+        t('br_dreampark_t3'),
+      ],
+      images: [
+        comingSoon
+      ]
+    },
+    {
+      title: t('br_moviecar_title'),
+      countryKey: "br",
+      country: t('br'),
+      icon: brazilianbarbecueIcon,
+      iconBg: "#E6DEDD",
+      duration: `~1 ${t('hour')}`,
+      points: [
+        t('br_moviecar_t1'),
+        t('br_moviecar_t2'),
+        t('br_moviecar_t3'),
+      ],
+      images: [
+        comingSoon
+      ]
+    },
   ]
 } 
 
@@ -1494,7 +1590,6 @@ const paraguayRides = () => {
       points: [
         t('py_monday_t1'),
         t('py_monday_t2'),
-        t('py_monday_t3'),
       ],
       images: [
         comingSoon

@@ -14,6 +14,7 @@ const BaseProduct = ({ id }) => {
         }
         return foundProduct;
     }, null );
+    const isSingle = selectedProduct.images.length;
     const [lightboxController, setLightboxController] = useState({
         toggler: false,
         sourceIndex: 0
@@ -57,7 +58,9 @@ const BaseProduct = ({ id }) => {
                             src={image}
                             alt={`Image ${index + 1}`}
                             onClick={() => handleImageClick(index)}
-                            className="w-full lg:h-96 lg:rounded-3xl rounded-md"
+                            className={selectedProduct.images.length === 1 ? 
+                                "w-full lg:h-96 lg:rounded-3xl rounded-md lg:col-start-2" :
+                                "w-full lg:h-96 lg:rounded-3xl rounded-md"}
                             style={{ cursor: 'pointer' }}
                         />
                 ))}
