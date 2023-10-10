@@ -21,7 +21,7 @@ const Explore = () => {
 
 
   return (
-    <section className={`${styles.paddings} pt-64`} id="explore">
+    <section className={`${styles.paddings} lg:pt-64 pt-16 pb-16 lg:pb-2`} id="explore">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

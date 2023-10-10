@@ -11,7 +11,7 @@ const HtmlTooltip = styled(({ className, ...props }) => (
         [`& .${tooltipClasses.tooltip}`]: {
             backgroundColor: '#f5f5f9',
             color: 'rgba(0, 0, 0, 0.87)',
-            maxWidth: 220,
+            maxWidth: 300,
             fontSize: theme.typography.pxToRem(12),
             border: '1px solid #dadde9',
         },
@@ -41,6 +41,10 @@ const MapPin = ({ name, local, desc, keyword, rideIndex, path }) => {
         navigateTo(`/${path}/${rideIndex}`);
     };
 
+    const handleButtonClickPath = () => {
+        navigateTo(`/${path}/`);
+    };
+
     return (
         <g 
             onMouseEnter={handleMouseEnter}
@@ -59,21 +63,30 @@ const MapPin = ({ name, local, desc, keyword, rideIndex, path }) => {
             <HtmlTooltip
                 title={
                 <React.Fragment>
-                    <Typography color="inherit">{name}</Typography>
-                    <br/>
-                    <em>{desc}</em>
-                    {t('click')}
-                    <u className="cursor-pointer"> {keyword} </u>
-                    {t('map_tooltip')}
+                    <strong 
+                        className={ local === 'Brasil' ? 'text-green-700 cursor-pointer text-[20px]' :
+                        local === 'Argentina' ? 'text-blue-700 cursor-pointer text-[20px]' : 
+                        'text-red-700 cursor-pointer text-[20px]'}
+                    > {name} </strong>
                     <br/><br/>
-                    {t('map_tour')}
-                    <u 
-                        onClick={() => handleButtonClick()}
-                        className={ local === 'Brasil' ? 'text-green-700 cursor-pointer' :
-                                    local === 'Argentina' ? 'text-blue-700 cursor-pointer' : 
-                                    'text-red-700 cursor-pointer'
-                        }
-                    > {local}.</u>
+                    <div className="text-[15px]">
+                        <b>{desc}</b>
+                        <br/>
+                        {t('click')}
+                        <u onClick={() => handleButtonClick()} className="cursor-pointer"> {keyword} </u>
+                        {t('map_tooltip2')}
+                        {t('map_tooltip')}
+                        <br/><br/>
+                        {t('map_tour')}
+                        <u 
+                            onClick={() => handleButtonClickPath()}
+                            className={ local === 'Brasil' ? 'text-green-700 cursor-pointer' :
+                                        local === 'Argentina' ? 'text-blue-700 cursor-pointer' : 
+                                        'text-red-700 cursor-pointer'
+                            }
+                        > {local}.</u>
+                    </div>
+                    
                 </React.Fragment>
                 }
                 >
