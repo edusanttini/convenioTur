@@ -65,7 +65,7 @@ const Paraguay = () => {
         </motion.div>
       </div>
       <div className='pt-8'>
-        <section className={`${styles.paddings} relative z-10 pt-32`}>
+        <section className={`${styles.paddings} relative z-10 lg:pt-32`}>
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -75,12 +75,11 @@ const Paraguay = () => {
           >
             <motion.div
               variants={planetVariants('left')}
-              className={`flex-1 ${styles.flexCenter}`}
+              className={`flex-1 ${styles.flexCenter} mobile-hide`}
             >
               <FlagShape img={FLAGPYTXT}/>
             </motion.div>
             <motion.div
-              variants={fadeIn('left', 'tween', 0.2, 1)}
               className="flex-[0.75] flex justify-center flex-col"
             >
               <TypingTextGeneric title="| Paraguay" colorr="text-red-600"/>

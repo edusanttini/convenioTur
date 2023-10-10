@@ -66,7 +66,7 @@ const Brasil = () => {
         </motion.div>
       </div>
       <div className='pt-8'>
-        <section className={`${styles.paddings} relative z-10 pt-32`}>
+        <section className={`${styles.paddings} relative z-10 lg:pt-32`}>
           <motion.div
             variants={staggerContainer}
             initial="hidden"

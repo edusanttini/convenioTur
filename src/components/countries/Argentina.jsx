@@ -67,7 +67,7 @@ const Argentina = () => {
         </motion.div>
       </div>
       <div className='pt-8'>
-        <section className={`${styles.paddings} relative z-10 pt-32`}>
+        <section className={`${styles.paddings} relative z-10 lg:pt-32`}>
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -77,12 +77,11 @@ const Argentina = () => {
           >
             <motion.div
               variants={planetVariants('left')}
-              className={`flex-1 ${styles.flexCenter}`}
+              className={`flex-1 ${styles.flexCenter} mobile-hide`}
             >
               <FlagShape img={FLAGTXT}/>
             </motion.div>
             <motion.div
-              variants={fadeIn('left', 'tween', 0.2, 1)}
               className="flex-[0.75] flex justify-center flex-col"
             >
               <TypingTextGeneric title={`| ${t('arg')}`} colorr="text-blue-600"/>
@@ -101,7 +100,7 @@ const Argentina = () => {
         </section>
         <div className={`${styles.paddings} relative z-10`}>
           {argRides.map((ride, index) => (
-            <div id={`ride-point-${index}`} key={`rides-point-${index}`} className="pb-32">
+            <div id={`ride-point-${index}`} key={`rides-point-${index}`}>
               <RidesList
                 index={index}
                 ride={ride}
