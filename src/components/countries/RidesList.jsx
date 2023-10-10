@@ -36,11 +36,7 @@ const RidesList = ({index, ride}) => {
                             <div className={`pb-32 justify-center flex`}>
                                 <Carousel ride={ride}/>
                             </div>
-                            <motion.div className='custom-width pl-16'
-                                variants={fadeIn("down", "", 0.5, 0.5)}
-                                initial="hidden"
-                                whileInView="show"
-                                viewport={{ once: false, amount: 0.25 }}>
+                            <div>
                                 <Accordion>
                                     <AccordionSummary
                                         aria-controls="panel1a-content"
@@ -59,7 +55,7 @@ const RidesList = ({index, ride}) => {
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
-                            </motion.div>
+                            </div>
                         </div>
                     </div>
                 </section>

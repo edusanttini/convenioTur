@@ -76,12 +76,12 @@ const Brasil = () => {
           >
             <motion.div
               variants={planetVariants('left')}
-              className={`flex-1 ${styles.flexCenter}`}
+              className={`flex-1 ${styles.flexCenter} mobile-hide`}
             >
               <FlagShape img={FLAGBRTXT}/>
             </motion.div>
+
             <motion.div
-              variants={fadeIn('left', 'tween', 0.2, 1)}
               className="flex-[0.75] flex justify-center flex-col"
             >
               <TypingTextGeneric title="| Brasil" colorr="text-green-600"/>
