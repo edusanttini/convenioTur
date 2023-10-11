@@ -25,6 +25,7 @@
     "maath": "^0.5.2",
     "mdb-react-ui-kit": "^6.1.0",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-i18next": "^13.2.2",
     "react-parallax-tilt": "^1.7.154",
