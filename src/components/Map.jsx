@@ -10,10 +10,6 @@ import { useTranslation } from 'react-i18next';
 
 const Map = () => {
   const svgRef = useRef(null);
-  const [zoomFactor, setZoomFactor] = useState(1);
-  const [zoomOriginX, setZoomOriginX] = useState(0);
-  const [zoomOriginY, setZoomOriginY] = useState(0);
-  const [isZoomed, setIsZoomed] = useState(false);
   const { t } = useTranslation();
 
   return (

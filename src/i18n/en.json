@@ -156,7 +156,7 @@
     "br_fish_t1": "Motor skiffs equipped with special sonar, tackle and live bait.",
     "br_fish_t2": "The current and depth of the river facilitate the catching of dourado salmon, pacú, surubim.",
     "br_fish_t3": "On board refreshments included.",
-    "br_marco_title": "Three Borders",
+    "br_marco_title": "Landmark of the 3 borders",
     "br_marco_t1": "Enjoy the view from the observation deck at the “Meeting of the Waters” of the Iguassu and Paraná rivers where Brazil, Argentina and Paraguay form the Three Borders.",
     "br_marco_t2": "Three stone markers dating from 1916 designate the territory of each country.",
     "br_rural_title": "Rural Tour",
@@ -184,7 +184,6 @@
     "br_gaucho_t3": "You may join in on the spacious dance floor.",
     "br_gaucho_t4": "Afterwards, enjoy an exhibition of gaucho horsemanship.",
     "br_gaucho_t5": "Playground for the children.",
-
     "py_visit_title": "Visit to Paraguay",
     "py_visit_t1": "Cross the picturesque Friendship Bridge to Ciudad Del Este, Paraguay.",
     "py_visit_t2": "Ample time to shop for duty-free imported goods and local handicrafts.",
@@ -200,7 +199,7 @@
     "arg_marco_t1": "Comming soon...",
     "arg_marco_t2": "Comming soon...",
     "arg_marco_t3": "Comming soon...",
-    "br_templo_title": "Budhist temple (Chen Tien)",
+    "br_templo_title": "Budhist Temple (Chen Tien)",
     "br_templo_t1": "Comming soon...",
     "br_templo_t2": "Comming soon...",
     "br_templo_t3": "Comming soon...",
@@ -208,22 +207,43 @@
     "br_mesquita_t1": "Comming soon...",
     "br_mesquita_t2": "Comming soon...",
     "br_mesquita_t3": "Comming soon...",
-
     "br_cated_title": "Cathedral of Our Lady of Guadalupe",
     "br_cated_t1": "Comming soon...",
     "br_cated_t2": "Comming soon...",
     "br_cated_t3": "Comming soon...",
-
     "br_dreampark_title": "Dreams Park Show",
     "br_dreampark_t1": "Comming soon...",
     "br_dreampark_t2": "Comming soon...",
     "br_dreampark_t3": "Comming soon...",
-
     "br_moviecar_title": "Movie Car",
     "br_moviecar_t1": "Comming soon...",
     "br_moviecar_t2": "Comming soon...",
     "br_moviecar_t3": "Comming soon...",
-    "map_tooltip2": "for more information "
-    
+    "map_tooltip2": "for more information ",
+
+    "contact_send": "Send",
+    "contact_sending": "Sending...",
+    "ruins_title": "Jesuit Ruins",
+    "ruins_t1": "These missions, also known as reductions, were founded and organized by Jesuit priests. These 30 reductions span the current territories of Brazil, Paraguay, Argentina, and Uruguay. There were indigenous peoples of different races in these missions, but the majority were Guarani.",
+    "ruins_t2": "The Guarani were the first to feel European influence with the arrival of Spanish Jesuit priests in 1626.",
+    "ruins_t3": "The Jesuits arrived in the region with the intention of catechizing and 'civilizing' under Spanish authorities. However, staying was an oxymoron. Conflicts between bandits and natives were common in the 17th century.",
+    "ruins_t4": "The conflict was characterized by the destruction of the mission and the first exodus of the Guarani people. In times of peace, the indigenous people returned to their places of origin with the support of the Jesuits.",
+    "ruins_t5": "One of the challenges for the Jesuit priests was to convince the indigenous peoples of the need for a sedentary life and monogamy. The Guarani are nomadic people who practice polygamy. Additionally, they were polytheistic.",
+    "here": "Here",
+    "macuco_desc": "Up for a daring water challenge?",
+    "br_marco_desc": "Ready for a leisurely exploration of local culture?",
+    "br_fall_desc": "Feeling a little adventurous?",
+    "arg_fall_title": "The Argentine Falls",
+    "birdp_desc": "In the mood for an up-close encounter with exotic creatures?",
+    "helip_desc": "In the mood for a trip to the sky?",
+    "moviec_desc": "Ready to rev up your curiosity and explore the fascinating world of cars?",
+    "bertoni_desc": "Up for a quiet journey through rich heritage and traditions?",
+    "dreamp_desc": "Get up close and personal with your favorite historical and pop culture icons.",
+    "itaipu_desc": "Intrigued by sustainable energy? Discover the powerhouse of Itaipu Dam!",
+    "templo_desc": "Ready to embrace culture in a peaceful ambiance?",
+    "mesq_desc": "Want to immerse yourself in tranquility and culture?",
+    "cath_desc": "Craving a calm cultural escapade?",
+    "moday_desc": "Feeling like trying something new?"
+
 
 }
