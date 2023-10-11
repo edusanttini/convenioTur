@@ -80,7 +80,6 @@
     "example": "example@conveniotur.com",
     "message": "Message",
     "contact_tell_more": "Tell us more about you...",
-
     "arg_title": "Get to know Argentina's best attractions",
     "star_steps_first": "Scroll down the page to look for our tours",
     "star_steps_sec": "Find a tour that you might be interested in",
@@ -220,7 +219,6 @@
     "br_moviecar_t2": "Comming soon...",
     "br_moviecar_t3": "Comming soon...",
     "map_tooltip2": "for more information ",
-
     "contact_send": "Send",
     "contact_sending": "Sending...",
     "ruins_title": "Jesuit Ruins",
@@ -243,7 +241,7 @@
     "templo_desc": "Ready to embrace culture in a peaceful ambiance?",
     "mesq_desc": "Want to immerse yourself in tranquility and culture?",
     "cath_desc": "Craving a calm cultural escapade?",
-    "moday_desc": "Feeling like trying something new?"
-
-
+    "moday_desc": "Feeling like trying something new?",
+    "br_title": "Get to know Brasil's best attractions",
+    "py_title": "Get to know Paraguay's best attractions"
 }

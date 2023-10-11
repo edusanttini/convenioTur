@@ -11,6 +11,7 @@ import { bgGrayGradientStyle } from '../../globalColorScheme';
 import FlagShape from "./FlagShape";
 import { FLAGBRTXT, FLAGTXT } from "../Util/base64Images";
 import { useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const StartSteps = ({ number, text }) => (
   <div className={`${styles.flexCenter} flex-row`}>
@@ -32,6 +33,7 @@ const Brasil = () => {
   const { rideIndex } = useParams();
   const starFeatures = startingFeatures();
   const brRides = brasilRides();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const rideElement = document.getElementById(rideIndex);
@@ -84,8 +86,8 @@ const Brasil = () => {
             <motion.div
               className="flex-[0.75] flex justify-center flex-col"
             >
-              <TypingTextGeneric title="| Brasil" colorr="text-green-600"/>
-              <TitleText title={<>Get to know Brasil's best attractions</>} />
+              <TypingTextGeneric title={`| ${t('br')}`} colorr="text-green-600"/>
+              <TitleText title={<>{t('br_title')}</>} />
               <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
                 {starFeatures.map((feature, index) => (
                   <StartSteps
