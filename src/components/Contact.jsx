@@ -124,7 +124,7 @@ const Contact = () => {
             type='submit'
             className='bg-neutral-900 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
-            {loading ? "Sending..." : "Send"}
+            {loading ? t('contact_sending') : t('contact_send')}
           </button>
         </form>
       </motion.div>
