@@ -11,13 +11,13 @@ const HtmlTooltip = styled(({ className, ...props }) => (
         [`& .${tooltipClasses.tooltip}`]: {
             backgroundColor: '#f5f5f9',
             color: 'rgba(0, 0, 0, 0.87)',
-            maxWidth: 300,
+            maxWidth: 380,
             fontSize: theme.typography.pxToRem(12),
             border: '1px solid #dadde9',
         },
 }));
 
-const MapPin = ({ name, local, desc, keyword, rideIndex, path }) => {
+const MapPin = ({ name, local, desc, keyword, rideIndex, path, id, img}) => {
     const [isMouseEntered, setIsMouseEntered] = useState(false);
     const [width, setWidth] = useState(280);
     const [height, setHeight] = useState(350);
@@ -62,34 +62,51 @@ const MapPin = ({ name, local, desc, keyword, rideIndex, path }) => {
                 
             <HtmlTooltip
                 title={
-                <React.Fragment>
-                    <strong 
-                        className={ local === 'Brasil' ? 'text-green-700 cursor-pointer text-[20px]' :
-                        local === 'Argentina' ? 'text-blue-700 cursor-pointer text-[20px]' : 
-                        'text-red-700 cursor-pointer text-[20px]'}
-                    > {name} </strong>
-                    <br/><br/>
-                    <div className="text-[15px]">
-                        <b>{desc}</b>
-                        <br/>
-                        {t('click')}
-                        <u onClick={() => handleButtonClick()} className="cursor-pointer"> {keyword} </u>
-                        {t('map_tooltip2')}
-                        {t('map_tooltip')}
+                    <React.Fragment>
+                        <strong 
+                            className={ local === 'Brasil' ? 'text-green-700 text-[20px]' :
+                            local === 'Argentina' ? 'text-blue-700 text-[20px]' : 
+                            'text-red-700 text-[20px]'}
+                        > {name} </strong>
                         <br/><br/>
-                        {t('map_tour')}
-                        <u 
-                            onClick={() => handleButtonClickPath()}
-                            className={ local === 'Brasil' ? 'text-green-700 cursor-pointer' :
-                                        local === 'Argentina' ? 'text-blue-700 cursor-pointer' : 
-                                        'text-red-700 cursor-pointer'
-                            }
-                        > {local}.</u>
-                    </div>
-                    
-                </React.Fragment>
+                        <div className="text-[15px]">
+                            {id === 'ruins' && (
+                                <div>
+                                    {desc.map((point, index) => (
+                                    <Typography variant="body1" sx={{ textIndent: '20px' }} key={index}>
+                                            <b> {point} </b>
+                                    </Typography > 
+                                    ))}
+                                    <br/>
+                                </div>
+                            )}
+                            {id != 'ruins' && (
+                                <div>
+                                    <b>{desc}</b>
+                                    <br/>
+                                    {t('click')}
+                                    <u onClick={() => handleButtonClick()} className="cursor-pointer"> {keyword} </u>
+                                    {t('map_tooltip2')}
+                                    {t('map_tooltip')}
+                                    <br/><br/>
+                                    <div className="">
+                                        <img className="rounded-3xl max-h-64 w-full object-none object-center " src={img}/>
+                                    </div>
+                                    <br/><br/>
+                                    {t('map_tour')}
+                                    <u 
+                                        onClick={() => handleButtonClickPath()}
+                                        className={ local === 'Brasil' ? 'text-green-700 cursor-pointer' :
+                                                    local === 'Argentina' ? 'text-blue-700 cursor-pointer' : 
+                                                    'text-red-700 cursor-pointer'
+                                        }
+                                    > {local}.</u>
+                                </div>
+                            )}
+                        </div>
+                    </React.Fragment>
                 }
-                >
+            >
                 <rect
                     x="0"
                     y="0"
@@ -122,7 +139,7 @@ const MapSVG = () => {
                 {/* Location Pins */}
                 {map.map((pin, index) => (
                     <g key={index} transform={pin.coordinates}>
-                        <MapPin name={pin.name} local={pin.local} desc={pin.description} keyword={pin.keyword} rideIndex={pin.rideIndex} path={pin.path} />
+                        <MapPin name={pin.name} local={pin.local} desc={pin.description} keyword={pin.keyword} rideIndex={pin.rideIndex} path={pin.path} id={pin.id} img={pin.image}/>
                     </g>
                 ))}
             </g>

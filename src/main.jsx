@@ -22,7 +22,6 @@ export default function Main() {
     <React.StrictMode>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />}/>
           <Route index element={<App/>}/>
           <Route path="/eventsandincentives" element={<EventsAndIncentives/>}/>
           <Route path="/naturetours" element={<NatureTours/>}/>

@@ -977,6 +977,7 @@ const projects = [
 
 const map = [
   {
+    id: "ruins",
     name: "Ruínas Jesuíticas",
     local: "Brasil",
     description: [
@@ -989,152 +990,185 @@ const map = [
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,676.78,2199.55)",
     rideIndex: "ride-point-1",
-    path: "br"
+    path: "br",
+    image: cataratas01
   },
   {
+    id: "macuco",
     name: "Macuco Safari",
     local: "Brasil",
     description: "Up for a daring water challenge? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1854.78,1969.55)",
     rideIndex: "ride-point-1",
-    path: "br"
+    path: "br",
+    image: macuco1
   },
   {
+    id: "marcobr",
     name: "Marco das 3 fronteiras",
     local: "Brasil",
     description: "Ready for a leisurely exploration of local culture? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1216.1,1565.53)",
     rideIndex: "ride-point-10",
-    path: "br"
+    path: "br",
+    image: borders1
   },
   {
+    id: "marcoarg",
     name: "Hito de las 3 fronteiras",
     local: "Argentina",
     description: "Ready for a leisurely exploration of local culture?",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1246.29,1702.09)",
     rideIndex: "ride-point-4",
-    path: "arg"
+    path: "arg",
+    image: bordersIcon
   },
   {
+    id: "fallbr",
     name: "Iguassu Falls",
     local: "Brasil",
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1900.29,2036.3)",
     rideIndex: "ride-point-0",
-    path: "br"
+    path: "br",
+    image: cataratas02
   },
   {
+    id: "fallarg",
     name: "Iguassu Falls",
     local: "Argentina",
     description: "Feeling a little adventurous? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1798.38,2071.09)",
     rideIndex: "ride-point-0",
-    path: "arg"
+    path: "arg",
+    image: cataratasArg
   },
   {
+    id: "birdp",
     name: "Parque das Aves",
     local: "Brasil",
     description: "In the mood for an up-close encounter with exotic creatures?",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1830.96,1869.4)",
     rideIndex: "ride-point-2",
-    path: "br"
+    path: "br",
+    image: birdpark
   },
   {
+    id: "helis",
     name: "Helisul panoramic",
     local: "Brasil",
     description: "In the mood for a trip to the sky?",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1753.1,1715.67)",
     rideIndex: "ride-point-3",
-    path: "br"
+    path: "br",
+    image: heli
   },
   {
+    id: "moviec",
     name: "Movie car",
     local: "Brasil",
     description: "Ready to rev up your curiosity and explore the fascinating world of cars?",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1658.02,1605.18)",
     rideIndex: "ride-point-18",
-    path: "br"
+    path: "br",
+    image: ""
   },
   {
+    id: "bertoni",
     name: "Navegação - rios Paraná e Iguaçu",
     local: "Brasil",
     description: "Up for a quiet journey through rich heritage and traditions?",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1224.67,1326.56)",
     rideIndex: "ride-point-8",
-    path: "br"
+    path: "br",
+    image: bertoniMuseum
   },
   {
+    id: "dreamsp",
     name: "Dreams Park Show",
     local: "Brasil",
     description: "Get up close and personal with your favorite historical and pop culture icons.",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1558.95,1644.01)",
     rideIndex: "ride-point-17",
-    path: "br"
+    path: "br",
+    image: ""
   },
   {
+    id: "itaipu",
     name: "Itaipu",
     local: "Brasil",
     description: "Intrigued by sustainable energy? Discover the powerhouse of Itaipu Dam!",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1299.54,947.249)",
     rideIndex: "ride-point-6",
-    path: "br"
+    path: "br",
+    image: itaipu1
   },
   {
+    id: "templob",
     name: "Templo Budista (chen tien)",
     local: "Brasil",
     description: "Ready to embrace culture in a peaceful ambiance?",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1149.62,1110.39)",
     rideIndex: "ride-point-14",
-    path: "br"
+    path: "br",
+    image: ""
   },
   {
+    id: "mesq",
     name: "Mesquita Muçulmana",
     local: "Brasil",
     description: "Want to immerse yourself in tranquility and culture?",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1245.69,1167.23)",
     rideIndex: "ride-point-15",
-    path: "br"
+    path: "br",
+    image: ""
   },
   {
+    id: "cath",
     name: "Catedral Nossa Sra. de Guadalupe",
     local: "Brasil",
     description: "Craving a calm cultural escapade?",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1367.79,1134.6)",
     rideIndex: "ride-point-16",
-    path: "br"
+    path: "br",
+    image: ""
   },
   {
+    id: "marcopy",
     name: "Hito de las 3 fronteiras",
     local: "Paraguay",
     description: "Ready for a leisurely exploration of local culture? ",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1143.44,1579.4)",
     rideIndex: "ride-point-1",
-    path: "py"
+    path: "py",
+    image: bordersIcon
   },
   {
+    id: "moday",
     name: "Saltos de Monday",
     local: "Paraguay",
     description: "Feeling like trying something new?",
     keyword: "here",
     coordinates: "matrix(0.26779,0,0,0.26779,1042.33,1530.44)",
     rideIndex: "ride-point-2",
-    path: "py"
-  },
+    path: "py",
+    image: ""
+  }
 ];
 
 const argentinaRides = () => {
