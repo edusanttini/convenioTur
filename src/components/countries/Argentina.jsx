@@ -1,15 +1,14 @@
 'use client';
 import React, { useEffect } from "react";
 import { motion } from 'framer-motion';
-
 import styles from '../../stylesCountries';
-import { argentinaRides, startingFeatures } from '../../constants';
+import { brasilRides, startingFeatures } from '../../constants';
 import { Navbar, RidesList, TitleText, TypingTextGeneric } from '../../components';
-import { staggerContainer, fadeIn, planetVariants, slideIn } from '../../utils/motion';
-import { flagarg, flagbr } from '../../assets';
+import { staggerContainer, planetVariants, slideIn } from '../../utils/motion';
+import { flagbr } from '../../assets';
 import { bgGrayGradientStyle } from '../../globalColorScheme';
 import FlagShape from "./FlagShape";
-import { FLAGTXT } from "../Util/Base64ArgFlag";
+import { FLAGBRTXT } from "../Util/Base64BrFlag";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -32,7 +31,7 @@ const Argentina = () => {
   const { rideIndex } = useParams();
   const { t } = useTranslation()
   const starFeatures = startingFeatures();
-  const argRides = argentinaRides();
+  const argRides = brasilRides();
 
   useEffect(() => {
     const rideElement = document.getElementById(rideIndex);
@@ -59,7 +58,7 @@ const Argentina = () => {
 
           <div className="relative">
             <img
-              src={flagarg}
+              src={flagbr}
               alt="hero_cover"
               className="w-5/6 sm:h-[200px] h-[150px] object-cover rounded-tr-[240px] z-10 relative right-0 top-0"
             />
@@ -79,7 +78,7 @@ const Argentina = () => {
               variants={planetVariants('left')}
               className={`flex-1 ${styles.flexCenter} mobile-hide`}
             >
-              <FlagShape img={FLAGTXT}/>
+              <FlagShape img={FLAGBRTXT}/>
             </motion.div>
             <motion.div
               className="flex-[0.75] flex justify-center flex-col"

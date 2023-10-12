@@ -4,7 +4,6 @@ import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { JaguarCanvas } from "./canvas";
-import { TestCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { bgDarkGrayGradientStyle, bgRedGradientStyle, bgSilverGradientStyle, bgYellowGradientStyle } from "../globalColorScheme";

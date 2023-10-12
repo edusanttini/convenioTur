@@ -1,4 +1,4 @@
-import { JaguarCanvas, BallCanvas, StarsCanvas, TestCanvas } from './canvas';
+import { JaguarCanvas, StarsCanvas } from './canvas';
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Overview from "./Overview";
@@ -45,14 +45,12 @@ export {
   Feedbacks,
   Contact,
   CanvasLoader,
-  BallCanvas,
   StarsCanvas,
   Explore,
   ExploreCard,
   TypingText,
   TitleText,
   JaguarCanvas,
-  TestCanvas,
   AppProducts,
   EventsAndIncentives,
   NatureTours,
