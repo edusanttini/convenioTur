@@ -19,7 +19,7 @@ const styles = {
   sectionSubTextGray:
      "text-gray-700 sm:text-[18px] text-[14px] uppercase tracking-wider",
     sectionHeadSubText:
-    "text-white font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[10px]",
+    "text-white font-black md:text-[40px] sm:text-[30px] xs:text-[20px] text-[20px]",
 };
 
 export { styles };

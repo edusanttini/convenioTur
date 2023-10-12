@@ -138,12 +138,6 @@ const services = () => {
       url: "naturetours",
     },
     {
-      title: t('service_card_cultural'),
-      icon: katalogo,
-      img: cardTechnologic,
-      url: "culturaltours",
-    },
-    {
       title: t('service_card_Transfer'),
       icon: transferIcon,
       img: cardTransfer,
