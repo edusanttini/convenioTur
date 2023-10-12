@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { isMobile } from "react-device-detect";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close, headerLogo } from "../assets";
@@ -84,21 +84,23 @@ const Navbar = ({ isMain }) => {
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {links.map(link => (
-                <div key={link.id}>
-                  <li
-                  className={`clickable-element ${
-                    active === link.title ? "text-yellow-300" : "text-secondary"
-                  }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(link.title);
-                  }}
-                  >
-                  { isMain ? 
-                    <a href={`#${link.id}`}>{link.title}</a> :
-                    <Link to={`/#${link.id}`}>{link.title}</Link> }
-                  </li>
-                </div>
+                isMobile && link.id === 'map' ? null : (
+                  <div key={link.id}>
+                    <li
+                    className={`clickable-element ${
+                      active === link.title ? "text-yellow-300" : "text-secondary"
+                    }`}
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(link.title);
+                    }}
+                    >
+                    { isMain ? 
+                      <a href={`#${link.id}`}>{link.title}</a> :
+                      <Link to={`/#${link.id}`}>{link.title}</Link> }
+                    </li>
+                  </div>
+                )
               ))}
             </ul>
           </div>
