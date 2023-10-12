@@ -9,7 +9,7 @@ import { staggerContainer, fadeIn, planetVariants, slideIn } from '../../utils/m
 import { flagarg, flagbr } from '../../assets';
 import { bgGrayGradientStyle } from '../../globalColorScheme';
 import FlagShape from "./FlagShape";
-import { FLAGTXT } from "../Util/base64Images";
+import { FLAGTXT } from "../Util/Base64ArgFlag";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
