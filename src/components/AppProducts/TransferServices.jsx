@@ -54,7 +54,7 @@ const TransferServices = () => {
                         </p>
                     </motion.div>
                 </div>
-                <div className="text-center pt-32 pl-32 pr-32 pl-sm-4 pr-sm-4 pt-sm-16">
+                <div className="text-center pt-32 lg:pl-32 lg:pr-32 pt-sm-16 pr-4 pl-4">
                     <motion.div>
                         <h2 className={`text-black font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] text-center pb-16`}>
                             Our fleet
@@ -75,7 +75,7 @@ const TransferServices = () => {
                             All cars are equipped with air conditioning, and their appearance, cleanliness, and maintenance ensure an impeccable ride."
                         </p>
                     </motion.div>
-                    <div className="grid lg:grid-cols-3 gap-4 pt-16 pb-16">
+                    <div className="grid lg:grid-cols-3 gap-4 pt-16 pb-16 pr-4">
                         {fleetImgs.map((image, index) => (
                             <img
                             className={fleetImgs.length === 1 ? 

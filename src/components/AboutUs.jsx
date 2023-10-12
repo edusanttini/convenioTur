@@ -6,6 +6,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { yellowText } from "../globalColorScheme";
 import {CEOTxt} from "./Util/base64Images"
 import { useTranslation } from "react-i18next";
+import { enio } from "../assets";
 
 
 const Papyrus = () => {
@@ -245,7 +246,7 @@ const AboutUs = () => {
 
             <motion.div
              variants={textVariant()}
-             className="pt-32 text-center pb-16"
+             className="lg:pt-32 pt-8 text-center pb-16"
              initial="hidden"
              whileInView="show"
              viewport={{ once: false, amount: 0.25 }}
@@ -260,6 +261,7 @@ const AboutUs = () => {
                 <Papyrus />
             </div>
             <div className="block md:hidden">
+                <img src={enio} />
                 <h2 className="text-[20px]" >
                     {t('txt_all_title')}
                 </h2>
