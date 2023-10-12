@@ -372,3 +372,10 @@ body {
   background-color: #a0a0a0; /* Color of the thumb */
   border-radius: 6px;  /* Rounded corners for the thumb */
 }
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

@@ -56,17 +56,28 @@ const Jaguar = () => {
 };
 
 const JaguarCanvas = () => {
+  const isLowPerformanceDevice = () => {
+    const nav = window.navigator;
+    console.log('hardware', nav.hardwareConcurrency)
+    console.log('devmem', nav.deviceMemory)
+    return nav && (nav.hardwareConcurrency <=2 || nav.deviceMemory <=4);
+  }
+
   const position = isMobile ? [25, 5, 5] : [20, 3, 5];
   const fov = isMobile ? 15 : 25;
   return (
-    <Canvas dpr={[1, 2]} camera={{ position: position, fov: fov }} gl={{ preserveDrawingBuffer: true }}>
-      <ambientLight intensity={1}/>
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls autoRotate autoRotateSpeed={0.05} enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
-        <Jaguar/>
-      </Suspense>
-      <Preload all />
-    </Canvas>
+    isLowPerformanceDevice() ? (
+      <div>This device may have trouble rendering the scene.</div>
+    ) : (
+      <Canvas dpr={[1, 2]} camera={{ position: position, fov: fov }} gl={{ preserveDrawingBuffer: true }}>
+        <ambientLight intensity={1}/>
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls autoRotate autoRotateSpeed={0.05} enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
+          <Jaguar/>
+        </Suspense>
+        <Preload all />
+      </Canvas>
+    )
   );
 };
 

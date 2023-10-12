@@ -18,7 +18,7 @@ const ServiceCard = ({ index, title, icon, url, img }) => {
     return (
       <Tilt className='xs:w-[250px] w-full clickable-element'>
         <motion.div
-          variants={fadeIn("right", "", index * 0.5, 0.5)}
+          variants={fadeIn("right", "", index * 0.1, 0.5)}
           className='w-full p-[1px] rounded-[20px] shadow-card relative overflow-hidden'
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}

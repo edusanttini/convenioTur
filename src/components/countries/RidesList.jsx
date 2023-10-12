@@ -20,7 +20,7 @@ const RidesList = ({index, ride}) => {
     return (
         <>
             <div className=' w-full'>
-                <section className={`${styles.paddings} relative z-10 pt-32 `}
+                <section className={`${styles.paddings} relative z-10 lg:pt-32 `}
                     style={parentContainerStyle}>
                     <div
                         className={`${styles.innerWidth} mx-auto lg:flex-row flex-col gap-8`}
@@ -33,7 +33,7 @@ const RidesList = ({index, ride}) => {
                                          ride.countryKey === 'arg' ? 'text-blue-600':
                                          'text-red-600' } />
                             <TitleText title={<>{ride.title}</>} />
-                            <div className={`pb-32 justify-center flex`}>
+                            <div className={`lg:pb-32 pb-8 pt-8 justify-center flex`}>
                                 <Carousel ride={ride}/>
                             </div>
                             <div>
