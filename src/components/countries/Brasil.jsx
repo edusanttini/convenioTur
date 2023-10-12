@@ -46,7 +46,7 @@ const Brasil = () => {
   
   return (
     <div className='relative z-0 w-full' style={bgGrayGradientStyle}>
-      {/*<div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+      <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
         <Navbar isMain={false}/>
       </div>
       <div className='pt-32'>
@@ -110,7 +110,7 @@ const Brasil = () => {
             </div>
           ))}
         </div>
-      </div>*/}
+      </div>
     </div>
   )
 };
