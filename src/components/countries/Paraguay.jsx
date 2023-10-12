@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect } from "react";
 import { motion } from 'framer-motion';
-
 import styles from '../../stylesCountries';
 import { paraguayRides, startingFeatures } from '../../constants';
 import { Navbar, RidesList, TitleText, TypingTextGeneric } from '../../components';
@@ -44,7 +43,7 @@ const Paraguay = () => {
   }, [rideIndex]);
   
   return (
-    <div className='relative z-0 w-full' style={bgGrayGradientStyle}>
+    <div className='relative w-full' style={bgGrayGradientStyle}>
       <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
         <Navbar isMain={false}/>
       </div>
@@ -55,19 +54,19 @@ const Paraguay = () => {
           whileInView="show"
           className="relative w-full md:-mt-[20px] -mt-[12px]"
         >
-          <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
+          <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] -top-[30px]" />
 
           <div className="relative">
             <img
               src={flagpy}
               alt="hero_cover"
-              className="w-5/6 sm:h-[200px] h-[150px] object-cover rounded-tr-[240px] z-10 relative right-0 top-0"
+              className="w-5/6 sm:h-[200px] h-[150px] object-cover rounded-tr-[240px] relative right-0 top-0"
             />
           </div>
         </motion.div>
       </div>
       <div className='pt-8'>
-        <section className={`${styles.paddings} relative z-10`}>
+        <section className={`${styles.paddings} relative `}>
           <motion.div
             variants={staggerContainer}
             initial="hidden"
@@ -98,7 +97,7 @@ const Paraguay = () => {
             </motion.div>
           </motion.div>
         </section>
-        <div className={`${styles.paddings} relative z-10`}>
+        <div className={`${styles.paddings} relative`}>
           {pyRides.map((ride, index) => (
             <div id={`ride-point-${index}`} key={`rides-point-${index}`}>
               <RidesList

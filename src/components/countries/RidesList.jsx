@@ -20,7 +20,7 @@ const RidesList = ({index, ride}) => {
     return (
         <>
             <div className=' w-full'>
-                <section className={`${styles.paddings} relative z-10 lg:pt-32 `}
+                <section className={`${styles.paddings} relative lg:pt-32 `}
                     style={parentContainerStyle}>
                     <div
                         className={`${styles.innerWidth} mx-auto lg:flex-row flex-col gap-8`}

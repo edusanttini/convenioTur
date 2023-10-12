@@ -45,7 +45,7 @@ const Brasil = () => {
   }, [rideIndex]);
   
   return (
-    <div className='relative z-0 w-full' style={bgGrayGradientStyle}>
+    <div className='relative w-full' style={bgGrayGradientStyle}>
       <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
         <Navbar isMain={false}/>
       </div>
@@ -56,13 +56,13 @@ const Brasil = () => {
           whileInView="show"
           className="relative w-full md:-mt-[20px] -mt-[12px]"
         >
-          <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
+          <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] -top-[30px]" />
 
           <div className="relative">
             <img
               src={flagbr}
               alt="hero_cover"
-              className="w-5/6 sm:h-[200px] h-[150px] object-cover rounded-tr-[240px] z-10 relative right-0 top-0"
+              className="w-5/6 sm:h-[200px] h-[150px] object-cover rounded-tr-[240px] relative right-0 top-0"
             />
           </div>
         </motion.div>
@@ -100,7 +100,7 @@ const Brasil = () => {
             </motion.div>
           </motion.div>
         </section>
-        <div className={`${styles.paddings} relative z-10`}>
+        <div className={`${styles.paddings} relative`}>
           {brRides.map((ride, index) => (
             <div id={`ride-point-${index}`} key={`rides-point-${index}`}>
               <RidesList
