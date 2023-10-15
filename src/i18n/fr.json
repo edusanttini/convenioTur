@@ -23,7 +23,7 @@
     "service_card_events": "Événements et Incitations",
     "service_card_nature": "Cataratas et Excursions Nature",
     "service_card_cultural": "Tours Technologiques/Culturels",
-    "service_card_Transfer": "Services de Transfert/Réceptifs",
+    "service_card_Transfer": "Services de Transfert & Réceptifs",
     "service_card_gastronomy": "Gastronomie et Divertissement",
     "service_card_hotels": "Hôtels",
     "explore_sub_title": "| Le Monde",
@@ -297,5 +297,14 @@
     "nature_others_t7" : "Rafting sur l'Iguassu - Quatre kilomètres de rapides en radeaux gonflables - les participants rament ensemble.",
     "nature_others_t8" : "Rappel et Descente en Cascades - Pratiquez le rappel dans le canyon de l'Iguassu depuis une hauteur de 55 m avec les chutes en arrière-plan ! Lors d'excursions spéciales, pratiquez le « Cascading » dans une cascade locale.",
     "nature_others_t9" : "Safari dans la Jungle - Parc argentin - Des véhicules 4x4 spéciaux explorent le sentier exclusif Yacaratía avec de courtes promenades et des explications par un guide jungle professionnel.",
-    "nature_others_t10" : "Sentier Martins - Visitez une zone éloignée du parc national lors d'une sortie en kayak (canard). Snack inclus."
+    "nature_others_t10" : "Sentier Martins - Visitez une zone éloignée du parc national lors d'une sortie en kayak (canard). Snack inclus.",
+    "transfer_t1": "Notre agence est en contact constant avec les principales compagnies aériennes qui opèrent dans notre région.",
+    "transfer_t2": "Nous sommes spécialisés dans la garantie des liaisons aériennes et dans le respect strict de tous les itinéraires. Tous nos guides sont officiellement enregistrés et suivent un programme de formation approfondi offrant un service professionnel à tous les niveaux pendant le séjour de nos clients.",
+    "transfer_t3": "Contactez-nous pour des devis pour des charters spéciaux d'hélicoptères et d'avions.",
+    "transfer_t4": "Nous sommes structurés pour opérer des comités et des délégations VIP spéciaux.",
+    "transfer_subtitle": "Notre flotte",
+    "transfer_t5": "Nous maintenons un standard international élevé grâce à des actions telles que le renouvellement constant de la flotte de voitures et d'autobus, et l'amélioration continue des conducteurs avec le plus haut degré de spécialisation et d'éducation sur le marché.",
+    "transfer_t6": "Nous sommes la seule entreprise à Foz do Iguaçu à avoir une assurance internationale pour la flotte de voitures et d'autobus.",
+    "transfer_t7": "Convenio-Tur garantit le meilleur transport en toute sécurité et confort que la région puisse offrir.",
+    "transfer_t8": "Toutes les voitures sont équipées de la climatisation, et leur apparence, leur propreté et leur entretien garantissent une expérience impeccable."
 }

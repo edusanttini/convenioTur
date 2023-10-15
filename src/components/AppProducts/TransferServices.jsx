@@ -6,9 +6,10 @@ import { styles } from "../../styles";
 import { bgGrayGradientStyle } from "../../globalColorScheme";
 import { yellowText } from "../../globalColorScheme";
 import { comingSoon } from "../../assets";
+import { useTranslation } from "react-i18next";
 
 const TransferServices = () => {
-
+    const { t } = useTranslation();
     const fleetImgs = [ comingSoon ];
 
     useEffect(() => {
@@ -31,49 +32,27 @@ const TransferServices = () => {
                         >
                         <h2 className={`${styles.sectionHeadText} text-center`}
                         style={yellowText}>
-                        Transfer & Receptives Services
+                        {t('service_card_Transfer')}
                         </h2>
                     </motion.div>
                 </div>
                 <div className="text-center pt-32 pl-32 pr-32 pl-sm-4 pr-sm-4 pt-sm-16">
                     <motion.div>
-                        <p>
-                            Our agency is in constant contact with the major air carriers who operate in our region.
-                        </p>
-                        <p className="pt-8">
-                            We are specialists in guaranteeing flight connections and in making sure that
-                            all itineraries strictly maintained. All of our guides are officially registered
-                            and undergo an extensive training program providing professional service at all
-                            levels during our clients’ stay.
-                        </p>
-                        <p className="pt-8">
-                            Contact us for quotes for special charters of helicopters and airplanes.
-                        </p>
-                        <p className="pt-8">
-                            We are structured to operate special VIP committees and delegations.
-                        </p>
+                        <p>{t('transfer_t1')}</p>
+                        <p className="pt-8">{t('transfer_t2')}</p>
+                        <p className="pt-8">{t('transfer_t3')}</p>
+                        <p className="pt-8">{t('transfer_t4')}</p>
                     </motion.div>
                 </div>
                 <div className="text-center pt-32 lg:pl-32 lg:pr-32 pt-sm-16 pr-4 pl-4">
                     <motion.div>
                         <h2 className={`text-black font-black md:text-[50px] sm:text-[40px] xs:text-[30px] text-[20px] text-center pb-16`}>
-                            Our fleet
+                            {t('transfer_subtitle')}
                         </h2>
-                        <p>
-                            We maintain a high international standard through actions such as the constant renewal
-                            of the fleet of cars and buses, and the continuous improvement of drivers with the
-                            highest degree of specialization and education in the market.
-                        </p>
-                        <p className="pt-8">
-                            We are the only company in Foz do Iguaçu that has international insurance for the fleet
-                            of cars and buses.
-                        </p>
-                        <p className="pt-8">
-                            Convenio-Tur ensures the best transportation with safety and comfort that the region can offer.
-                        </p>
-                        <p className="pt-8">
-                            All cars are equipped with air conditioning, and their appearance, cleanliness, and maintenance ensure an impeccable ride."
-                        </p>
+                        <p>{t('transfer_t5')}</p>
+                        <p className="pt-8">{t('transfer_t6')}</p>
+                        <p className="pt-8">{t('transfer_t7')}</p>
+                        <p className="pt-8">{t('transfer_t8')}</p>
                     </motion.div>
                     <div className="grid lg:grid-cols-3 gap-4 pt-16 pb-16 pr-4">
                         {fleetImgs.map((image, index) => (

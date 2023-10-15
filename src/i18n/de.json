@@ -23,7 +23,7 @@
     "service_card_events": "Veranstaltungen und Anreize",
     "service_card_nature": "Cataratas und Naturtouren",
     "service_card_cultural": "Technologische/Kulturelle Touren",
-    "service_card_Transfer": "Transfer/Empfangsdienste",
+    "service_card_Transfer": "Transfer & Empfangsdienste",
     "service_card_gastronomy": "Gastronomie und Unterhaltung",
     "service_card_hotels": "Hotels",
     "explore_sub_title": "| Die Welt",
@@ -297,5 +297,15 @@
     "nature_others_t7" : "Rafting auf dem Iguassu - Vier Kilometer Stromschnellen in aufblasbaren Flößen - die Teilnehmer rudern gemeinsam.",
     "nature_others_t8" : "Rappel und Abseilen - Üben Sie Abseilen im Iguassu Canyon aus einer Höhe von 55 m mit den Cataratas im Hintergrund! In speziellen Ausflügen üben Sie „Cascading“ an einem örtlichen Wasserfall.",
     "nature_others_t9" : "Selva Safari - Argentinischer Park - Spezielle 4x4-Fahrzeuge erkunden den exklusiven Yacaratía-Trail mit kurzen Spaziergängen und Erläuterungen durch einen professionellen Dschungelführer.",
-    "nature_others_t10" : "Martins Trail - Besuchen Sie einen abgelegenen Bereich des Nationalparks mit einer Kajak (Enten)-Tour. Snack inbegriffen."
+    "nature_others_t10" : "Martins Trail - Besuchen Sie einen abgelegenen Bereich des Nationalparks mit einer Kajak (Enten)-Tour. Snack inbegriffen.",
+    "transfer_t1": "Unsere Agentur steht in ständigem Kontakt mit den großen Fluggesellschaften, die in unserer Region tätig sind.",
+    "transfer_t2": "Wir sind spezialisiert auf die Garantie von Flugverbindungen und darauf, sicherzustellen, dass alle Reiserouten strikt eingehalten werden. Alle unsere Guides sind offiziell registriert und durchlaufen ein umfangreiches Schulungsprogramm, das professionellen Service auf allen Ebenen während des Aufenthalts unserer Kunden bietet.",
+    "transfer_t3": "Kontaktieren Sie uns für Angebote für spezielle Charterflüge mit Hubschraubern und Flugzeugen.",
+    "transfer_t4": "Wir sind strukturiert, um spezielle VIP-Ausschüsse und Delegationen zu betreuen.",
+    "transfer_subtitle": "Unsere Flotte",
+    "transfer_t5": "Wir halten einen hohen internationalen Standard durch Maßnahmen wie die ständige Erneuerung der Flotte von Autos und Bussen sowie die kontinuierliche Weiterbildung der Fahrer mit höchstem Spezialisierungsgrad und Bildung auf dem Markt.",
+    "transfer_t6": "Wir sind das einzige Unternehmen in Foz do Iguaçu, das eine internationale Versicherung für die Flotte von Autos und Bussen hat.",
+    "transfer_t7": "Convenio-Tur garantiert den besten Transport mit Sicherheit und Komfort, den die Region bieten kann.",
+    "transfer_t8": "Alle Autos sind mit Klimaanlage ausgestattet, und ihr Aussehen, Sauberkeit und Wartung gewährleisten eine einwandfreie Fahrt."
+
 }

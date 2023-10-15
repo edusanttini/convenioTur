@@ -23,7 +23,7 @@
     "service_card_events": "Eventos e Incentivos",
     "service_card_nature": "Cataratas e Passeios pela Natureza",
     "service_card_cultural": "Tours Tecnológicos/Culturais",
-    "service_card_Transfer": "Serviços de Transfer/Receptivos",
+    "service_card_Transfer": "Serviços de Transfer & Receptivos",
     "service_card_gastronomy": "Gastronomia e Entretenimento",
     "service_card_hotels": "Hotéis",
     "explore_sub_title": "| O Mundo",
@@ -297,5 +297,14 @@
     "nature_others_t7" : "Rafting no Iguassu - Quatro quilômetros. de corredeiras em botes infláveis - os participantes remam juntos.",
     "nature_others_t8" : "Rapel e Cascading - Pratique rapel no Canyon do Iguassu a uma altura de 55m com as Cataratas ao fundo! Em excursões especiais, pratique o 'Cascading' em uma cachoeira local.",
     "nature_others_t9" : "Selva Safari - Parque Argentino - Veículos 4x4 especiais exploram a exclusiva Trilha Yacaratía com curtas caminhadas e explicações de um guia profissional da selva.",
-    "nature_others_t10" : "Trilha Martins - Visite uma área remota do Parque Nacional com um passeio de caiaque (duck). Lanche incluído."    
+    "nature_others_t10" : "Trilha Martins - Visite uma área remota do Parque Nacional com um passeio de caiaque (duck). Lanche incluído.",
+    "transfer_t1": "Nossa agência está em constante contato com as principais companhias aéreas que operam em nossa região.",
+    "transfer_t2": "Somos especialistas em garantir conexões de voo e em garantir que todos os itinerários sejam estritamente mantidos. Todos os nossos guias são oficialmente registrados e passam por um extenso programa de treinamento fornecendo serviço profissional em todos os níveis durante a estadia de nossos clientes.",
+    "transfer_t3": "Entre em contato conosco para orçamentos de fretamentos especiais de helicópteros e aviões.",
+    "transfer_t4": "Estamos estruturados para operar comitês VIP e delegações especiais.",
+    "transfer_subtitle": "Nossa frota",
+    "transfer_t5": "Mantemos um alto padrão internacional por meio de ações como a renovação constante da frota de carros e ônibus, e a melhoria contínua dos motoristas com o mais alto grau de especialização e educação no mercado.",
+    "transfer_t6": "Somos a única empresa em Foz do Iguaçu que possui seguro internacional para a frota de carros e ônibus.",
+    "transfer_t7": "A Convenio-Tur garante o melhor transporte com segurança e conforto que a região pode oferecer.",
+    "transfer_t8": "Todos os carros estão equipados com ar-condicionado, e sua aparência, limpeza e manutenção garantem um passeio impecável."
 }
