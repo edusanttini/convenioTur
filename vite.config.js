@@ -2,9 +2,11 @@
 
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import { visualizer } from "rollup-plugin-visualizer";
+import { splitVendorChunkPlugin } from 'vite';
 
 export default defineConfig({
-  plugins: [ react() ],
+  plugins: [ react(), visualizer(), splitVendorChunkPlugin() ],
   build: {
     optimizeDeps: {
       include: ['react', 'react-dom', 'react-router-dom'],
@@ -12,44 +14,21 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks(id) {
-          if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/') || id.includes('node_modules/react-router-dom/')) {
-            return 'vendor';
-          }
-          if (id.includes('src/components/AppProducts')) {
-            return 'productsChunk';
-          }
-          if (id.includes('src/components/blobs')) {
-            return 'blobChunk';
-          }
-          if (id.includes('src/components/canvas')) {
-            return 'canvasChunk';
-          }
           if (id.includes('src/components/Util/Base64ArgFlag')) {
-            return 'utilArgChunk';
-          }
-          if (id.includes('src/components/countries/RidesList')) {
-            return 'ridesChunk';
-          }
-          if (id.includes('src/components/countries/Brasil')) {
-            return 'brChunk';
-          }
-          if (id.includes('src/components/countries/Argentina')) {
-            return 'argChunk';
-          }
-          if (id.includes('src/components/countries/Paraguay')) {
-            return 'pyChunk';
-          }
-          if (id.includes('src/components/countries')) {
-            return 'countriesChunk';
-          }
-          if (id.includes('src/components/Handlers')) {
-            return 'handlerChunk';
+            return '@utilArg';
           }
           if (id.includes('src/components/Util')) {
-            return 'utilChunk';
+            return '@util';
           }
-          if (id.includes('src/constants')) {
-            return 'constantsChunk';
+          if (id.includes('three.module')) {
+            return '@threeJS';
+          }
+          if (id.includes('react-reconciler') ||
+              id.includes('i18next') ||
+              id.includes('GLTFLoader') ||
+              id.includes('react-dom.production') ||
+              id.includes('fiber')) {
+            return '@deps';
           }
         },
       },
