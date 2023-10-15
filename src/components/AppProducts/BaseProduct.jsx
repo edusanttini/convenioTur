@@ -8,7 +8,8 @@ import FsLightbox from "fslightbox-react";
 
 const BaseProduct = ({ id }) => {
     const gTours = gastronomyTour();
-    const allProductArrays = [culturalTours, gTours];
+    const cTours = culturalTours();
+    const allProductArrays = [cTours, gTours];
     const selectedProduct = allProductArrays.reduce((foundProduct, pArray) => {
         if (!foundProduct) {
             return pArray.find(tour => tour.id === id)

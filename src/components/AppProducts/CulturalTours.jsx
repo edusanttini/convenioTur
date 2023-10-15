@@ -109,6 +109,7 @@ const TourContainer = ({ experience }) => {
 
 
 const CulturalTours = () => {
+  const cTours = culturalTours();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -140,7 +141,7 @@ const CulturalTours = () => {
             <VerticalTimeline 
               layout="1-column-left"
               lineColor="#FCD34D">
-              {culturalTours.map((tour, index) => (
+              {cTours.map((tour, index) => (
                 <TourContainer
                   key={`tour-${index}`}
                   experience={tour}

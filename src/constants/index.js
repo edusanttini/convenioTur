@@ -367,140 +367,126 @@ const natureTours = () => {
   ];
 }
 
-const culturalTours = [
-  {
-    id: "itaipu",
-    title: "The Itaipu Dam",
-    country: "Brasil",
-    icon: damIcon,
-    iconBg: "#E6DEDD",
-    duration: "2 hours and 30 minutes",
-    points: [
-      "This visit to the largest Hydroelectric Dam in the world begins at the Reception Center where an audiovisual is presented showcasing the history of the construction.",
-      "Visit the power station and the observation deck with a panoramic view of the whole dam and the spillway giving an idea of this dimension of this colossal project.",
-      "The Itaipu Dam is eight kilometers wide with a total of 20 turbines and a installed capacity of 14,000,00 kilowatts. Special technical visits may be arranged upon request.",
-    ],
-    images: [
-      itaipu1, itaipu2, itaipu3
-    ]
-  },
-  {
-    id: "ruins",
-    title: "The Jesuit Ruins of San Ignacio",
-    country: "Argentina",
-    icon: ruinsIcon,
-    iconBg: "#E6DEDD",
-    duration: "Full day",
-    points: [
-      "Visit the ruins of San Ignacio, located 250 kilometers from Iguassu Falls.",
-      "Here the Jesuits founded the Guarani Republic, which flourished in the seventeenth century.",
-      "Visit the communal houses, churches and buildings, with their baroque traits and numerous stone sculptures now invaded by the jungle.",
-      "The trip is via a paved highway winding through the picturesque Argentine countryside with its Mate-Tea plantations and well-preserved tropical rainforest.",
-      "Enroute we visit a working open-air gemstone mine. Lunch is optional"
-    ],
-    images: [
-      ruins1, ruins2, ruins3, ruins4, ruins5, ruins6, ruins7
-    ]
-  },
-  {
-    id: "kata",
-    title: "Kattamaram",
-    country: "Brasil",
-    icon: katalogo,
-    iconBg: "#E6DEDD",
-    duration: "3 hours",
-    points: [
-      "The grandest and most luxurious ship in the region.",
-      "The Kattamaram is a large yacht specially designed to provide comfort and safety for its passengers with an infrastructure to realize dinners and events for up to 200 guests.",
-      "Conveniently located at the Itaipu Lake, the Kattamaram plies the water of this gigantic reservoir with its forested shoreline.",
-      "Daily departures. We suggest that this tour be done with the visit to the Itaipu Dam.",
-    ],
-    images: [
-      kata1
-    ]
-  },
-  {
-    id: "museum",
-    title: "Navegation with visit to Bertoni Museum",
-    country: "Brasil",
-    icon: bertoniMuseumIcon,
-    iconBg: "#E6DEDD",
-    duration: "4 hours",
-    points: [
-      "Departure from the Cataratas Yacht Club.",
-      "We board modern boats with experienced pilots for an unforgettable trip on the Paraná River observing the International Friendship Bridge, Acaray Island and the Three Borders enroute to the Bertoni Parque and Museum on the Paraguayan side.",
-      "On board refreshments included.",
-    ],
-    images: [
-      bertoniMuseum
-    ]
-  },
-  {
-    id: "fishing",
-    title: "Sport Fishing",
-    country: "Brasil",
-    icon: sportFishingIcon,
-    iconBg: "#E6DEDD",
-    duration: "4 hours",
-    points: [
-      "Motor skiffs equipped with special sonar, tackle and live bait.",
-      "The current and depth of the river facilitate the catching of dourado salmon, pacú, surubim.",
-      "On board refreshments included.",
-    ],
-    images: [
-      sportFishing1
-    ]
-  },
-  {
-    id: "borders",
-    title: "Three Borders",
-    country: "Brasil",
-    icon: bordersIcon,
-    iconBg: "#E6DEDD",
-    duration: "1 hour",
-    points: [
-      "Enjoy the view from the observation deck at the “Meeting of the Waters” of the Iguassu and Paraná rivers where Brazil, Argentina and Paraguay form the Three Borders.",
-      "Three stone markers dating from 1916 designate the territory of each country.",
-    ],
-    images: [
-      borders1
-    ]
-  },
-  {
-    id: "paraguay",
-    title: "Visit to Paraguay",
-    country_name: "Paraguay",
-    icon: pyIcon,
-    iconBg: "#E6DEDD",
-    duration: "4 hours",
-    points: [
-      "Cross the picturesque Friendship Bridge to Ciudad Del Este, Paraguay.",
-      "Ample time to shop for duty-free imported goods and local handicrafts.",
-      "Accompanied by guide.",
-      "Please bring passport or valid I.D.",
-    ],
-    images: [
-      py1, py2, py3
-    ]
-  },
-  {
-    id: "rural",
-    title: "Rural Tour",
-    country: "Brasil",
-    icon: ruralTourIcon,
-    iconBg: "#E6DEDD",
-    duration: "Full day (Overnight Optional)",
-    points: [
-      "Get to know the local culture while visiting or staying overnight with families from the Sabia River Community, in Matelandia, Paraná.",
-      "The strong influence of Italian and German immigrants can be felt in the food, speech and stories which trigger a nostalgic well being in the visitor.",
-      "The Sabia Circuit offers visits which emphasize real rest, authentic local cuisine prepared with the local produce, leisure activities and convivial country living.",
-      "Have walks on nature trails and enjoy beautiful landscapes. Visits can be full-day or with overnight.",
-    ],//check current website, thers another route that must be done on rural tours 'get to know the farms'
-    images: [
-      ruralTour1, ruralTour2, ruralTour3
-    ]
-  },
-];
+const culturalTours = () => {
+  const { t } = useTranslation();
+  return [
+    {
+      id: "itaipu",
+      title: t('br_dam_title'),
+      country: t('br'),
+      icon: damIcon,
+      iconBg: "#E6DEDD",
+      duration: `2 ${t('hours')} ${t('and')} 30 ${t('minutes')}`,
+      points: [
+        t('br_dam_t1'),
+        t('br_dam_t2'),
+        t('br_dam_t3')
+      ],
+      images: [
+        itaipu1, itaipu2, itaipu3
+      ]
+    },
+    {
+      id: "ruins",
+      title: t('arg_ruins_title'),
+      country: t('arg'),
+      icon: ruinsIcon,
+      iconBg: "#E6DEDD",
+      duration: t('full_day'),
+      points: [
+        t('arg_ruins_t1'),
+        t('arg_ruins_t2'),
+        t('arg_ruins_t3'),
+        t('arg_ruins_t4'),
+        t('arg_ruins_t5')
+      ],
+      images: [
+        ruins1, ruins2, ruins3, ruins4, ruins5, ruins6, ruins7
+      ]
+    },
+    {
+      id: "kata",
+      title: t('br_kata_title'),
+      country: t('br'),
+      icon: katalogo,
+      iconBg: "#E6DEDD",
+      duration: `3 ${t('hours')}}`,
+      points: [
+        t('br_kata_t1'),
+        t('br_kata_t2'),
+        t('br_kata_t3'),
+        t('br_kata_t4')
+      ],
+      images: [
+        kata1
+      ]
+    },
+    {
+      id: "museum",
+      title: t('br_bertoni_museum_sub_title'),
+      country: t('br'),
+      icon: bertoniMuseumIcon,
+      iconBg: "#E6DEDD",
+      duration: `4 ${t('hours')}}`,
+      points: [
+        t('br_bertoni_museum_t1'),
+        t('br_bertoni_museum_t2'),
+        t('br_bertoni_museum_t3')
+      ],
+      images: [
+        bertoniMuseum
+      ]
+    },
+    {
+      id: "fishing",
+      title: t('br_fish_title'),
+      country: t('br'),
+      icon: sportFishingIcon,
+      iconBg: "#E6DEDD",
+      duration: `4 ${t('hours')}}`,
+      points: [
+        t('br_fish_t1'),
+        t('br_fish_t2'),
+        t('br_fish_t3')
+      ],
+      images: [
+        sportFishing1
+      ]
+    },
+    {
+      id: "borders",
+      title: t('br_marco_title'),
+      country: t('br'),
+      icon: bordersIcon,
+      iconBg: "#E6DEDD",
+      duration: `1 ${t('hour')}}`,
+      points: [
+        t('br_marco_t1'),
+        t('br_marco_t2')
+      ],
+      images: [
+        borders1
+      ]
+    },
+    {
+      id: "rural",
+      title: t('br_rural_title'),
+      country: t('br'),
+      icon: ruralTourIcon,
+      iconBg: "#E6DEDD",
+      duration: t('full_day'),//overnightoptional
+      points: [
+        t('br_rural_t1'),
+        t('br_rural_t2'),
+        t('br_rural_t3'),
+        t('br_rural_t4')
+      ],
+      images: [
+        ruralTour1, ruralTour2, ruralTour3
+      ]
+    }
+  ]
+};
 
 const gastronomyTour = () => {
   const { t } = useTranslation();
