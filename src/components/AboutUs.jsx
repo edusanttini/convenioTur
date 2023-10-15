@@ -261,7 +261,7 @@ const AboutUs = () => {
                 <Papyrus />
             </div>
             <div className="block md:hidden">
-                <img src={enio} />
+                <img className="rounded-3xl" src={enio} />
                 <h2 className="text-[20px]" >
                     {t('txt_all_title')}
                 </h2>
