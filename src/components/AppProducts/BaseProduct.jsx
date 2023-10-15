@@ -3,11 +3,11 @@ import { bgGrayGradientStyle } from "../../globalColorScheme";
 import Navbar from "../Navbar";
 import { motion } from 'framer-motion';
 import { TitleText, TypingTextGeneric } from "../CustomTexts";
-import { culturalTours, gastronomyTour, natureTours } from "../../constants";
+import { culturalTours, gastronomyTour } from "../../constants";
 import FsLightbox from "fslightbox-react";
 
 const BaseProduct = ({ id }) => {
-    const allProductArrays = [culturalTours, natureTours, gastronomyTour];
+    const allProductArrays = [culturalTours, gastronomyTour];
     const selectedProduct = allProductArrays.reduce((foundProduct, pArray) => {
         if (!foundProduct) {
             return pArray.find(tour => tour.id === id)

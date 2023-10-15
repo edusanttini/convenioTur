@@ -10,8 +10,10 @@ import {
   } from "react-vertical-timeline-component";
 import { natureTours } from "../../constants";
 import FsLightbox from "fslightbox-react";
+import { useTranslation } from "react-i18next";
 
 const TourContainer = ({tour}) => {
+    const { t } = useTranslation();
     const argFallsHalfDayTour = tour.points.slice(0,3);
     const argFallsFullDayTour = tour.points.slice(3,5);
     const [lightboxController, setLightboxController] = useState({
@@ -56,14 +58,14 @@ const TourContainer = ({tour}) => {
                     {tour.country}
                 </p>
             </div>
-            {tour.title === 'Argentine Falls with Devil’s Throat' && (
+            {tour.id === 'argfall' && (
                 <div>
                     <p className= 'text-[16px] ' style={yellowText}>
-                        The argentinian side of the Falls offers rides with different durations:
+                        {t('nature_exclusive_arg_cata')}
                     </p>
                     <br/>
                     <h2 className= 'text-[16px] font-bold' style={yellowText}>
-                        - Half Day
+                    {t('nature_exclusive_arg_cata1')}
                     </h2>
                     <ul className='mt-5 list-disc ml-5 space-y-2'>
                         {argFallsHalfDayTour.map((point, index) => (
@@ -76,11 +78,11 @@ const TourContainer = ({tour}) => {
                         ))}
                     </ul>
                     <p className=' text-[16px] italic' style={ yellowText }>
-                        {"Duration: 4 hours"}
+                        {t('duration')}{": 4 "} {t('hours')}
                     </p>
                     <br/>
                     <h2 className= 'text-[16px] font-bold' style={yellowText}>
-                        - Full Day
+                    {t('nature_exclusive_arg_cata2')}
                     </h2>
                     <ul className='mt-5 list-disc ml-5 space-y-2'>
                         {argFallsFullDayTour.map((point, index) => (
@@ -93,20 +95,20 @@ const TourContainer = ({tour}) => {
                         ))}
                     </ul>
                     <p className=' text-[16px] italic' style={ yellowText }>
-                        {"Duration: 7 hours"}
+                    {t('duration')}{": 7 "} {t('hours')}
                     </p>
                     <br/>
                     <h2 className= 'text-[16px] font-bold' style={yellowText}>
-                        Optional
+                    {t('nature_exclusive_arg_cata3')}
                     </h2>
                     <ul className='mt-5 list-disc ml-5 space-y-2'>
                         <li className='text-white-100 text-[14px] pl-1 tracking-wider'>
-                            Extension to San Martin’s Island it’s impressive though steep trails.
+                        {t('nature_exclusive_arg_cata4')}
                         </li>
                     </ul>
                 </div>
             )}
-            {tour.title !== 'Argentine Falls with Devil’s Throat' && (
+            {tour.id !== 'argfall' && (
                 <ul className='mt-5 list-disc ml-5 space-y-2'>
                     {tour.points.map((point, index) => (
                         <li
@@ -118,18 +120,18 @@ const TourContainer = ({tour}) => {
                     ))}
                 </ul>
             )}
-            {tour.title === 'Panoramic Helicopter Flight' && (
+            {tour.id === 'heli' && (
                 <div>
                     <p className=' text-[16px] italic' style={ yellowText }>
-                        {"Duration: 10 minutes"}
+                    {t('duration')}{": 10 "} {t('minutes')}
                     </p>
                     <ul className='mt-5 list-disc ml-5 space-y-2'>
                         <li className='text-white-100 text-[14px] pl-1 tracking-wider'>
-                            Optional longer flight includes three borders, Cataratas and Itaipu Dam.
+                        {t('nature_exclusive_heli')}
                         </li>
                     </ul>
                     <p className=' text-[16px] italic' style={ yellowText }>
-                        {"Duration: 35 minutes"}
+                    {t('duration')}{": 35 "} {t('minutes')}
                     </p>
                 </div>
             )}
@@ -155,9 +157,9 @@ const TourContainer = ({tour}) => {
                 </div>
             </div>
             <br/>
-            {tour.title !== 'Panoramic Helicopter Flight' && tour.title !== 'Argentine Falls with Devil’s Throat' ? (
+            {tour.id !== 'heli' && tour.id !== 'argfall' ? (
                 <p className='text-[16px] italic' style={yellowText}>
-                    {"Duration: " + tour.duration}
+                    {t('duration')}{": "} {tour.duration}
                 </p>
             ) : null}
         </VerticalTimelineElement>
@@ -166,7 +168,8 @@ const TourContainer = ({tour}) => {
 
 
 const NatureTours = () => {
-
+    const natTour = natureTours();
+    const { t } = useTranslation();
     useEffect(() => {
         window.scrollTo(0, 0);
       }, []);
@@ -186,18 +189,18 @@ const NatureTours = () => {
                 className={`${styles.innerWidth} mx-auto flex flex-col`} 
                 >
                 <p className={`${styles.sectionSubText} text-center`}>
-                  dummy txt dummy txt dummy txt dummy txt
+                  {t('nature_subtitle')}
                 </p>
                 <h2 className={`${styles.sectionHeadText} text-center`}
                 style={yellowText}>
-                  Technologic & Cultural Tours
+                  {t('service_card_nature')}
                 </h2>
               </motion.div>
               <div className='mt-20 flex flex-col'>
                 <VerticalTimeline 
                   layout="1-column-left"
                   lineColor="#FCD34D">
-                  {natureTours.map((tour, index) => (
+                  {natTour.map((tour, index) => (
                     <TourContainer
                       key={`tour-${index}`}
                       tour={tour}

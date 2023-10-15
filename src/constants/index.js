@@ -200,170 +200,172 @@ const services = () => {
   ]
 }
 
-const natureTours = [
-  {
-    id: "brfall",
-    title: "The Brazillian Falls",
-    country: "Brasil",
-    icon: waterfall,
-    iconBg: "#E6DEDD",
-    duration: "3 hours",
-    points: [
-      "“Never has so much beauty been seen in one place”",
-      "Board at the Iguassu National Park Visitor’s Center for a drive through the lush subtropical vegetation of park en route to the falls.",
-      "Stroll the trail descending the canyon that offers the most panoramic view of the more than 240 different falls.",
-      "Penetrate the mist of the Devil’s Throat on the main walkway.",
-      "Take the glass elevator up the cliff face for a view from the upper deck.",
-    ],
-    images: [
-      cataratasbr, cataratasbr1, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5,
-      cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, cataratasbr10, cataratasbr11,
-      cataratasbr12, cataratasbr13, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2,
-      devilsthroat3
-    ]
-  },
-  {
-    id: "argfall",
-    title: "Argentine Falls with Devil’s Throat",
-    country: "Argentina",
-    icon: waterfall,
-    iconBg: "#E6DEDD",
-    duration: "7 hours",
-    points: [
-      "Cross the Tancredo Neves Bridge with its lovely view of the Iguassu Canyon en route to the Iguazú National Park in Argentina.",
-      "Visit the upper and lower walkways which allow a different perspective and more intimate contact with the falls adjoining rainforest filled with orchids, bromeliads, birds and other wildlife.",
-      "The highlight of the trip is a visit to the suspended platform at the very brink of the abysmal Devil’s Throat - largest of the waterfalls.",
-      "This very complete trip shows you all the different angles of the waterfalls from the Argentine side and includes not only the upper trails and the Devil's Throat but also the lower trail which winds through heavy rainforest.",
-      "On this trip, we offer several different options for lunch, which is optional."
-    ],
-    images: [
-      cataratasArg, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2,
-      devilsthroat3
-    ]
-  },
-  {
-    id: "macuco",
-    title: "Macuco Boat Safari",
-    country: "Brasil",
-    icon: macucoIcon,
-    iconBg: "#E6DEDD",
-    duration: "2 hours",
-    points: [
-      "In an open wagon ride 2 km in the forest at a reduced speed, hearing explanations and curiosities of the native flora and fauna.",
-      "We continue on foot up to the margin of the Iguassu River where a inflatable motor boat takes the tourist on one of the most moving trips, where one has a close-up view of the falls, hearing the thunder of the waters, and getting wet in the mist of the falls, unforgettable.",
-    ],
-    images: [
-      macuco1
-    ]
-  },
-  {
-    id: "gadv",
-    title: "Grand Adventure",
-    country: "Argentina",
-    icon: macucoIcon,
-    iconBg: "#E6DEDD",
-    duration: "2 hours",
-    points: [
-      "This attraction is conveniently located on the Argentine side.",
-      "It starts with a ride throughn the jungle in special 4x4 vehicles.",
-      "Hike down the Iguassu canyon and board inflatable boats.",
-      "Take an exiting trip through the rapids and arrive at the base of the waterfalls with a view of the Devil`s Throat.",
-      "Get your hair wet in the mist and feel the forces of nature."
-    ],
-    images: [
-      grandadv1
-    ]
-  },
-  {
-    id: "birdpark",
-    title: "Parque das Aves",
-    country: "Brasil",
-    icon: birdparkicon,
-    iconBg: "#E6DEDD",
-    duration: "1 hour",
-    points: [
-      "The Bird Park is conveniently located at the entrance of the Iguassu National Park, and fully integrated into its natural surroundings.",
-      "Mingle with and photograph hundreds of different native and exotic birds, snakes, caimans, marmosets and butterflies in spacious walk-through aviaries and trails that wind through the jungle.",
-    ],
-    images: [
-      birdpark1, birdpark2, birdpark
-    ]
-  },
-  {
-    id: "heli",
-    title: "Panoramic Helicopter Flight",
-    country: "Brasil",
-    icon: panoramicheliIcon,
-    iconBg: "#E6DEDD",
-    duration: "10 minutes",
-    points: [
-      "Thrilling and informative, a helicopter flight over the falls affords a completely different perspective of the Cataratas.",
-    ],
-    images: [
-      heli, heli1, heli2, heli3
-    ]
-  },
-  {
-    id: "eadv",
-    title: "EcoAdventure Bananeira Trail",
-    country: "Brasil",
-    icon: ecoadventureicon,
-    iconBg: "#E6DEDD",
-    duration: "3 hours and 30 minutes",
-    points: [
-      "This tour starts with a jungle trail of 1,6 km, either on foot or by bicycle (conventional or electric).",
-      "Nature lovers can promenade through small ponds, where they can watch birds with aquatic habits.",
-      "Next, navigate in powerboats on the Upper Iguassu to the Poço Preto dock and visit an observation tower with a view of the Jacaré Pond, which is rich in terrestrial and aquatic life.",
-      "Visit Taquara islands with the option of kayaks.",
-      "The return path is through Bananeiras or Canoas Ports, always accompanied by specialized guides."
-    ],
-    images: [
-      ecoadventure1, ecoadventure2, ecoadventure3
-    ]
-  },
-  {
-    id: "ecoadv",
-    title: "EcoAdventure Black Well/Upper Iguassu",
-    country: "Brasil",
-    icon: ecoadventureBlackIcon,
-    iconBg: "#E6DEDD",
-    duration: "4 hours",
-    points: [
-      "In the first part of this excursion, the visitor takes a nine kilometer jungle trail and can opt for either doing it on foot, by bike, electric bicycle or electric tram.",
-      "Enroute, enjoy and observe the native flora, hard-woods and with luck, some of the animals and colorful birds of the region.",
-      "Board powerboats on the upper Iguassu River and navigate to the Taquara Islands, large caimans and other river life can be observed from the boat.",
-      "Another available option is to do a 30 minute kayak trip among the islands.",
-      "This trip ends up at Porto Canoas where an optional lunch can be served."
-    ],
-    images: [
-      ecoadventureBlack1, ecoadventureBlack2
-    ]
-  },
-  {
-    id: "otherAtt",
-    title: "Other Attractions",
-    country: "Brasil & Argentina",
-    icon: otherAttractionsIcon,
-    iconBg: "#E6DEDD",
-    duration: "null",
-    points: [
-      "Tree Climbing and Zipline - Tree climbing and trips between rainforest trunks and an exciting trip hanging from a pulley on a steel cable.",
-      "Field of Challenges - Programmed activities in a jungle environment that present mental and physical challenges.",
-      "Eco Adventure - Porto Canoas - Departures from Porto Canoas for a 20 min. boat ride on the Upper Iguassu.",
-      "Rock Climbing - Climb an artificial rock wall or choose among 30 different canyon routes.",
-      "Floating Safari - Floating boat ride on the Upper Iguassu without the use of motors. Argentine side.",
-      "Bird Watching - Iguassu has over 400 different species, early morning departures. Accompaniment of a specialist. Snack included.",
-      "Rafting on the Iguassu - Four kilometers. of rapids in inflatable rafts - the participants row together.",
-      "Rapel and Cascading - Practice rappel in the Iguassu Canyon from a height of 55m with the Cataratas as a backdrop! In special excursions, practice “Cascading” in a local waterfall.",
-      "Selva Safari - Argentine Park - Special 4x4 vehicles explore the exclusive Yacaratía Trail with short walks and explanations from a professional jungle guide.",
-      "Martins Trail - Visit a remote area of the National Park with a kayak (duck) trip. Snack included."
-    ],
-    images: [
-      otherAttractions1, otherAttractions2
-    ]
-  }
-  
-];
+const natureTours = () => {
+  const { t } = useTranslation();
+  return [
+    {
+      id: "brfall",
+      title: t('br_falls_title'),
+      country: t('br'),
+      icon: waterfall,
+      iconBg: "#E6DEDD",
+      duration: `3 ${t('hours')}`,
+      points: [
+        t('br_falls_t1'),
+        t('br_falls_t2'),
+        t('br_falls_t3'),
+        t('br_falls_t4'),
+        t('br_falls_t5'),
+      ],
+      images: [
+        cataratasbr, cataratasbr1, cataratasbr2, cataratasbr3, cataratasbr4, cataratasbr5,
+        cataratasbr6, cataratasbr7, cataratasbr8, cataratasbr9, cataratasbr10, cataratasbr11,
+        cataratasbr12, cataratasbr13, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2,
+        devilsthroat3
+      ]
+    },
+    {
+      id: "argfall",
+      title: t('arg_falls_title'),
+      country: t('arg'),
+      icon: waterfall,
+      iconBg: "#E6DEDD",
+      duration: `7 ${t('hours')}`,
+      points: [
+        t('arg_falls_t1'),
+        t('arg_falls_t2'),
+        t('arg_falls_t3'),
+        t('arg_falls_t4'),
+        t('arg_falls_t5'),
+      ],
+      images: [
+        cataratasArg, devilsthoat4, devilsthroat, devilsthroat1, devilsthroat2,
+        devilsthroat3
+      ]
+    },
+    {
+      id: "macuco",
+      title: t('br_macuco_title'),
+      country: t('br'),
+      icon: macucoIcon,
+      iconBg: "#E6DEDD",
+      duration: `2 ${t('hours')}`,
+      points: [
+        t('br_macuco_t1'),
+        t('br_macuco_t2'),
+      ],
+      images: [
+        macuco1
+      ]
+    },
+    {
+      id: "gadv",
+      title: t('arg_gran_adventure_title'),
+      country: t('arg'),
+      icon: macucoIcon,
+      iconBg: "#E6DEDD",
+      duration: `2 ${t('hours')}`,
+      points: [
+        t('arg_gran_adventure_t1'),
+        t('arg_gran_adventure_t2'),
+        t('arg_gran_adventure_t3'),
+        t('arg_gran_adventure_t4'),
+        t('arg_gran_adventure_t5'),
+      ],
+      images: [
+        grandadv1
+      ]
+    },
+    {
+      id: "birdpark",
+      title: t('br_bird_park_title'),
+      country: t('br'),
+      icon: birdparkicon,
+      iconBg: "#E6DEDD",
+      duration: `1 ${t('hour')}`,
+      points: [
+        t('br_bird_park_t1'),
+        t('br_bird_park_t2'),
+      ],
+      images: [
+        birdpark1, birdpark2, birdpark
+      ]
+    },
+    {
+      id: "heli",
+      title: t('br_heli_flight_title'),
+      country: t('br'),
+      icon: panoramicheliIcon,
+      iconBg: "#E6DEDD",
+      duration: `10 ${t('minutes')}`,
+      points: [
+        t('br_heli_flight_t1')
+      ],
+      images: [
+        heli, heli1, heli2, heli3
+      ]
+    },
+    {
+      id: "eadv",
+      title: t('br_eco_trail_title'),
+      country: t('br'),
+      icon: ecoadventureicon,
+      iconBg: "#E6DEDD",
+      duration: `3 ${t('hours')} ${t('and')} 30 ${t('minutes')}`,
+      points: [
+        t('br_eco_trail_t1'),
+        t('br_eco_trail_t2'),
+        t('br_eco_trail_t3'),
+        t('br_eco_trail_t4'),
+        t('br_eco_trail_t5')
+      ],
+      images: [
+        ecoadventure1, ecoadventure2, ecoadventure3
+      ]
+    },
+    {
+      id: "ecoadv",
+      title: t('br_eco_black_title'),
+      country: t('br'),
+      icon: ecoadventureBlackIcon,
+      iconBg: "#E6DEDD",
+      duration: `4 ${t('hours')}`,
+      points: [
+        t('br_eco_black_t1'),
+        t('br_eco_black_t2'),
+        t('br_eco_black_t3'),
+        t('br_eco_black_t4'),
+        t('br_eco_black_t5')
+      ],
+      images: [
+        ecoadventureBlack1, ecoadventureBlack2
+      ]
+    },
+    {
+      id: "otherAtt",
+      title: t('nature_others_title'),
+      country: `${t('br')} & ${t('arg')}`,
+      icon: otherAttractionsIcon,
+      iconBg: "#E6DEDD",
+      duration: "null",
+      points: [
+        t('nature_others_t1'),
+        t('nature_others_t2'),
+        t('nature_others_t3'),
+        t('nature_others_t4'),
+        t('nature_others_t5'),
+        t('nature_others_t6'),
+        t('nature_others_t7'),
+        t('nature_others_t8'),
+        t('nature_others_t9'),
+        t('nature_others_t10')
+      ],
+      images: [
+        otherAttractions1, otherAttractions2
+      ]
+    }  
+  ];
+}
 
 const culturalTours = [
   {
@@ -1318,7 +1320,7 @@ const brasilRides = () => {
       country: t('br'),
       icon: panoramicheliIcon,
       iconBg: "#E6DEDD",
-      duration: `10 to 35 ${t('minutes')}`,
+      duration: `10 ${t('to')} 35 ${t('minutes')}`,
       points: [
         t('br_heli_flight_t1'),
         t('br_heli_flight_t2'),
@@ -1333,7 +1335,7 @@ const brasilRides = () => {
       country: t('br'),
       icon: ecoadventureicon,
       iconBg: "#E6DEDD",
-      duration: `3 ${t('hours')} and 30 ${t('minutes')}`,
+      duration: `3 ${t('hours')} ${t('and')} 30 ${t('minutes')}`,
       points: [
         t('br_eco_trail_t1'),
         t('br_eco_trail_t2'),
@@ -1369,7 +1371,7 @@ const brasilRides = () => {
       country: t('br'),
       icon: itaipuLogo,
       iconBg: "#E6DEDD",
-      duration: `2 ${t('hours')} and 30 ${t('minutes')}`,
+      duration: `2 ${t('hours')} ${t('and')} 30 ${t('minutes')}`,
       points: [
         t('br_dam_t1'),
         t('br_dam_t2'),
