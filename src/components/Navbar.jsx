@@ -3,13 +3,37 @@ import { Link } from "react-router-dom";
 import { isMobile } from "react-device-detect";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { menu, close, headerLogo } from "../assets";
+import { menu, close, headerLogo, languageIcon } from "../assets";
+import LanguageSelectionPopup from "./LanguageSelectionPopup";
 
 const Navbar = ({ isMain }) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const links = navLinks();
+  const [toggleLang, setToggleLang ] = useState(false);
+
+  const [showLanguagePopup, setShowLanguagePopup] = useState(false);
+    useEffect(() => {
+        const languageSelected = localStorage.getItem("languageSelected");
+        if (languageSelected) {
+            setShowLanguagePopup(false);
+        }
+    }, []);
+
+    const handleCloseLanguagePopup = () => {
+        setShowLanguagePopup(false);
+        localStorage.setItem("languageSelected", "true");
+    };
+
+    const handleOpenLanguagePopUp = () => {
+      setShowLanguagePopup(true);
+      localStorage.setItem("languageSelected", "false");
+  };
+
+      window.addEventListener("beforeunload", () => {
+        localStorage.removeItem("languageSelected");
+      });
 
   useEffect(() => {
     const sectionId = location.hash.replace('#', '');
@@ -66,9 +90,33 @@ const Navbar = ({ isMain }) => {
               </li>
             </div>
           ))}
+          <li>
+            <img 
+              src={languageIcon}
+              alt='lang'
+              className='w-32 h-12 clickable-element absolute right-0'
+              onClick={handleOpenLanguagePopUp}
+            />
+            <div >
+              {showLanguagePopup && <LanguageSelectionPopup onClose={handleCloseLanguagePopup} />}
+            </div>
+          </li>
         </ul>
 
+        {/*Mobile*/}
         <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className="pr-8">
+          <img 
+            src={languageIcon}
+            alt='lang'
+            className='w-18 h-10 clickable-element'
+            onClick={handleOpenLanguagePopUp}
+          />
+          <div >
+              {showLanguagePopup && <LanguageSelectionPopup onClose={handleCloseLanguagePopup} />}
+            </div>
+        </div>
+        
           <img
             src={toggle ? close : menu}
             alt='menu'

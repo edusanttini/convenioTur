@@ -5,7 +5,6 @@ import { Overview, AboutUs, Contact, Hero, Navbar, StarsCanvas,
     LanguageSelectionPopup } from "./components";
 import { bgGrayGradientStyle } from "./globalColorScheme";
 import { southAmerica } from "./assets";
-import i18n from './i18n/i18n';
 import React, { useEffect, useState } from "react";
 
 const App = () => {

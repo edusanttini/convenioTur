@@ -58,8 +58,6 @@ const Jaguar = () => {
 const JaguarCanvas = () => {
   const isLowPerformanceDevice = () => {
     const nav = window.navigator;
-    console.log('hardware', nav.hardwareConcurrency)
-    console.log('devmem', nav.deviceMemory)
     return nav && (nav.hardwareConcurrency <=2 || nav.deviceMemory <=4);
   }
 
