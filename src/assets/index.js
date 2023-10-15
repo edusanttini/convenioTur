@@ -15,9 +15,6 @@ import incentiveTravel from "./company/incentiveTravel.png";
 import someOfTheEvents from "./company/someOfTheEvents.png";
 
 //Cultural Tours
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import tesla from "./company/tesla.png";
 import waterfall from "./company/waterfall.svg"
 import wf1 from "./company/wf1.png"
 import wf2 from "./company/wf2.png"
@@ -69,7 +66,6 @@ import teatroPlaza from "./company/teatroPlaza.png";
 import cassinoiguazu from "./company/cassinoiguazu.png";
 import brazilianbarbecueIcon from "./company/brazilianbarbecueIcon.svg";
 import brazilianBarbcue from "./company/brazilianBarbcue.png";
-import yatchclub from "./company/yatchclub.png";
 import gauchoranch from "./company/gauchoranch.png";
 
 //general
@@ -143,9 +139,6 @@ export {
   logo,
   menu,
   close,
-  meta,
-  shopify,
-  tesla,
   headerLogo,
   flagpy,
   flagbr,
@@ -177,7 +170,7 @@ export {
   portocanoas1, restaurantIcon, teatroPlaza, teatroplazaIcon,
   cassinoIcon, cassinoiguazu,
   brazilianBarbcue, brazilianbarbecueIcon,
-  yatchclub, gauchoranch,
+  gauchoranch,
   someOfTheEvents, incentiveTravel, thePrincipalVenues, eventsAndIncentives, enio,
   cataratas01, cataratas02,
   southAmerica,
