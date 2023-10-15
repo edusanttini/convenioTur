@@ -410,7 +410,7 @@ const culturalTours = () => {
       country: t('br'),
       icon: katalogo,
       iconBg: "#E6DEDD",
-      duration: `3 ${t('hours')}}`,
+      duration: `3 ${t('hours')}`,
       points: [
         t('br_kata_t1'),
         t('br_kata_t2'),
@@ -427,7 +427,7 @@ const culturalTours = () => {
       country: t('br'),
       icon: bertoniMuseumIcon,
       iconBg: "#E6DEDD",
-      duration: `4 ${t('hours')}}`,
+      duration: `4 ${t('hours')}`,
       points: [
         t('br_bertoni_museum_t1'),
         t('br_bertoni_museum_t2'),
@@ -443,7 +443,7 @@ const culturalTours = () => {
       country: t('br'),
       icon: sportFishingIcon,
       iconBg: "#E6DEDD",
-      duration: `4 ${t('hours')}}`,
+      duration: `4 ${t('hours')}`,
       points: [
         t('br_fish_t1'),
         t('br_fish_t2'),
@@ -459,7 +459,7 @@ const culturalTours = () => {
       country: t('br'),
       icon: bordersIcon,
       iconBg: "#E6DEDD",
-      duration: `1 ${t('hour')}}`,
+      duration: `1 ${t('hour')}`,
       points: [
         t('br_marco_t1'),
         t('br_marco_t2')

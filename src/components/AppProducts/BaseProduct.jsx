@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { bgGrayGradientStyle } from "../../globalColorScheme";
+import { bgGrayGradientStyle, yellowText } from "../../globalColorScheme";
 import Navbar from "../Navbar";
 import { motion } from 'framer-motion';
 import { TitleText, TypingTextGeneric } from "../CustomTexts";
 import { culturalTours, gastronomyTour } from "../../constants";
 import FsLightbox from "fslightbox-react";
+import { t } from "i18next";
 
 const BaseProduct = ({ id }) => {
     const gTours = gastronomyTour();
@@ -46,12 +47,17 @@ const BaseProduct = ({ id }) => {
                     <TitleText title={selectedProduct.title} />
                 </motion.div>
             </div>
-            <div className="lg:pt-32">
+            <div className="lg:pt-32 lg:pr-64 lg:pl-64">
                 {selectedProduct.points.map((point, index) => (
                     <div className="lg:text-[22px] ml-4 mr-4 text-center pb-8" key={index} >
                         - {point}
                     </div>
                 ))}
+            </div>
+            <div className="absolute lg:right-0 lg:pr-64 pl-sm-4 text-[20px]">
+                <p style={yellowText}>
+                    {t('duration')}{": " + selectedProduct.duration}
+                </p>
             </div>
             <div className="justify-center pt-16 lg:pt-48 grid grid-cols-1 lg:grid-cols-3 gap-4 pl-4 pr-4 pb-16">
                 {selectedProduct && selectedProduct.images.map((image, index) => (
