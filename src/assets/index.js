@@ -1,28 +1,9 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import headerLogo from "./convenioturlogo.png";
 import languageIcon from "./languageIcon.svg";
 import comingSoon from "./comingSoon.jpg";
-
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 import flagarg from "./flagarg.jpg";
 import flagbr from "./flagbr.jpg";
 import flagpy from "./flagpy.png";
@@ -91,66 +72,12 @@ import brazilianBarbcue from "./company/brazilianBarbcue.png";
 import yatchclub from "./company/yatchclub.png";
 import gauchoranch from "./company/gauchoranch.png";
 
-//Hotels
-import hotelIcon from "./company/hotelIcon.svg";
-import hotelcataratas1 from "./company/hotelcataratas1.jpg";
-import hotelcataratas2 from "./company/hotelcataratas2.jpg";
-import LoiSuites1 from "./company/LoiSuites1.jpg";
-import loisuites2 from "./company/loisuites2.jpg";
-import mabu1 from "./company/mabu1.jpg";
-import mabu2 from "./company/mabu2.jpg";
-import mabu3 from "./company/mabu3.jpg";
-import iguazuGrand1 from "./company/iguazuGrand1.jpg";
-import iguazugrand2 from "./company/iguazugrand2.jpg";
-import bourbon1 from "./company/bourbon1.jpg";
-import bourbon2 from "./company/bourbon2.jpg";
-import sheratoniguazu1 from "./company/sheratoniguazu1.jpg";
-import sheratoniguazu2 from "./company/sheratoniguazu2.jpg";
-import golfresort1 from "./company/golfresort1.jpg";
-import golfresort2 from "./company/golfresort2.jpg";
-import panoramic1 from "./company/panoramic1.jpg";
-import panoramic2 from "./company/panoramic2.jpg";
-import mercure1 from "./company/mercure1.jpg";
-import mercure2 from "./company/mercure2.jpg";
-import mercure3 from "./company/mercure3.jpg";
-import bestwetern1 from "./company/bestwetern1.jpg";
-import bestwetern2 from "./company/bestwetern2.jpg";
-import continentalinn1 from "./company/continentalinn1.jpg";
-import continentalinn2 from "./company/continentalinn2.jpg";
-import hotelcassino1 from "./company/hotelcassino1.jpg";
-import hotelcassino2 from "./company/hotelcassino2.jpg";
-import rafaincentro1 from "./company/rafaincentro1.jpg";
-import rafaincentro2 from "./company/rafaincentro2.jpg";
-import turrance1 from "./company/turrance1.jpg";
-import turrance2 from "./company/turrance2.jpg";
-import sanrafael1 from "./company/sanrafael1.jpg";
-import sanrafael2 from "./company/sanrafael2.jpg";
-import carima1 from "./company/carima1.jpg";
-import carima2 from "./company/carima2.jpg";
-import san_martin1 from "./company/san_martin1.jpg";
-import san_martin2 from "./company/san_martin2.jpg";
-import yacutinga1 from "./company/yacutinga1.jpg";
-import yacutinga2 from "./company/yacutinga2.jpg";
-import aldea1 from "./company/aldea1.jpg";
-import aldea2 from "./company/aldea2.jpg";
-import recanto1 from "./company/recanto1.jpg";
-import recanto2 from "./company/recanto2.jpg";
-import rafainpalace1 from "./company/rafainpalace1.jpg";
-import rafainpalace2 from "./company/rafainpalace2.jpg";
-import rafainpalace3 from "./company/rafainpalace3.jpg";
-import argentinaIcon from "./company/argentinaIcon.svg";
-import brazilIcon from "./company/brazilIcon.svg";
-
 //general
 import enio from "./company/enio.jpg";
 
 //cataratas
 import cataratas01 from "./cataratas01.jpeg"
 import cataratas02 from "./cataratas02.jpeg"
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 import cataratas from "./cataratas.jpg";
 import cardEvents from "./eventsimg.jpg";
 import cardCataratas from "./cardCataratas.jpg";
@@ -214,32 +141,11 @@ import cassinoIcon from "./icons/cassinoIcon.svg";
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
-  github,
   menu,
   close,
-  css,
-  docker,
-  figma,
-  git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
   meta,
   shopify,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
   headerLogo,
   flagpy,
   flagbr,
@@ -272,28 +178,6 @@ export {
   cassinoIcon, cassinoiguazu,
   brazilianBarbcue, brazilianbarbecueIcon,
   yatchclub, gauchoranch,
-  hotelcataratas1, hotelcataratas2,
-  loisuites2, LoiSuites1,
-  mabu1, mabu2, mabu3,
-  iguazuGrand1, iguazugrand2,
-  bourbon1, bourbon2,
-  sheratoniguazu1, sheratoniguazu2,
-  golfresort1, golfresort2,
-  panoramic1, panoramic2,
-  mercure1, mercure2, mercure3,
-  bestwetern1, bestwetern2,
-  continentalinn1, continentalinn2,
-  hotelcassino1, hotelcassino2,
-  rafaincentro1, rafaincentro2,
-  turrance1, turrance2,
-  sanrafael1, sanrafael2,
-  carima1, carima2,
-  san_martin1, san_martin2,
-  yacutinga1, yacutinga2,
-  aldea1, aldea2,
-  recanto1, recanto2,
-  rafainpalace1, rafainpalace2, rafainpalace3,
-  hotelIcon, brazilIcon, argentinaIcon,
   someOfTheEvents, incentiveTravel, thePrincipalVenues, eventsAndIncentives, enio,
   cataratas01, cataratas02,
   southAmerica,

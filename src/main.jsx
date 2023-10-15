@@ -9,7 +9,6 @@ import {
   CulturalTours,
   TransferServices,
   Gastronomy,
-  Hotels,
   Argentina,
   Brasil,
   Paraguay,
@@ -28,7 +27,6 @@ export default function Main() {
           <Route path="/culturaltours" element={<CulturalTours/>}/>
           <Route path="/transferservices" element={<TransferServices/>}/>
           <Route path="/gastronomy" element={<Gastronomy/>}/>
-          <Route path="/hotels" element={<Hotels/>}/>
           <Route path="/arg" element={<Argentina/>}/>
           <Route path="/br" element={<Brasil/>}/>
           <Route path="/py" element={<Paraguay/>}/>

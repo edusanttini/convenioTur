@@ -8,7 +8,6 @@ import {
 import { Navbar } from "..";
 import { styles } from "../../styles";
 import { bgGrayGradientStyle, bgDarkGrayGradientStyle, yellowText } from "../../globalColorScheme";
-import { hotels } from "../../constants";
 
 const HotelContainer = ({experience}) => {
     return (

@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 
 import { Overview, AboutUs, Contact, Hero, Navbar, StarsCanvas,
-    Explore, Works, Feedbacks,Experience, AppProducts, Map,
+    Explore, AppProducts, Map,
     LanguageSelectionPopup } from "./components";
 import { bgGrayGradientStyle } from "./globalColorScheme";
 import { southAmerica } from "./assets";
