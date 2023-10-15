@@ -3,8 +3,6 @@ import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Overview from "./Overview";
 import Experience from "./Experience";
-import Works from "./Works";
-import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Explore from './Explore';
@@ -17,7 +15,6 @@ import NatureTours from "./AppProducts/NatureTours";
 import CulturalTours from "./AppProducts/CulturalTours";
 import TransferServices from "./AppProducts/TransferServices";
 import Gastronomy from "./AppProducts/Gastronomy";
-import Hotels from "./AppProducts/Hotels";
 import GenericModal from "./Util/GenericModal";
 import AboutUs from "./AboutUs";
 import Map from "./Map";
@@ -40,9 +37,6 @@ export {
   Hero,
   Navbar,
   Overview,
-  Experience,
-  Works,
-  Feedbacks,
   Contact,
   CanvasLoader,
   StarsCanvas,
@@ -57,7 +51,6 @@ export {
   CulturalTours,
   TransferServices,
   Gastronomy,
-  Hotels,
   GenericModal,
   AboutUs,
   Map,
