@@ -502,53 +502,58 @@ const culturalTours = [
   },
 ];
 
-const gastronomyTour = [
-  {
-    title: "Porto Canoas Restaurant",
-    country: "Brasil",
-    icon: restaurantIcon,
-    iconBg: "#E6DEDD",
-    duration: "~1 hour",
-    points: [
-      "Overlooking the Iguassu River the Porto Canoas Restaurant offers regional Brazilian cuisine, with a unique unique atmosphere.",
-      "The architecture is integrated into the natural surroundings.",
-      "To sit at your table you will have the sensation to be in the river itself, encircled by flowers and birds.",
-      "Choose the air-conditioned panoramic room or opt for seating on the open-air deck built over the water itself.",
-      "Have lunch watching the mist from the Devil’s Throat."
-    ],
-    images: [
-      portocanoas1
-    ]
-  },
-  {
-    id: "cassino",
-    title: "Cassino Iguazú in Argentina",
-    country: "Argentina",
-    icon: cassinoIcon,
-    iconBg: "#E6DEDD",
-    duration: "4 hours",
-    points: [
-      "The elegant and modern Casino Iguazú is located just across the border from Brazil.",
-      "Time for playing and entertainment.",
-    ],
-    images: [
-      cassinoiguazu
-    ]
-  },
-  {
-    title: "Brazilian Barbecue (Churrasco)",
-    country: "Brasil",
-    icon: brazilianbarbecueIcon,
-    iconBg: "#E6DEDD",
-    duration: "~1 hour",
-    points: [
-      "The most famous speciality of southern Brazil, the churrasco can be savored with all of its typical accompaniments and a vast selection of salads and hot plates.",
-    ],
-    images: [
-      brazilianBarbcue
-    ]
-  },
-];
+const gastronomyTour = () => {
+  const { t } = useTranslation();
+  return [
+    {
+      id: "portocan",
+      title: t('br_porto_canoas_title'),
+      country: t('br'),
+      icon: restaurantIcon,
+      iconBg: "#E6DEDD",
+      duration: `~1 ${t('hour')}`,
+      points: [
+        t('br_porto_canoas_t1'),
+        t('br_porto_canoas_t2'),
+        t('br_porto_canoas_t3'),
+        t('br_porto_canoas_t4'),
+        t('br_porto_canoas_t5')
+      ],
+      images: [
+        portocanoas1
+      ]
+    },
+    {
+      id: "cassino",
+      title: t('arg_cassino_title'),
+      country: t('arg'),
+      icon: cassinoIcon,
+      iconBg: "#E6DEDD",
+      duration: `4 ${t('hours')}`,
+      points: [
+        t('arg_cassino_t1'),
+        t('arg_cassino_t2')
+      ],
+      images: [
+        cassinoiguazu
+      ]
+    },
+    {
+      id: "brbarbcue",
+      title: t('br_barbcue_title'),
+      country: t('br'),
+      icon: brazilianbarbecueIcon,
+      iconBg: "#E6DEDD",
+      duration: `~1 ${t('hour')}`,
+      points: [
+        t('br_barbcue_t1')
+      ],
+      images: [
+        brazilianBarbcue
+      ]
+    }
+  ]
+};
 
 const hotels = [
   {

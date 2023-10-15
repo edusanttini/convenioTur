@@ -298,7 +298,6 @@
     "nature_others_t8" : "Rapel and Cascading - Practice rappel in the Iguassu Canyon from a height of 55m with the Cataratas as a backdrop! In special excursions, practice “Cascading” in a local waterfall.",
     "nature_others_t9" : "Selva Safari - Argentine Park - Special 4x4 vehicles explore the exclusive Yacaratía Trail with short walks and explanations from a professional jungle guide.",
     "nature_others_t10" : "Martins Trail - Visit a remote area of the National Park with a kayak (duck) trip. Snack included.",
-
     "transfer_t1": "Our agency is in constant contact with the major air carriers who operate in our region.",
     "transfer_t2": "We are specialists in guaranteeing flight connections and in making sure that all itineraries strictly maintained. All of our guides are officially registered and undergo an extensive training program providing professional service at all levels during our clients’ stay.",
     "transfer_t3": "Contact us for quotes for special charters of helicopters and airplanes.",
@@ -307,5 +306,7 @@
     "transfer_t5": "We maintain a high international standard through actions such as the constant renewal of the fleet of cars and buses, and the continuous improvement of drivers with the highest degree of specialization and education in the market.",
     "transfer_t6": "We are the only company in Foz do Iguaçu that has international insurance for the fleet of cars and buses.",
     "transfer_t7": "Convenio-Tur ensures the best transportation with safety and comfort that the region can offer.",
-    "transfer_t8": "All cars are equipped with air conditioning, and their appearance, cleanliness, and maintenance ensure an impeccable ride."
+    "transfer_t8": "All cars are equipped with air conditioning, and their appearance, cleanliness, and maintenance ensure an impeccable ride.",
+
+    "gastronomy_subtitle": "Discover our Culinary Delights and Engaging Entertainments"
 }

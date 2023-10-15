@@ -9,8 +9,10 @@ import { Navbar } from "..";
 import { styles } from "../../styles";
 import { bgGrayGradientStyle, bgDarkGrayGradientStyle, yellowText } from "../../globalColorScheme";
 import { gastronomyTour } from "../../constants";
+import { useTranslation } from "react-i18next";
 
 const TourGastronomy = ({ experience }) => {
+  const { t } = useTranslation();
     return (
         <VerticalTimelineElement
           contentStyle={{
@@ -68,7 +70,7 @@ const TourGastronomy = ({ experience }) => {
               className='text-secondary text-[16px] italic'
               style={ yellowText }
             >
-              {"Duration: "+experience.duration}
+              {t('duration')}{": "+experience.duration}
             </p>
         </VerticalTimelineElement>
       );
@@ -76,49 +78,51 @@ const TourGastronomy = ({ experience }) => {
 
 
 const Gastronomy = () => {
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+  const { t } = useTranslation();
+  const gTours = gastronomyTour();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
         
-      return (
-        <>
-          <div className='relative z-0' style={bgGrayGradientStyle}>
-            <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center '>
-              <Navbar isMain={false}/>
-            </div>
-            <div className="pt-32">
-              <motion.div 
-                variants={textVariant()}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, amount: 0.25 }}
-                className={`${styles.innerWidth} mx-auto flex flex-col`} 
-                >
-                <p className={`${styles.sectionSubText} text-center`}>
-                  dummy txt dummy txt dummy txt dummy txt
-                </p>
-                <h2 className={`${styles.sectionHeadText} text-center`}
-                style={yellowText}>
-                  Gastronomy and Entertainment
-                </h2>
-              </motion.div>
-              <div className='mt-20 flex flex-col'>
-                <VerticalTimeline 
-                  layout="1-column-left"
-                  lineColor="#FCD34D">
-                  {gastronomyTour.map((tour, index) => (
-                    <TourGastronomy
-                      key={`tour-${index}`}
-                      experience={tour}
-                    />
-                  ))}
-                </VerticalTimeline>
-              </div>
-            </div>
+  return (
+    <>
+      <div className='relative z-0' style={bgGrayGradientStyle}>
+        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center '>
+          <Navbar isMain={false}/>
+        </div>
+        <div className="pt-32">
+          <motion.div 
+            variants={textVariant()}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className={`${styles.innerWidth} mx-auto flex flex-col`} 
+          >
+            <p className={`${styles.sectionSubText} text-center`}>
+              {t('gastronomy_subtitle')}
+            </p>
+            <h2 className={`${styles.sectionHeadText} text-center`}
+              style={yellowText}>
+              {t('service_card_gastronomy')}
+            </h2>
+          </motion.div>
+          <div className='mt-20 flex flex-col'>
+            <VerticalTimeline 
+              layout="1-column-left"
+              lineColor="#FCD34D"
+            >
+              {gTours.map((tour, index) => (
+                <TourGastronomy
+                  key={`tour-${index}`}
+                  experience={tour}
+                />
+              ))}
+            </VerticalTimeline>
           </div>
-        </>
-      );
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Gastronomy;

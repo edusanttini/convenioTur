@@ -7,7 +7,8 @@ import { culturalTours, gastronomyTour } from "../../constants";
 import FsLightbox from "fslightbox-react";
 
 const BaseProduct = ({ id }) => {
-    const allProductArrays = [culturalTours, gastronomyTour];
+    const gTours = gastronomyTour();
+    const allProductArrays = [culturalTours, gTours];
     const selectedProduct = allProductArrays.reduce((foundProduct, pArray) => {
         if (!foundProduct) {
             return pArray.find(tour => tour.id === id)
