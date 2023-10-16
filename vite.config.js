@@ -23,13 +23,13 @@ export default defineConfig({
           if (id.includes('three.module')) {
             return '@threeJS';
           }
-          if (id.includes('react-reconciler') ||
+          /*if (id.includes('react-reconciler') ||TODO: find out which one is causing the issue!
               id.includes('i18next') ||
               id.includes('GLTFLoader') ||
               id.includes('react-dom.production') ||
               id.includes('fiber')) {
             return '@deps';
-          }
+          }*/
         },
       },
     },
